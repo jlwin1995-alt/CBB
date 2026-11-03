@@ -1,0 +1,4 @@
+research/out/
+__pycache__/
+*.pyc
+data/raw/done_*.json
