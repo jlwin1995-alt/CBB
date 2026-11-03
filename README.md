@@ -1,7 +1,7 @@
 # cbb: college basketball player projections, lines and grading
 
 Separate project (own repo) from the NBA (`jlwin1995-alt/Bball`) and football work. Scope: **power 6 + mid-major conferences, Division I only**.
-Daily Odds API budget: **100 credits/day** (`pipeline/config.py`).
+Odds API budget: this project has its own **free key with 500 credits in total** (about 5 days at the 100/day cap), so lines are pulled for **points only** by default (about 2 credits a game, to be verified on the first pull) and pulling stops at a 25-credit floor (`pipeline/config.py`). 500 credits is a pilot, not the ~2,000 graded lines the phase-3e gate needs; the plan is revisited after probe #2 and the first week.
 
 ## Where things stand (Nov 3, 2026)
 * **Data:** four seasons of ESPN Division I box scores (2022-23 .. 2025-26, about 500k player-games) in `data/raw/`, plus the recruit classes 2023-26 and the 2026 transfer-portal list in `data/raw/recruits/`.
