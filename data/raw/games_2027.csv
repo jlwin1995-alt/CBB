@@ -1,0 +1,184 @@
+event,date,season,home_id,home,home_score,away_id,away,away_score,neutral,conf_game
+401920982,2026-11-01,2027,222,Villanova Wildcats,72,87,Notre Dame Fighting Irish,74,1,0
+401920409,2026-11-02,2027,2272,High Point Panthers,72,2335,Liberty Flames,57,1,0
+401906769,2026-11-02,2027,57,Florida Gators,77,2390,Miami Hurricanes,67,1,0
+401909562,2026-11-02,2027,150,Duke Blue Devils,84,349,Army Black Knights,50,0,0
+401913525,2026-11-03,2027,356,Illinois Fighting Illini,120,161,Fairleigh Dickinson Knights,45,0,0
+401911390,2026-11-03,2027,41,UConn Huskies,86,2241,Gardner-Webb Runnin' Bulldogs,46,0,0
+401909738,2026-11-03,2027,26,UCLA Bruins,84,12,Arizona Wildcats,75,1,0
+401924856,2026-11-03,2027,127,Michigan State Spartans,96,2514,Quinnipiac Bobcats,59,0,0
+401906863,2026-11-03,2027,251,Texas Longhorns,109,2130,Chicago State Cougars,59,0,0
+401925811,2026-11-03,2027,248,Houston Cougars,94,2325,La Salle Explorers,55,0,0
+401918947,2026-11-03,2027,97,Louisville Cardinals,84,236,Chattanooga Mocs,70,0,0
+401920679,2026-11-02,2027,2599,St. John's Red Storm,78,2405,Monmouth Hawks,63,0,0
+401921704,2026-11-03,2027,2250,Gonzaga Bulldogs,78,2509,Purdue Boilermakers,72,1,0
+401925733,2026-11-02,2027,130,Michigan Wolverines,84,2473,Oakland Golden Grizzlies,68,0,0
+401909784,2026-11-03,2027,2305,Kansas Jayhawks,95,2230,Fordham Rams,65,0,0
+401909771,2026-11-03,2027,66,Iowa State Cyclones,76,235,Memphis Tigers,80,1,0
+401921036,2026-11-03,2027,2641,Texas Tech Red Raiders,76,2296,Jackson State Tigers,42,0,0
+401926771,2026-11-03,2027,30,USC Trojans,95,270,Milwaukee Panthers,63,0,0
+401921104,2026-11-03,2027,238,Vanderbilt Commodores,93,91,Bellarmine Knights,47,0,0
+401916313,2026-11-03,2027,252,BYU Cougars,94,194,Ohio State Buckeyes,83,1,0
+401920912,2026-11-02,2027,2755,Grambling Tigers,89,2459,Northern Illinois Huskies,87,1,0
+401921422,2026-11-02,2027,2026,App State Mountaineers,63,2771,Merrimack Warriors,49,1,0
+401921423,2026-11-02,2027,2511,Queens University Royals,103,2737,Winthrop Eagles,98,1,0
+401929384,2026-11-02,2027,2382,Mercer Bears,90,2890,Reinhardt Eagles,53,0,0
+401921173,2026-11-02,2027,85,IU Indianapolis Jaguars,113,126972,Miami (OH) Middletown ThunderHawks,76,0,0
+401928619,2026-11-02,2027,2393,Middle Tennessee Blue Raiders,117,2225,Fisk Bulldogs,73,0,0
+401926830,2026-11-02,2027,2275,Hofstra Pride,97,3196,St. Joseph's Long Island Golden Eagles,51,0,0
+401911707,2026-11-02,2027,2634,Tennessee State Tigers,64,93,Murray State Racers,94,1,0
+401925925,2026-11-02,2027,2569,South Carolina State Bulldogs,94,571,Morris Hornets,55,0,0
+401925062,2026-11-02,2027,2447,Nicholls Colonels,110,126750,North American Stallions,56,0,0
+401911532,2026-11-02,2027,94,Northern Kentucky Norse,84,2638,UTEP Miners,76,1,0
+401911469,2026-11-02,2027,23,San José State Spartans,95,2636,UTSA Roadrunners,74,0,0
+401924732,2026-11-02,2027,163,Princeton Tigers,78,2102,Carnegie Mellon Tartans,46,0,0
+401920071,2026-11-02,2027,2244,George Mason Patriots,82,2378,UMBC Retrievers,54,0,0
+401928858,2026-11-02,2027,82,UIC Flames,96,2595,St. Francis (IL) Fighting Saints,47,0,0
+401919014,2026-11-02,2027,2377,McNeese Cowboys,99,5,UAB Blazers,78,1,0
+401929404,2026-11-02,2027,233,South Dakota Coyotes,95,573,Mount Marty Lancers,57,0,0
+401926200,2026-11-02,2027,2678,VMI Keydets,115,3229,Virginia Lynchburg Dragons,83,0,0
+401924717,2026-11-02,2027,172,Cornell Big Red,86,2492,Pepperdine Waves,85,0,0
+401910994,2026-11-02,2027,2247,Georgia State Panthers,73,189,Bowling Green Falcons,76,0,0
+401926833,2026-11-02,2027,2619,Stony Brook Seawolves,97,16231,SUNY Old Westbury Panthers,47,0,0
+401925857,2026-11-02,2027,218,Temple Owls,68,2115,Central Connecticut Blue Devils,56,0,0
+401923317,2026-11-02,2027,399,UAlbany Great Danes,74,226,Rhode Island College Anchormen,67,0,0
+401921264,2026-11-02,2027,46,Georgetown Hoyas,80,2352,Loyola Maryland Greyhounds,58,0,0
+401921093,2026-11-02,2027,242,Rice Owls,100,2937,Dallas Christian Crusaders,55,0,0
+401929383,2026-11-03,2027,2198,Eastern Kentucky Colonels,105,3077,Kentucky Christian Knights,54,0,0
+401928852,2026-11-03,2027,2415,Morgan State Bears,103,2129,Cheyney (PA) Wolves,52,0,0
+401928357,2026-11-03,2027,2229,Florida International Panthers,101,128550,New College Mighty Banyans,58,0,0
+401927341,2026-11-03,2027,2169,Delaware State Hornets,86,2614,Saint Vincent Bearcats,52,0,0
+401926862,2026-11-03,2027,350,UNC Wilmington Seahawks,101,2418,Mount Olive Trojans,65,0,0
+401926787,2026-11-03,2027,338,Kennesaw State Owls,116,111166,Midway Eagles,57,0,0
+401926141,2026-11-03,2027,2565,SIU Edwardsville Cougars,91,101,Eureka Red Devils,39,0,0
+401926077,2026-11-03,2027,2504,Prairie View A&M Panthers,86,2491,Paul Quinn Tigers,65,0,0
+401925818,2026-11-03,2027,282,Indiana State Sycamores,70,2429,Charlotte 49ers,78,0,0
+401924875,2026-11-03,2027,2529,Sacred Heart Pioneers,111,2557,Coast Guard Bears,44,0,0
+401924743,2026-11-03,2027,43,Yale Bulldogs,72,47,Howard Bison,62,0,0
+401923324,2026-11-03,2027,2349,UMass Lowell River Hawks,121,111913,Rivier Raiders,57,0,0
+401922247,2026-11-03,2027,2697,West Florida Argonauts,127,111951,Southeastern Baptist Chargers,42,0,0
+401921766,2026-11-03,2027,277,West Virginia Mountaineers,91,315,Niagara Purple Eagles,46,0,0
+401921753,2026-11-03,2027,2116,UCF Knights,96,526,Florida Gulf Coast Eagles,95,0,0
+401921139,2026-11-03,2027,171,Columbia Lions,71,2210,Elon Phoenix,84,0,0
+401920902,2026-11-03,2027,48,Delaware Blue Hens,105,128342,Notre Dame (MD) Gators,44,0,0
+401920876,2026-11-03,2027,294,Jacksonville Dolphins,105,3174,Trinity College of Jacksonville Eagles,61,0,0
+401920842,2026-11-03,2027,2506,Presbyterian Blue Hose,78,2900,St. Thomas Tommies,87,0,0
+401920746,2026-11-03,2027,104,Boston University Terriers,93,111,Northeastern Huskies,85,0,0
+401920690,2026-11-03,2027,314,Iona Gaels,56,261,Vermont Catamounts,55,0,0
+401920354,2026-11-03,2027,108,Harvard Crimson,73,109,MIT Engineers,45,0,0
+401920231,2026-11-03,2027,2368,Marist Red Foxes,62,159,Dartmouth Big Green,69,0,0
+401920201,2026-11-03,2027,2670,VCU Rams,82,2031,Little Rock Trojans,72,0,0
+401919845,2026-11-03,2027,284,Stonehill Skyhawks,84,40,Curry Colonels,56,0,0
+401919803,2026-11-03,2027,2226,Florida Atlantic Owls,74,112358,Long Island University Sharks,60,0,0
+401918976,2026-11-03,2027,151,East Carolina Pirates,83,2908,South Carolina Upstate Spartans,70,0,0
+401918312,2026-11-03,2027,2729,William & Mary Tribe,80,2079,Bridgewater Eagles,66,0,0
+401918073,2026-11-03,2027,228,Clemson Tigers,85,56,Stetson Hatters,72,0,0
+401916296,2026-11-03,2027,120,Maryland Terrapins,96,2083,Bucknell Bison,67,0,0
+401916286,2026-11-03,2027,84,Indiana Hoosiers,91,2197,Eastern Illinois Panthers,57,0,0
+401913099,2026-11-03,2027,153,North Carolina Tar Heels,80,2717,Western Carolina Catamounts,72,0,0
+401912207,2026-11-03,2027,2132,Cincinnati Bearcats,79,44,American University Eagles,53,0,0
+401911333,2026-11-03,2027,2750,Wright State Raiders,102,2005,Air Force Falcons,71,0,0
+401911304,2026-11-03,2027,225,Brown Bears,55,160,New Hampshire Wildcats,59,0,0
+401911261,2026-11-03,2027,179,St. Bonaventure Bonnies,71,2754,Youngstown State Penguins,79,0,0
+401911237,2026-11-03,2027,257,Richmond Spiders,100,2427,UNC Asheville Bulldogs,77,0,0
+401911185,2026-11-03,2027,2168,Dayton Flyers,89,2885,NJIT Highlanders,58,0,0
+401911004,2026-11-03,2027,290,Georgia Southern Eagles,67,2050,Ball State Cardinals,55,0,0
+401911002,2026-11-03,2027,256,James Madison Dukes,77,193,Miami (OH) RedHawks,86,0,0
+401911001,2026-11-03,2027,2653,Troy Trojans,60,113,Massachusetts Minutemen,71,0,0
+401910998,2026-11-03,2027,324,Coastal Carolina Chanticleers,70,2199,Eastern Michigan Eagles,71,0,0
+401910997,2026-11-03,2027,295,Old Dominion Monarchs,61,2711,Western Michigan Broncos,49,0,0
+401910995,2026-11-03,2027,276,Marshall Thundering Herd,92,2084,Buffalo Bulls,65,0,0
+401909716,2026-11-03,2027,183,Syracuse Orange,74,2441,New Haven Chargers,58,0,0
+401909705,2026-11-03,2027,221,Pittsburgh Panthers,95,2520,Rider Broncs,57,0,0
+401909541,2026-11-03,2027,2752,Xavier Musketeers,97,116,Mount St. Mary's Mountaineers,52,0,0
+401909531,2026-11-03,2027,2507,Providence Friars,83,311,Maine Black Bears,56,0,0
+401902275,2026-11-03,2027,2086,Butler Bulldogs,96,322,Lafayette Leopards,60,0,0
+401931655,2026-11-03,2027,232,Charleston Cougars,111,2576,Southern Wesleyan Warriors,55,0,0
+401928806,2026-11-03,2027,2739,Green Bay Phoenix,94,268,Lawrence Vikings,51,0,0
+401926116,2026-11-03,2027,2535,Samford Bulldogs,87,2757,Berry Vikings,58,0,0
+401925088,2026-11-03,2027,2617,Stephen F. Austin Lumberjacks,120,2358,Lyon Scots,61,0,0
+401922043,2026-11-03,2027,2344,Longwood Lancers,123,2945,Pfeiffer Falcons,67,0,0
+401920959,2026-11-03,2027,98,Western Kentucky Hilltoppers,83,2413,Morehead State Eagles,58,0,0
+401920893,2026-11-03,2027,275,Wisconsin Badgers,75,2172,Denver Pioneers,68,0,0
+401920886,2026-11-03,2027,2550,Seton Hall Pirates,66,2612,Saint Peter's Peacocks,42,0,0
+401920758,2026-11-03,2027,2057,Belmont Bruins,72,88,Southern Indiana Screaming Eagles,54,0,0
+401920701,2026-11-03,2027,2546,Southeast Missouri State Redhawks,86,288,Lipscomb Bisons,79,0,0
+401919780,2026-11-03,2027,158,Nebraska Cornhuskers,106,2330,Le Moyne Dolphins,64,0,0
+401918955,2026-11-03,2027,152,NC State Wolfpack,83,2097,Campbell Fighting Camels,64,0,0
+401917173,2026-11-03,2027,213,Penn State Nittany Lions,97,2099,Canisius Golden Griffins,57,0,0
+401911208,2026-11-03,2027,45,George Washington Revolutionaries,91,2426,Navy Midshipmen,39,0,0
+401911000,2026-11-03,2027,2348,Louisiana Tech Bulldogs,85,2309,Kent State Golden Flashes,75,0,0
+401910996,2026-11-03,2027,2433,UL Monroe Warhawks,78,2117,Central Michigan Chippewas,83,0,0
+401909522,2026-11-03,2027,269,Marquette Golden Eagles,78,2385,Mercyhurst Lakers,43,0,0
+401906791,2026-11-03,2027,344,Mississippi State Bulldogs,106,2635,Tennessee Tech Golden Eagles,88,0,0
+401906779,2026-11-03,2027,61,Georgia Bulldogs,78,2428,North Carolina Central Eagles,62,0,0
+401911374,2026-11-03,2027,58,South Florida Bulls,98,2127,Charleston Southern Buccaneers,71,0,0
+401929441,2026-11-03,2027,2572,Southern Miss Golden Eagles,82,2650,Tougaloo Bulldogs,35,0,0
+401929394,2026-11-03,2027,2437,Omaha Mavericks,73,3126,Mid America Christian Evangels,65,0,0
+401929391,2026-11-03,2027,2449,North Dakota State Bison,90,2772,Crookston (MN) Golden Eagles,59,0,0
+401929365,2026-11-03,2027,2627,Tarleton State Texans,86,2096,Cameron Aggies,60,0,0
+401929355,2026-11-03,2027,250,UT Arlington Mavericks,89,126794,UNT Dallas Trailblazers,56,0,0
+401928995,2026-11-03,2027,2674,Valparaiso Beacons,80,2710,Western Illinois Leathernecks,58,0,0
+401927368,2026-11-03,2027,339,Evansville Purple Aces,80,3192,IU Kokomo Cougars,70,0,0
+401927360,2026-11-03,2027,71,Bradley Braves,85,2919,Monmouth (IL) Fighting Scots,41,0,0
+401925892,2026-11-03,2027,2450,Norfolk State Spartans,68,131784,Regent Regent Royals,45,0,0
+401925862,2026-11-03,2027,202,Tulsa Golden Hurricane,98,2775,Ottawa (KS) Braves,50,0,0
+401925096,2026-11-03,2027,326,Texas State Bobcats,67,357,Texas A&M-Corpus Christi Islanders,55,0,0
+401923269,2026-11-03,2027,2803,Bryant Bulldogs,80,2561,Siena Saints,75,0,0
+401921424,2026-11-03,2027,2065,Bethune-Cookman Wildcats,70,231,Furman Paladins,79,1,0
+401920951,2026-11-03,2027,79,Southern Illinois Salukis,82,310,Maryville (MO) Saints,40,0,0
+401920732,2026-11-03,2027,77,Northwestern Wildcats,86,2066,Binghamton Bearcats,60,0,0
+401920434,2026-11-03,2027,3084,Utah Valley Wolverines,84,112694,Western Colorado Mountaineers,63,0,0
+401919047,2026-11-03,2027,2628,TCU Horned Frogs,98,2815,Lindenwood Lions,59,0,0
+401919001,2026-11-03,2027,2655,Tulane Green Wave,100,2630,UT Martin Skyhawks,98,0,0
+401918967,2026-11-03,2027,2567,SMU Mustangs,85,2582,Southern Jaguars,72,0,0
+401918051,2026-11-03,2027,25,California Golden Bears,115,2001,Adams State Grizzlies,86,0,0
+401917948,2026-11-03,2027,2046,Austin Peay Governors,109,6371,Lane College Dragons,65,0,0
+401917510,2026-11-03,2027,2501,Portland Pilots,133,2930,Willamette Bearcats,89,0,0
+401911248,2026-11-03,2027,139,Saint Louis Billikens,92,2329,Lehigh Mountain Hawks,67,0,0
+401911228,2026-11-03,2027,2350,Loyola Chicago Ramblers,77,2643,The Citadel Bulldogs,52,0,0
+401911003,2026-11-03,2027,6,South Alabama Jaguars,77,195,Ohio Bobcats,86,0,0
+401910999,2026-11-03,2027,2032,Arkansas State Red Wolves,71,2649,Toledo Rockets,70,0,0
+401910993,2026-11-03,2027,309,Louisiana Ragin' Cajuns,61,2006,Akron Zips,75,0,0
+401909725,2026-11-03,2027,154,Wake Forest Demon Deacons,83,2379,Maryland Eastern Shore Hawks,62,0,0
+401909500,2026-11-03,2027,305,DePaul Blue Demons,75,2698,West Georgia Wolves,58,0,0
+401909490,2026-11-03,2027,156,Creighton Bluejays,76,140,Kansas City Roos,61,0,0
+401906801,2026-11-03,2027,201,Oklahoma Sooners,64,2837,East Texas A&M Lions,68,0,0
+401926739,2026-11-03,2027,55,Jacksonville State Gamecocks,123,548,LaGrange Panthers,59,0,0
+401925683,2026-11-03,2027,145,Ole Miss Rebels,99,2016,Alcorn State Braves,58,0,0
+401925640,2026-11-03,2027,2010,Alabama A&M Bulldogs,90,3083,Oakwood Ambassadors,57,0,0
+401925105,2026-11-03,2027,292,UT Rio Grande Valley Vaqueros,81,2658,Texas A&M-Kingsville Javelinas,51,0,0
+401925010,2026-11-03,2027,2320,Lamar Cardinals,124,2544,Schreiner Mountaineers,62,0,0
+401917913,2026-11-03,2027,2110,Central Arkansas Bears,85,198,Oral Roberts Golden Eagles,55,0,0
+401929179,2026-11-03,2027,278,Fresno State Bulldogs,88,2235,Fresno Pacific Sunbirds,79,0,0
+401928351,2026-11-03,2027,2540,UC Santa Barbara Gauchos,85,22,San Francisco State Gators,55,0,0
+401925771,2026-11-03,2027,265,Washington State Cougars,61,2166,Davidson Wildcats,76,0,0
+401924894,2026-11-03,2027,167,New Mexico Lobos,100,3101,Utah Tech Trailblazers,60,0,0
+401921697,2026-11-03,2027,254,Utah Utes,66,299,Long Beach State Beach,63,0,0
+401919039,2026-11-03,2027,197,Oklahoma State Cowboys,91,2916,Incarnate Word Cardinals,60,0,0
+401916303,2026-11-03,2027,135,Minnesota Golden Gophers,85,155,North Dakota Fighting Hawks,50,0,0
+401911389,2026-11-03,2027,2253,Grand Canyon Lopes,103,2640,Texas Southern Tigers,79,0,0
+401909759,2026-11-03,2027,38,Colorado Buffaloes,94,2000,Abilene Christian Wildcats,59,0,0
+401925826,2026-11-03,2027,249,North Texas Mean Green,122,3238,Southwestern Christian U Eagles,50,0,0
+401909694,2026-11-03,2027,50,Florida A&M Rattlers,69,52,Florida State Seminoles,112,1,0
+401925947,2026-11-03,2027,204,Oregon State Beavers,102,2692,Weber State Wildcats,61,0,0
+401925887,2026-11-03,2027,2458,Northern Colorado Bears,117,2144,Colorado College Tigers,64,0,0
+401922020,2026-11-03,2027,328,Utah State Aggies,94,304,Idaho State Bengals,58,0,0
+401917508,2026-11-03,2027,301,San Diego Toreros,79,2067,Biola Eagles,62,0,0
+401909750,2026-11-03,2027,239,Baylor Bears,87,2466,Northwestern State Demons,65,0,0
+401926776,2026-11-03,2027,27,UC Riverside Highlanders,110,2318,La Verne Leopards,47,0,0
+401925921,2026-11-03,2027,253,Southern Utah Thunderbirds,134,110418,West Coast Baptist Eagles,69,0,0
+401925878,2026-11-03,2027,36,Colorado State Rams,84,147,Montana State Bobcats,74,0,0
+401922260,2026-11-03,2027,70,Idaho Vandals,97,415,George Fox Bruins,56,0,0
+401922029,2026-11-03,2027,2483,Oregon Ducks,87,149,Montana Grizzlies,69,0,0
+401921731,2026-11-03,2027,9,Arizona State Sun Devils,75,2193,East Tennessee State Buccaneers,65,0,0
+401921060,2026-11-03,2027,2539,San Francisco Dons,76,2515,Radford Highlanders,62,0,0
+401920769,2026-11-03,2027,264,Washington Huskies,90,2142,Colgate Raiders,76,0,0
+401920716,2026-11-03,2027,24,Stanford Cardinal,74,331,Eastern Washington Eagles,65,0,0
+401920370,2026-11-03,2027,28,UC San Diego Tritons,100,2850,Whittier Poets,75,0,0
+401920348,2026-11-03,2027,16,Sacramento State Hornets,90,3078,Jessup Warriors,74,0,0
+401917509,2026-11-03,2027,2541,Santa Clara Broncos,89,119,Towson Tigers,70,0,0
+401917507,2026-11-03,2027,2608,Saint Mary's Gaels,90,2287,Illinois State Redbirds,85,0,0
+401911517,2026-11-03,2027,302,UC Davis Aggies,75,2453,North Alabama Lions,79,0,0
+401911452,2026-11-03,2027,2440,Nevada Wolf Pack,86,2523,Robert Morris Colonials,49,0,0
+401920122,2026-11-03,2027,13,Cal Poly Mustangs,78,3182,Cal State San Marcos Cougars,62,0,0
