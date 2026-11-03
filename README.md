@@ -19,6 +19,11 @@ Odds API budget: **100 credits/day** (`pipeline/config.py`), on the **same key a
 
 Availability has no injury feed: infer it from the lines (a player with a line is expected to play), used only to decide who is shown, never to set a projection.
 
+## Lines pull (phase 3a)
+* `pipeline/fetch_lines.py` (run by `.github/workflows/lines.yml` every two hours in the evening, UTC): lists the Odds API's `basketball_ncaab` events (free), matches them to the in-scope games in `data/raw/schedule.csv` by team name (`data/raw/team_aliases.csv` holds spellings that differ), and asks `/odds` for points, rebounds, assists and threes from the seven sportsbooks plus PrizePicks. A game with no props costs 0 credits, so every in-scope game starting in the next 8 hours is asked; stops at the 100/day cap and at the 5,000-credit floor. Writes `data/raw/lines.csv` (latest) and `data/log/lines_log.csv` (every changed snapshot) and the spend to `data/log/credits.csv`.
+* Needs the repository secret `ODDS_API_KEY`. `python pipeline/fetch_lines.py --dry-run` lists the matches and the games with no Odds API event (free).
+* Probe #2 (Nov 3): 1 of 16 sampled games had props (Lipscomb @ Iowa), all power-6-vs-low-major games on an early-season night. Expect 10-20 PrizePicks lines on a typical early night, more on marquee nights and in conference play.
+
 ## Layout
 * `pipeline/backfill_espn.py`: resumable ESPN box-score backfill, `python pipeline/backfill_espn.py 2026` (season = ending year)
 * `pipeline/recruits.py`: recruit-rank priors learned from earlier classes only (walk-forward)
