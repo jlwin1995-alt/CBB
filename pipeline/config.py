@@ -1,6 +1,10 @@
 """CBB project settings (separate from the NBA / football projects)."""
 DAILY_CREDIT_CAP = 100          # The Odds API credits this project may spend per day (set by the user Nov 3, 2026)
+# The user chose (Nov 3, 2026) to run this project on the SAME Odds API key as the NBA project (about 19,000 credits, NBA spends roughly 100-150 a day), not a free 500-credit key.
+# Because the pool is shared, CBB stops pulling when the remaining-credits header drops to CREDIT_FLOOR, which keeps the NBA project funded.
+CREDIT_FLOOR = 5000
 SPORT = "basketball_ncaab"
+# Credits per game are (markets x bookmaker groups): probe #1 spent 8 credits on a game with props for these four markets (0 when a game has no props).
 ODDS_MARKETS = ["player_points", "player_rebounds", "player_assists", "player_threes"]
 PP_BREAKEVEN = 0.544            # the user's break-even for PrizePicks legs
 # Scope (user, Nov 3, 2026): power 6 + mid-major conferences, Division I only. Names are ESPN's conference table names.

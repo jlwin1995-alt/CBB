@@ -1,7 +1,7 @@
 # cbb: college basketball player projections, lines and grading
 
 Separate project (own repo) from the NBA (`jlwin1995-alt/Bball`) and football work. Scope: **power 6 + mid-major conferences, Division I only**.
-Daily Odds API budget: **100 credits/day** (`pipeline/config.py`).
+Odds API budget: **100 credits/day** (`pipeline/config.py`), on the **same key as the NBA project** (the user chose this on Nov 3, 2026 over a free 500-credit key). The pool is shared, so pulls stop when the remaining credits drop to **5,000** (`CREDIT_FLOOR`), which keeps the NBA project funded. At about 8 credits a game with props that is about 12 games a day.
 
 ## Where things stand (Nov 3, 2026)
 * **Data:** four seasons of ESPN Division I box scores (2022-23 .. 2025-26, about 500k player-games) in `data/raw/`, plus the recruit classes 2023-26 and the 2026 transfer-portal list in `data/raw/recruits/`.
