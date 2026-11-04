@@ -1,0 +1,363 @@
+team_id,team,abbr,conf_id,conference,tier
+2066,Binghamton Bearcats,BING,1,America East,low
+2803,Bryant Bulldogs,BRY,1,America East,low
+311,Maine Black Bears,ME,1,America East,low
+2885,NJIT Highlanders,NJIT,1,America East,low
+160,New Hampshire Wildcats,UNH,1,America East,low
+399,UAlbany Great Danes,UALB,1,America East,low
+2378,UMBC Retrievers,UMBC,1,America East,low
+2349,UMass Lowell River Hawks,UML,1,America East,low
+261,Vermont Catamounts,UVM,1,America East,low
+91,Bellarmine Knights,BELL,46,Atlantic Sun,low
+526,Florida Gulf Coast Eagles,FGCU,46,Atlantic Sun,low
+294,Jacksonville Dolphins,JAX,46,Atlantic Sun,low
+288,Lipscomb Bisons,LIP,46,Atlantic Sun,low
+2454,North Florida Ospreys,UNF,46,Atlantic Sun,low
+56,Stetson Hatters,STET,46,Atlantic Sun,low
+2697,West Florida Argonauts,UWF,46,Atlantic Sun,low
+331,Eastern Washington Eagles,EWU,5,Big Sky,low
+304,Idaho State Bengals,IDST,5,Big Sky,low
+70,Idaho Vandals,IDHO,5,Big Sky,low
+149,Montana Grizzlies,MONT,5,Big Sky,low
+147,Montana State Bobcats,MTST,5,Big Sky,low
+2464,Northern Arizona Lumberjacks,NAU,5,Big Sky,low
+2458,Northern Colorado Bears,UNCO,5,Big Sky,low
+2502,Portland State Vikings,PRST,5,Big Sky,low
+253,Southern Utah Thunderbirds,SUU,5,Big Sky,low
+3101,Utah Tech Trailblazers,UTU,5,Big Sky,low
+2692,Weber State Wildcats,WEB,5,Big Sky,low
+2127,Charleston Southern Buccaneers,CHSO,6,Big South,low
+2241,Gardner-Webb Runnin' Bulldogs,GWEB,6,Big South,low
+2272,High Point Panthers,HPU,6,Big South,low
+2344,Longwood Lancers,LONG,6,Big South,low
+2506,Presbyterian Blue Hose,PRES,6,Big South,low
+2515,Radford Highlanders,RAD,6,Big South,low
+2908,South Carolina Upstate Spartans,UPST,6,Big South,low
+2427,UNC Asheville Bulldogs,UNCA,6,Big South,low
+2737,Winthrop Eagles,WIN,6,Big South,low
+325,Cleveland State Vikings,CLE,45,Horizon League,low
+2174,Detroit Mercy Titans,DETM,45,Horizon League,low
+2739,Green Bay Phoenix,GB,45,Horizon League,low
+85,IU Indianapolis Jaguars,IUIN,45,Horizon League,low
+270,Milwaukee Panthers,MILW,45,Horizon League,low
+2459,Northern Illinois Huskies,NIU,45,Horizon League,low
+94,Northern Kentucky Norse,NKU,45,Horizon League,low
+2473,Oakland Golden Grizzlies,OAK,45,Horizon League,low
+2870,Purdue Fort Wayne Mastodons,PFW,45,Horizon League,low
+2523,Robert Morris Colonials,RMU,45,Horizon League,low
+2750,Wright State Raiders,WRST,45,Horizon League,low
+2754,Youngstown State Penguins,YSU,45,Horizon League,low
+225,Brown Bears,BRWN,12,Ivy League,low
+171,Columbia Lions,COLU,12,Ivy League,low
+172,Cornell Big Red,COR,12,Ivy League,low
+159,Dartmouth Big Green,DART,12,Ivy League,low
+108,Harvard Crimson,HARV,12,Ivy League,low
+219,Pennsylvania Quakers,PENN,12,Ivy League,low
+163,Princeton Tigers,PRIN,12,Ivy League,low
+43,Yale Bulldogs,YALE,12,Ivy League,low
+2099,Canisius Golden Griffins,CAN,13,Metro,low
+2217,Fairfield Stags,FAIR,13,Metro,low
+314,Iona Gaels,IONA,13,Metro,low
+2363,Manhattan Jaspers,MAN,13,Metro,low
+2368,Marist Red Foxes,MRST,13,Metro,low
+2771,Merrimack Warriors,MRMK,13,Metro,low
+116,Mount St. Mary's Mountaineers,MSM,13,Metro,low
+315,Niagara Purple Eagles,NIA,13,Metro,low
+2514,Quinnipiac Bobcats,QUIN,13,Metro,low
+2520,Rider Broncs,RID,13,Metro,low
+2529,Sacred Heart Pioneers,SHU,13,Metro,low
+2612,Saint Peter's Peacocks,SPU,13,Metro,low
+2561,Siena Saints,SIE,13,Metro,low
+2154,Coppin State Eagles,COPP,16,Mid-Eastern Athletic,low
+2169,Delaware State Hornets,DSU,16,Mid-Eastern Athletic,low
+47,Howard Bison,HOW,16,Mid-Eastern Athletic,low
+2379,Maryland Eastern Shore Hawks,UMES,16,Mid-Eastern Athletic,low
+2415,Morgan State Bears,MORG,16,Mid-Eastern Athletic,low
+2450,Norfolk State Spartans,NORF,16,Mid-Eastern Athletic,low
+2428,North Carolina Central Eagles,NCCU,16,Mid-Eastern Athletic,low
+2569,South Carolina State Bulldogs,SCST,16,Mid-Eastern Athletic,low
+2115,Central Connecticut Blue Devils,CCSU,19,Northeast,low
+2130,Chicago State Cougars,CHST,19,Northeast,low
+161,Fairleigh Dickinson Knights,FDU,19,Northeast,low
+2330,Le Moyne Dolphins,LEM,19,Northeast,low
+112358,Long Island University Sharks,LIU,19,Northeast,low
+2385,Mercyhurst Lakers,MERC,19,Northeast,low
+2441,New Haven Chargers,NHVN,19,Northeast,low
+284,Stonehill Skyhawks,STO,19,Northeast,low
+2681,Wagner Seahawks,WAG,19,Northeast,low
+2197,Eastern Illinois Panthers,EIU,20,Ohio Valley,low
+2413,Morehead State Eagles,MORE,20,Ohio Valley,low
+2565,SIU Edwardsville Cougars,SIUE,20,Ohio Valley,low
+2546,Southeast Missouri State Redhawks,SEMO,20,Ohio Valley,low
+2634,Tennessee State Tigers,TNST,20,Ohio Valley,low
+2630,UT Martin Skyhawks,UTM,20,Ohio Valley,low
+2710,Western Illinois Leathernecks,WIU,20,Ohio Valley,low
+44,American University Eagles,AMER,22,Patriot League,low
+349,Army Black Knights,ARMY,22,Patriot League,low
+104,Boston University Terriers,BU,22,Patriot League,low
+2083,Bucknell Bison,BUCK,22,Patriot League,low
+2142,Colgate Raiders,COLG,22,Patriot League,low
+107,Holy Cross Crusaders,HC,22,Patriot League,low
+322,Lafayette Leopards,LAF,22,Patriot League,low
+2329,Lehigh Mountain Hawks,LEH,22,Patriot League,low
+2352,Loyola Maryland Greyhounds,L-MD,22,Patriot League,low
+2426,Navy Midshipmen,NAVY,22,Patriot League,low
+236,Chattanooga Mocs,UTC,24,Southern,low
+2193,East Tennessee State Buccaneers,ETSU,24,Southern,low
+231,Furman Paladins,FUR,24,Southern,low
+2382,Mercer Bears,MER,24,Southern,low
+2535,Samford Bulldogs,SAM,24,Southern,low
+2635,Tennessee Tech Golden Eagles,TNTC,24,Southern,low
+2643,The Citadel Bulldogs,CIT,24,Southern,low
+2430,UNC Greensboro Spartans,UNCG,24,Southern,low
+2678,VMI Keydets,VMI,24,Southern,low
+2717,Western Carolina Catamounts,WCU,24,Southern,low
+2747,Wofford Terriers,WOF,24,Southern,low
+2837,East Texas A&M Lions,ETAM,25,Southland,low
+2277,Houston Christian Huskies,HCU,25,Southland,low
+2916,Incarnate Word Cardinals,UIW,25,Southland,low
+2443,LSU New Orleans Privateers,NOLA,25,Southland,low
+2320,Lamar Cardinals,LAM,25,Southland,low
+2377,McNeese Cowboys,MCN,25,Southland,low
+2447,Nicholls Colonels,NICH,25,Southland,low
+2466,Northwestern State Demons,NWST,25,Southland,low
+2545,SE Louisiana Lions,SELA,25,Southland,low
+2617,Stephen F. Austin Lumberjacks,SFA,25,Southland,low
+357,Texas A&M-Corpus Christi Islanders,AMCC,25,Southland,low
+292,UT Rio Grande Valley Vaqueros,RGV,25,Southland,low
+2010,Alabama A&M Bulldogs,AAMU,26,Southwestern Athletic,low
+2011,Alabama State Hornets,ALST,26,Southwestern Athletic,low
+2016,Alcorn State Braves,ALCN,26,Southwestern Athletic,low
+2029,Arkansas-Pine Bluff Golden Lions,UAPB,26,Southwestern Athletic,low
+2065,Bethune-Cookman Wildcats,BCU,26,Southwestern Athletic,low
+50,Florida A&M Rattlers,FAMU,26,Southwestern Athletic,low
+2755,Grambling Tigers,GRAM,26,Southwestern Athletic,low
+2296,Jackson State Tigers,JKST,26,Southwestern Athletic,low
+2400,Mississippi Valley State Delta Devils,MVSU,26,Southwestern Athletic,low
+2504,Prairie View A&M Panthers,PV,26,Southwestern Athletic,low
+2582,Southern Jaguars,SOU,26,Southwestern Athletic,low
+2640,Texas Southern Tigers,TXSO,26,Southwestern Athletic,low
+140,Kansas City Roos,KC,49,Summit League,low
+155,North Dakota Fighting Hawks,UND,49,Summit League,low
+2449,North Dakota State Bison,NDSU,49,Summit League,low
+2437,Omaha Mavericks,OMA,49,Summit League,low
+198,Oral Roberts Golden Eagles,ORU,49,Summit League,low
+233,South Dakota Coyotes,SDAK,49,Summit League,low
+2571,South Dakota State Jackrabbits,SDST,49,Summit League,low
+2900,St. Thomas Tommies,STMN,49,Summit League,low
+2000,Abilene Christian Wildcats,ACU,30,United Athletic,low
+2046,Austin Peay Governors,APSU,30,United Athletic,low
+2110,Central Arkansas Bears,CARK,30,United Athletic,low
+2198,Eastern Kentucky Colonels,EKU,30,United Athletic,low
+2031,Little Rock Trojans,LR,30,United Athletic,low
+2453,North Alabama Lions,UNA,30,United Athletic,low
+2627,Tarleton State Texans,TAR,30,United Athletic,low
+250,UT Arlington Mavericks,UTA,30,United Athletic,low
+2698,West Georgia Wolves,WGA,30,United Athletic,low
+2429,Charlotte 49ers,CLT,50,American,mid
+151,East Carolina Pirates,ECU,50,American,mid
+2226,Florida Atlantic Owls,FAU,50,American,mid
+235,Memphis Tigers,MEM,50,American,mid
+249,North Texas Mean Green,UNT,50,American,mid
+242,Rice Owls,RICE,50,American,mid
+58,South Florida Bulls,USF,50,American,mid
+218,Temple Owls,TEM,50,American,mid
+2655,Tulane Green Wave,TULN,50,American,mid
+202,Tulsa Golden Hurricane,TLSA,50,American,mid
+5,UAB Blazers,UAB,50,American,mid
+2636,UTSA Roadrunners,UTSA,50,American,mid
+2724,Wichita State Shockers,WICH,50,American,mid
+2166,Davidson Wildcats,DAV,3,Atlantic 10,mid
+2168,Dayton Flyers,DAY,3,Atlantic 10,mid
+2184,Duquesne Dukes,DUQ,3,Atlantic 10,mid
+2230,Fordham Rams,FOR,3,Atlantic 10,mid
+2244,George Mason Patriots,GMU,3,Atlantic 10,mid
+45,George Washington Revolutionaries,GW,3,Atlantic 10,mid
+2325,La Salle Explorers,LAS,3,Atlantic 10,mid
+2350,Loyola Chicago Ramblers,LUC,3,Atlantic 10,mid
+227,Rhode Island Rams,URI,3,Atlantic 10,mid
+257,Richmond Spiders,RICH,3,Atlantic 10,mid
+2603,Saint Joseph's Hawks,JOES,3,Atlantic 10,mid
+139,Saint Louis Billikens,SLU,3,Atlantic 10,mid
+179,St. Bonaventure Bonnies,SBU,3,Atlantic 10,mid
+2670,VCU Rams,VCU,3,Atlantic 10,mid
+13,Cal Poly Mustangs,CP,9,Big West,mid
+2934,Cal State Bakersfield Roadrunners,CSUB,9,Big West,mid
+2239,Cal State Fullerton Titans,CSUF,9,Big West,mid
+2463,Cal State Northridge Matadors,CSUN,9,Big West,mid
+2856,California Baptist Lancers,CBU,9,Big West,mid
+299,Long Beach State Beach,LBSU,9,Big West,mid
+16,Sacramento State Hornets,SAC,9,Big West,mid
+300,UC Irvine Anteaters,UCI,9,Big West,mid
+27,UC Riverside Highlanders,UCR,9,Big West,mid
+28,UC San Diego Tritons,UCSD,9,Big West,mid
+2540,UC Santa Barbara Gauchos,UCSB,9,Big West,mid
+3084,Utah Valley Wolverines,UVU,9,Big West,mid
+2097,Campbell Fighting Camels,CAM,10,Coastal Athletic Association,mid
+232,Charleston Cougars,COFC,10,Coastal Athletic Association,mid
+2182,Drexel Dragons,DREX,10,Coastal Athletic Association,mid
+2210,Elon Phoenix,ELON,10,Coastal Athletic Association,mid
+2261,Hampton Pirates,HAMP,10,Coastal Athletic Association,mid
+2275,Hofstra Pride,HOF,10,Coastal Athletic Association,mid
+2405,Monmouth Hawks,MONM,10,Coastal Athletic Association,mid
+2448,North Carolina A&T Aggies,NCAT,10,Coastal Athletic Association,mid
+111,Northeastern Huskies,NE,10,Coastal Athletic Association,mid
+2619,Stony Brook Seawolves,STBK,10,Coastal Athletic Association,mid
+119,Towson Tigers,TOW,10,Coastal Athletic Association,mid
+350,UNC Wilmington Seahawks,UNCW,10,Coastal Athletic Association,mid
+2729,William & Mary Tribe,W&M,10,Coastal Athletic Association,mid
+48,Delaware Blue Hens,DEL,11,Conference USA,mid
+2229,Florida International Panthers,FIU,11,Conference USA,mid
+55,Jacksonville State Gamecocks,JXST,11,Conference USA,mid
+338,Kennesaw State Owls,KENN,11,Conference USA,mid
+2335,Liberty Flames,LIB,11,Conference USA,mid
+2393,Middle Tennessee Blue Raiders,MTSU,11,Conference USA,mid
+2623,Missouri State Bears,MOST,11,Conference USA,mid
+166,New Mexico State Aggies,NMSU,11,Conference USA,mid
+2534,Sam Houston Bearkats,SHSU,11,Conference USA,mid
+98,Western Kentucky Hilltoppers,WKU,11,Conference USA,mid
+2006,Akron Zips,AKR,14,Mid-American,mid
+2050,Ball State Cardinals,BALL,14,Mid-American,mid
+189,Bowling Green Falcons,BGSU,14,Mid-American,mid
+2084,Buffalo Bulls,BUF,14,Mid-American,mid
+2117,Central Michigan Chippewas,CMU,14,Mid-American,mid
+2199,Eastern Michigan Eagles,EMU,14,Mid-American,mid
+2309,Kent State Golden Flashes,KENT,14,Mid-American,mid
+113,Massachusetts Minutemen,MASS,14,Mid-American,mid
+193,Miami (OH) RedHawks,M-OH,14,Mid-American,mid
+195,Ohio Bobcats,OHIO,14,Mid-American,mid
+2649,Toledo Rockets,TOL,14,Mid-American,mid
+2711,Western Michigan Broncos,WMU,14,Mid-American,mid
+2057,Belmont Bruins,BEL,18,Missouri Valley,mid
+71,Bradley Braves,BRAD,18,Missouri Valley,mid
+2181,Drake Bulldogs,DRKE,18,Missouri Valley,mid
+339,Evansville Purple Aces,EVAN,18,Missouri Valley,mid
+2287,Illinois State Redbirds,ILST,18,Missouri Valley,mid
+282,Indiana State Sycamores,INST,18,Missouri Valley,mid
+93,Murray State Racers,MUR,18,Missouri Valley,mid
+2460,Northern Iowa Panthers,UNI,18,Missouri Valley,mid
+79,Southern Illinois Salukis,SIU,18,Missouri Valley,mid
+82,UIC Flames,UIC,18,Missouri Valley,mid
+2674,Valparaiso Beacons,VAL,18,Missouri Valley,mid
+2005,Air Force Falcons,AF,44,Mountain West,mid
+2253,Grand Canyon Lopes,GCU,44,Mountain West,mid
+62,Hawai'i Rainbow Warriors,HAW,44,Mountain West,mid
+2440,Nevada Wolf Pack,NEV,44,Mountain West,mid
+167,New Mexico Lobos,UNM,44,Mountain West,mid
+23,San José State Spartans,SJSU,44,Mountain West,mid
+302,UC Davis Aggies,UCD,44,Mountain West,mid
+2439,UNLV Rebels,UNLV,44,Mountain West,mid
+2638,UTEP Miners,UTEP,44,Mountain West,mid
+2751,Wyoming Cowboys,WYO,44,Mountain West,mid
+2026,App State Mountaineers,APP,27,Sun Belt,mid
+2032,Arkansas State Red Wolves,ARST,27,Sun Belt,mid
+324,Coastal Carolina Chanticleers,CCU,27,Sun Belt,mid
+290,Georgia Southern Eagles,GASO,27,Sun Belt,mid
+2247,Georgia State Panthers,GAST,27,Sun Belt,mid
+256,James Madison Dukes,JMU,27,Sun Belt,mid
+309,Louisiana Ragin' Cajuns,UL,27,Sun Belt,mid
+2348,Louisiana Tech Bulldogs,LT,27,Sun Belt,mid
+276,Marshall Thundering Herd,MRSH,27,Sun Belt,mid
+295,Old Dominion Monarchs,ODU,27,Sun Belt,mid
+6,South Alabama Jaguars,USA,27,Sun Belt,mid
+2572,Southern Miss Golden Eagles,USM,27,Sun Belt,mid
+2653,Troy Trojans,TROY,27,Sun Belt,mid
+2433,UL Monroe Warhawks,ULM,27,Sun Belt,mid
+2172,Denver Pioneers,DEN,29,West Coast,mid
+2351,Loyola Marymount Lions,LMU,29,West Coast,mid
+279,Pacific Tigers,PAC,29,West Coast,mid
+2492,Pepperdine Waves,PEPP,29,West Coast,mid
+2501,Portland Pilots,PORT,29,West Coast,mid
+2608,Saint Mary's Gaels,SMC,29,West Coast,mid
+301,San Diego Toreros,USD,29,West Coast,mid
+2539,San Francisco Dons,SF,29,West Coast,mid
+2541,Santa Clara Broncos,SCU,29,West Coast,mid
+2547,Seattle U Redhawks,SEA,29,West Coast,mid
+103,Boston College Eagles,BC,2,Atlantic Coast,power6
+25,California Golden Bears,CAL,2,Atlantic Coast,power6
+228,Clemson Tigers,CLEM,2,Atlantic Coast,power6
+150,Duke Blue Devils,DUKE,2,Atlantic Coast,power6
+52,Florida State Seminoles,FSU,2,Atlantic Coast,power6
+59,Georgia Tech Yellow Jackets,GT,2,Atlantic Coast,power6
+97,Louisville Cardinals,LOU,2,Atlantic Coast,power6
+2390,Miami Hurricanes,MIA,2,Atlantic Coast,power6
+152,NC State Wolfpack,NCSU,2,Atlantic Coast,power6
+153,North Carolina Tar Heels,UNC,2,Atlantic Coast,power6
+87,Notre Dame Fighting Irish,ND,2,Atlantic Coast,power6
+221,Pittsburgh Panthers,PITT,2,Atlantic Coast,power6
+2567,SMU Mustangs,SMU,2,Atlantic Coast,power6
+24,Stanford Cardinal,STAN,2,Atlantic Coast,power6
+183,Syracuse Orange,SYR,2,Atlantic Coast,power6
+258,Virginia Cavaliers,UVA,2,Atlantic Coast,power6
+259,Virginia Tech Hokies,VT,2,Atlantic Coast,power6
+154,Wake Forest Demon Deacons,WAKE,2,Atlantic Coast,power6
+9,Arizona State Sun Devils,ASU,8,Big 12,power6
+12,Arizona Wildcats,ARIZ,8,Big 12,power6
+252,BYU Cougars,BYU,8,Big 12,power6
+239,Baylor Bears,BAY,8,Big 12,power6
+2132,Cincinnati Bearcats,CIN,8,Big 12,power6
+38,Colorado Buffaloes,COLO,8,Big 12,power6
+248,Houston Cougars,HOU,8,Big 12,power6
+66,Iowa State Cyclones,ISU,8,Big 12,power6
+2305,Kansas Jayhawks,KU,8,Big 12,power6
+2306,Kansas State Wildcats,KSU,8,Big 12,power6
+197,Oklahoma State Cowboys,OKST,8,Big 12,power6
+2628,TCU Horned Frogs,TCU,8,Big 12,power6
+2641,Texas Tech Red Raiders,TTU,8,Big 12,power6
+2116,UCF Knights,UCF,8,Big 12,power6
+254,Utah Utes,UTAH,8,Big 12,power6
+277,West Virginia Mountaineers,WVU,8,Big 12,power6
+2086,Butler Bulldogs,BTLR,4,Big East,power6
+156,Creighton Bluejays,CREI,4,Big East,power6
+305,DePaul Blue Demons,DEP,4,Big East,power6
+46,Georgetown Hoyas,GTWN,4,Big East,power6
+269,Marquette Golden Eagles,MARQ,4,Big East,power6
+2507,Providence Friars,PROV,4,Big East,power6
+2550,Seton Hall Pirates,HALL,4,Big East,power6
+2599,St. John's Red Storm,SJU,4,Big East,power6
+41,UConn Huskies,CONN,4,Big East,power6
+222,Villanova Wildcats,VILL,4,Big East,power6
+2752,Xavier Musketeers,XAV,4,Big East,power6
+356,Illinois Fighting Illini,ILL,7,Big Ten,power6
+84,Indiana Hoosiers,IU,7,Big Ten,power6
+2294,Iowa Hawkeyes,IOWA,7,Big Ten,power6
+120,Maryland Terrapins,MD,7,Big Ten,power6
+127,Michigan State Spartans,MSU,7,Big Ten,power6
+130,Michigan Wolverines,MICH,7,Big Ten,power6
+135,Minnesota Golden Gophers,MINN,7,Big Ten,power6
+158,Nebraska Cornhuskers,NEB,7,Big Ten,power6
+77,Northwestern Wildcats,NU,7,Big Ten,power6
+194,Ohio State Buckeyes,OSU,7,Big Ten,power6
+2483,Oregon Ducks,ORE,7,Big Ten,power6
+213,Penn State Nittany Lions,PSU,7,Big Ten,power6
+2509,Purdue Boilermakers,PUR,7,Big Ten,power6
+164,Rutgers Scarlet Knights,RUTG,7,Big Ten,power6
+26,UCLA Bruins,UCLA,7,Big Ten,power6
+30,USC Trojans,USC,7,Big Ten,power6
+264,Washington Huskies,WASH,7,Big Ten,power6
+275,Wisconsin Badgers,WIS,7,Big Ten,power6
+68,Boise State Broncos,BOIS,21,Pac-12,power6
+36,Colorado State Rams,CSU,21,Pac-12,power6
+278,Fresno State Bulldogs,FRES,21,Pac-12,power6
+2250,Gonzaga Bulldogs,GONZ,21,Pac-12,power6
+204,Oregon State Beavers,ORST,21,Pac-12,power6
+21,San Diego State Aztecs,SDSU,21,Pac-12,power6
+326,Texas State Bobcats,TXST,21,Pac-12,power6
+328,Utah State Aggies,USU,21,Pac-12,power6
+265,Washington State Cougars,WSU,21,Pac-12,power6
+333,Alabama Crimson Tide,ALA,23,Southeastern,power6
+8,Arkansas Razorbacks,ARK,23,Southeastern,power6
+2,Auburn Tigers,AUB,23,Southeastern,power6
+57,Florida Gators,FLA,23,Southeastern,power6
+61,Georgia Bulldogs,UGA,23,Southeastern,power6
+96,Kentucky Wildcats,UK,23,Southeastern,power6
+99,LSU Tigers,LSU,23,Southeastern,power6
+344,Mississippi State Bulldogs,MSST,23,Southeastern,power6
+142,Missouri Tigers,MIZ,23,Southeastern,power6
+201,Oklahoma Sooners,OU,23,Southeastern,power6
+145,Ole Miss Rebels,MISS,23,Southeastern,power6
+2579,South Carolina Gamecocks,SC,23,Southeastern,power6
+2633,Tennessee Volunteers,TENN,23,Southeastern,power6
+245,Texas A&M Aggies,TA&M,23,Southeastern,power6
+251,Texas Longhorns,TEX,23,Southeastern,power6
+238,Vanderbilt Commodores,VAN,23,Southeastern,power6
