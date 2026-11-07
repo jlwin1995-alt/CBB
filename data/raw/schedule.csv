@@ -1,16 +1,14 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401918948,2026-11-07T17:00Z,2026-11-07,97,Louisville Cardinals,power6,Atlantic Coast,2413,Morehead State Eagles,low,Ohio Valley,0,1,STATUS_SCHEDULED
-401925707,2026-11-07T17:00Z,2026-11-07,2737,Winthrop Eagles,low,Big South,155,North Dakota Fighting Hawks,low,Summit League,0,0,STATUS_SCHEDULED
-401919758,2026-11-07T17:00Z,2026-11-07,161,Fairleigh Dickinson Knights,low,Northeast,170,City College NY Beavers,low,,0,0,STATUS_SCHEDULED
-401929449,2026-11-07T18:00Z,2026-11-07,2247,Georgia State Panthers,mid,Sun Belt,134851,Andrew Fighting Tigers,low,,0,1,STATUS_SCHEDULED
-401921154,2026-11-07T18:00Z,2026-11-07,195,Ohio Bobcats,mid,Mid-American,2448,North Carolina A&T Aggies,mid,Coastal Athletic Association,0,1,STATUS_SCHEDULED
-401926793,2026-11-07T19:00Z,2026-11-07,2335,Liberty Flames,mid,Conference USA,109700,Boyce Bulldogs,low,,0,1,STATUS_SCHEDULED
-401925047,2026-11-07T19:00Z,2026-11-07,2443,LSU New Orleans Privateers,low,Southland,100,Loyola New Orleans Wolfpack,low,,0,0,STATUS_SCHEDULED
-401920856,2026-11-07T19:00Z,2026-11-07,276,Marshall Thundering Herd,mid,Sun Belt,2649,Toledo Rockets,mid,Mid-American,0,1,STATUS_SCHEDULED
-401920770,2026-11-07T19:00Z,2026-11-07,2182,Drexel Dragons,mid,Coastal Athletic Association,2142,Colgate Raiders,low,Patriot League,0,1,STATUS_SCHEDULED
-401920156,2026-11-07T19:00Z,2026-11-07,233,South Dakota Coyotes,low,Summit League,2239,Cal State Fullerton Titans,mid,Big West,0,1,STATUS_SCHEDULED
-401918977,2026-11-07T19:00Z,2026-11-07,151,East Carolina Pirates,mid,American,350,UNC Wilmington Seahawks,mid,Coastal Athletic Association,0,1,STATUS_SCHEDULED
-401917962,2026-11-07T19:00Z,2026-11-07,2000,Abilene Christian Wildcats,low,United Athletic,2320,Lamar Cardinals,low,Southland,0,0,STATUS_SCHEDULED
+401925707,2026-11-07T17:00Z,2026-11-07,2737,Winthrop Eagles,low,Big South,155,North Dakota Fighting Hawks,low,Summit League,0,0,STATUS_END_PERIOD
+401929449,2026-11-07T18:00Z,2026-11-07,2247,Georgia State Panthers,mid,Sun Belt,134851,Andrew Fighting Tigers,low,,0,1,STATUS_IN_PROGRESS
+401921154,2026-11-07T18:00Z,2026-11-07,195,Ohio Bobcats,mid,Mid-American,2448,North Carolina A&T Aggies,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
+401926793,2026-11-07T19:00Z,2026-11-07,2335,Liberty Flames,mid,Conference USA,109700,Boyce Bulldogs,low,,0,1,STATUS_IN_PROGRESS
+401925047,2026-11-07T19:00Z,2026-11-07,2443,LSU New Orleans Privateers,low,Southland,100,Loyola New Orleans Wolfpack,low,,0,0,STATUS_IN_PROGRESS
+401920856,2026-11-07T19:00Z,2026-11-07,276,Marshall Thundering Herd,mid,Sun Belt,2649,Toledo Rockets,mid,Mid-American,0,1,STATUS_IN_PROGRESS
+401920770,2026-11-07T19:00Z,2026-11-07,2182,Drexel Dragons,mid,Coastal Athletic Association,2142,Colgate Raiders,low,Patriot League,0,1,STATUS_IN_PROGRESS
+401920156,2026-11-07T19:00Z,2026-11-07,233,South Dakota Coyotes,low,Summit League,2239,Cal State Fullerton Titans,mid,Big West,0,1,STATUS_IN_PROGRESS
+401918977,2026-11-07T19:00Z,2026-11-07,151,East Carolina Pirates,mid,American,350,UNC Wilmington Seahawks,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
+401917962,2026-11-07T19:00Z,2026-11-07,2000,Abilene Christian Wildcats,low,United Athletic,2320,Lamar Cardinals,low,Southland,0,0,STATUS_IN_PROGRESS
 401924264,2026-11-07T20:00Z,2026-11-07,147,Montana State Bobcats,low,Big Sky,299,Long Beach State Beach,mid,Big West,0,1,STATUS_SCHEDULED
 401922044,2026-11-07T20:00Z,2026-11-07,2344,Longwood Lancers,low,Big South,2428,North Carolina Central Eagles,low,Mid-Eastern Athletic,0,0,STATUS_SCHEDULED
 401918986,2026-11-07T20:00Z,2026-11-07,235,Memphis Tigers,mid,American,2670,VCU Rams,mid,Atlantic 10,0,1,STATUS_SCHEDULED
