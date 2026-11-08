@@ -24,6 +24,11 @@ Availability has no injury feed: infer it from the lines (a player with a line i
 * Needs the repository secret `ODDS_API_KEY`. `python pipeline/fetch_lines.py --dry-run` lists the matches and the games with no Odds API event (free).
 * Probe #2 (Nov 3): 1 of 16 sampled games had props (Lipscomb @ Iowa), all power-6-vs-low-major games on an early-season night. Expect 10-20 PrizePicks lines on a typical early night, more on marquee nights and in conference play.
 
+## Line grading (daily, automatic)
+* `pipeline/grade_lines.py` (a step in `.github/workflows/lines.yml`, after the pull): keeps the last pull of each line (the closing line), grades it against the stored box scores once the game is final, and rewrites `data/log/lines_graded.csv` (one row per line: actual, minutes, result over / under / push / void / nomatch, plus `avg_prior`, the player's earlier-game average, as a model-free benchmark) and `data/log/lines_tally.json` (counts and Over rate overall, by market, by book, by date and for PrizePicks alone). Safe to run twice; the tally has no timestamp, so a run with nothing new commits nothing.
+* This grades the **lines**, not a model: there is no CBB projection yet. A void is a player on the sheet with 0 minutes; `nomatch` means the game is final but the name was not found (the run prints a warning; fix with a name alias).
+* First read (Nov 5-7, 130 closing lines, 128 decided): 66 Overs, 62 Unders (51.6%); points 43 of 78 Over, assists 5 of 14.
+
 ## Layout
 * `pipeline/backfill_espn.py`: resumable ESPN box-score backfill, `python pipeline/backfill_espn.py 2026` (season = ending year)
 * `pipeline/recruits.py`: recruit-rank priors learned from earlier classes only (walk-forward)
