@@ -32,6 +32,7 @@ jobs:
         run: |
           if [ -z "$ODDS_API_KEY" ]; then echo "::notice::ODDS_API_KEY is not set; skipping the lines pull"; else python pipeline/fetch_lines.py; fi
       - name: Grade finished lines against the box scores
+        continue-on-error: true          # a grading problem must never stop the lines from being committed
         run: python pipeline/grade_lines.py
       - name: Commit data
         run: |
