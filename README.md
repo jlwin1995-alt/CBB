@@ -21,6 +21,7 @@ Availability has no injury feed: infer it from the lines (a player with a line i
 
 ## Lines pull (phase 3a)
 * `pipeline/fetch_lines.py` (run by `.github/workflows/lines.yml` every two hours in the evening, UTC): lists the Odds API's `basketball_ncaab` events (free), matches them to the in-scope games in `data/raw/schedule.csv` by team name (`data/raw/team_aliases.csv` holds spellings that differ), and asks `/odds` for points, rebounds, assists and threes from the seven sportsbooks plus PrizePicks. A game with no props costs 0 credits, so every in-scope game starting in the next 8 hours is asked; stops at the 100/day cap and at the 5,000-credit floor. Writes `data/raw/lines.csv` (latest) and `data/log/lines_log.csv` (every changed snapshot) and the spend to `data/log/credits.csv`.
+* Games with no Odds API event are listed in the run log with the closest unmatched Odds API event (start within 3 hours, ranked by name similarity) and the alias rows that would join them, and each is written once to `data/log/unmatched_events.csv` (`suggested_aliases` are `odds_name,espn_name` pairs for `data/raw/team_aliases.csv`; a non-Division I opponent has no candidate and needs nothing).
 * Needs the repository secret `ODDS_API_KEY`. `python pipeline/fetch_lines.py --dry-run` lists the matches and the games with no Odds API event (free).
 * Probe #2 (Nov 3): 1 of 16 sampled games had props (Lipscomb @ Iowa), all power-6-vs-low-major games on an early-season night. Expect 10-20 PrizePicks lines on a typical early night, more on marquee nights and in conference play.
 

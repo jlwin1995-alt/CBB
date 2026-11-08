@@ -7,7 +7,7 @@ gives the Odds API's game ids, which are matched to the schedule by team names. 
 the budget guards are: stop before DAILY_CREDIT_CAP (Eastern date, counted in data/log/credits.csv) and stop at CREDIT_FLOOR remaining (the key is shared with the NBA project).
 One row per (game, book, market, player, point) with the Over and Under prices side by side. Names are matched to ESPN later; team names here go through team_aliases.csv.
 """
-import os, sys, csv, json, time, argparse, datetime as dt
+import os, sys, csv, json, time, argparse, difflib, datetime as dt
 from zoneinfo import ZoneInfo
 import requests
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -49,6 +49,43 @@ def match_events(odds_events, schedule, aliases):
         if hit: out.append((e, hit[0]))
         else: unmatched.append(e)
     return out, unmatched
+
+
+def suggest_for_unmatched(sched_rows, odds_unmatched, aliases):
+    """For each in-scope ESPN game with no Odds API event, the closest unmatched Odds API events (starting within 3 hours, ranked by how alike the home and away names are)
+    and the alias rows (odds_name,espn_name) that would join them. A game against a non-Division I team has no sensible candidate and gets none."""
+    key = lambda n: aliases.get(norm_team(n), norm_team(n))
+    sim = lambda a, b: difflib.SequenceMatcher(None, key(a), key(b)).ratio()
+    out = []
+    for x in sched_rows:
+        t0 = dt.datetime.fromisoformat(x["start_utc"].replace("Z", "+00:00")); cands = []
+        for e in odds_unmatched:
+            t = dt.datetime.fromisoformat(e["commence_time"].replace("Z", "+00:00"))
+            if abs((t - t0).total_seconds()) >= 3 * 3600: continue
+            sh, sa = sim(e["home_team"], x["home"]), sim(e["away_team"], x["away"])
+            if sh + sa >= 1.4 and min(sh, sa) >= 0.5: cands.append((sh + sa, e, sh, sa))
+        cands.sort(key=lambda c: -c[0])
+        row = {"espn_event": x["event"], "start_utc": x["start_utc"], "espn_away": x["away"], "espn_home": x["home"], "candidates": "", "suggested_aliases": ""}
+        if cands:
+            row["candidates"] = " | ".join(f"{c[1]['away_team']} @ {c[1]['home_team']} ({c[0] / 2:.2f})" for c in cands[:3])
+            e, sh, sa = cands[0][1], cands[0][2], cands[0][3]
+            adds = []
+            if key(e["home_team"]) != key(x["home"]): adds.append(f"{e['home_team']},{x['home']}")
+            if key(e["away_team"]) != key(x["away"]): adds.append(f"{e['away_team']},{x['away']}")
+            row["suggested_aliases"] = " ; ".join(adds)
+        out.append(row)
+    return out
+
+
+def log_unmatched(rows, now):
+    """data/log/unmatched_events.csv: one row per ESPN game that had no Odds API event, first time it is seen (append only), so the aliases can be added from one place."""
+    path = os.path.join(LOG, "unmatched_events.csv"); seen = set()
+    cols = ["first_seen", "espn_event", "start_utc", "espn_away", "espn_home", "candidates", "suggested_aliases"]
+    if os.path.exists(path):
+        with open(path, newline="") as f: seen = {r["espn_event"] for r in csv.DictReader(f)}
+    new = [[now.isoformat(timespec="seconds"), r["espn_event"], r["start_utc"], r["espn_away"], r["espn_home"], r["candidates"], r["suggested_aliases"]] for r in rows if r["espn_event"] not in seen]
+    if new: append(path, cols, new)
+    return new
 
 
 def parse_odds(j, espn_event, pulled_at):
@@ -98,8 +135,13 @@ def main():
     matched, unmatched = match_events(r.json(), sched, load_aliases())
     print(f"in-scope games starting within {a.hours:g}h: {len(sched)}; matched to Odds API events: {len(matched)}; credits left {left:g}")
     sched_ids = {m[1]["event"] for m in matched}
-    for x in sched:
-        if x["event"] not in sched_ids: print(f"  no Odds API event for {x['away']} @ {x['home']} ({x['start_utc']}): add an alias in data/raw/team_aliases.csv if the name differs")
+    miss = [x for x in sched if x["event"] not in sched_ids]
+    sug = {r["espn_event"]: r for r in suggest_for_unmatched(miss, unmatched, load_aliases())}
+    for x in miss:
+        sg = sug[x["event"]]
+        print(f"  no Odds API event for {x['away']} @ {x['home']} ({x['start_utc']}): " + (f"closest Odds API event {sg['candidates']}; alias rows: {sg['suggested_aliases'] or 'none needed'}" if sg["candidates"] else "no close Odds API event (likely a non-Division I opponent)"))
+    if not a.dry_run:
+        os.makedirs(LOG, exist_ok=True); log_unmatched(list(sug.values()), now)
     if a.dry_run: return
     credlog = os.path.join(LOG, "credits.csv"); pulled_at = now.isoformat(timespec="seconds"); rows_all = []; used_total = 0.0
     for e, row in matched:
