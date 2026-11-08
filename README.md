@@ -38,6 +38,11 @@ Availability has no injury feed: infer it from the lines (a player with a line i
 * Backtest, `research/validate_model.py` (roster = who played, so availability is known): 2026 Dec-Mar FP MAE 6.75 vs 6.70 for the season-to-date average (a tie), minutes MAE 5.09 vs 5.18; 2025 holdout 6.56 vs 6.53 and 5.06 vs 5.15. Nov 5-30 (when the average has little to go on): FP MAE 7.13 vs 7.33 (2026), 7.05 vs 7.31 (2025), but minutes MAE 5.67 vs 5.13 and a bias of -0.8 to -1.2 fantasy points before the un-shrink.
 * Retro check on the 130 lines graded so far, `research/retro_lines.py` (history before each game, actual box-score rosters): the favoured side won 42 of 100 PrizePicks lines (42%) and projections run about 1.1 below the lines while the games finished about 0.8 above them. 110 lines on 16 marquee games over three days is noise-sized, but the gap is larger than the backtest bias for a team's top scorers (+0.1 to +1.4 points raw), so treat the model as **unproven against the lines** until the 3e review (about 2,000 graded lines).
 
+## Site (board and scorecard)
+* `site/` is a static page (vanilla JS, no build tooling) with two tabs. **Board:** PrizePicks lines for games not yet graded, each with the sportsbook consensus (median of the other books, hover for each book's number), the model projection from the pre-tip log, the edge and the side it favours; filters for market, edge size, consensus-only and player. **Scorecard:** PrizePicks lines vs results overall and by market, against the consensus gap, by day, the model's hit rate with 95% ranges once projections are graded, the backtest table, and the latest graded lines.
+* `pipeline/build_site.py` writes `site/data/board.json` and `site/data/scorecard.json` from `data/` (not committed). The last steps of `lines.yml` build it and publish `site/` to GitHub Pages; they are non-fatal, so a Pages problem never stops the lines from being committed. **One-time setup:** repository Settings > Pages > Source: GitHub Actions.
+* Preview locally: `python pipeline/build_site.py && cd site && python -m http.server`.
+
 ## Layout
 * `pipeline/backfill_espn.py`: resumable ESPN box-score backfill, `python pipeline/backfill_espn.py 2026` (season = ending year)
 * `pipeline/recruits.py`: recruit-rank priors learned from earlier classes only (walk-forward)
