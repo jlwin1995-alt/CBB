@@ -1,16 +1,16 @@
 {
  "through": "2026-11-07",
- "graded_rows": 130,
+ "graded_rows": 112,
  "pending_rows": 0,
  "total": {
-  "over": 66,
-  "under": 62,
+  "over": 56,
+  "under": 54,
   "push": 2,
   "void": 0,
   "nomatch": 0,
-  "decided": 128,
-  "over_rate": 0.516,
-  "mean_actual_minus_line": 0.91
+  "decided": 110,
+  "over_rate": 0.509,
+  "mean_actual_minus_line": 0.75
  },
  "by_market": {
   "player_assists": {
@@ -24,14 +24,14 @@
    "mean_actual_minus_line": -0.89
   },
   "player_points": {
-   "over": 43,
-   "under": 35,
+   "over": 33,
+   "under": 27,
    "push": 0,
    "void": 0,
    "nomatch": 0,
-   "decided": 78,
-   "over_rate": 0.551,
-   "mean_actual_minus_line": 1.37
+   "decided": 60,
+   "over_rate": 0.55,
+   "mean_actual_minus_line": 1.23
   },
   "player_rebounds": {
    "over": 14,
@@ -54,68 +54,26 @@
    "mean_actual_minus_line": 0.36
   }
  },
- "by_book": {
-  "betmgm": {
-   "over": 3,
-   "under": 2,
-   "push": 0,
-   "void": 0,
-   "nomatch": 0,
-   "decided": 5,
-   "over_rate": 0.6,
-   "mean_actual_minus_line": 2.9
-  },
-  "fanduel": {
-   "over": 4,
-   "under": 4,
-   "push": 0,
-   "void": 0,
-   "nomatch": 0,
-   "decided": 8,
-   "over_rate": 0.5,
-   "mean_actual_minus_line": 0.88
-  },
-  "prizepicks": {
-   "over": 56,
-   "under": 54,
-   "push": 2,
-   "void": 0,
-   "nomatch": 0,
-   "decided": 110,
-   "over_rate": 0.509,
-   "mean_actual_minus_line": 0.75
-  },
-  "williamhill_us": {
-   "over": 3,
-   "under": 2,
-   "push": 0,
-   "void": 0,
-   "nomatch": 0,
-   "decided": 5,
-   "over_rate": 0.6,
-   "mean_actual_minus_line": 2.3
-  }
- },
  "by_date": {
   "2026-11-05": {
-   "over": 25,
-   "under": 31,
+   "over": 24,
+   "under": 29,
    "push": 0,
    "void": 0,
    "nomatch": 0,
-   "decided": 56,
-   "over_rate": 0.446,
-   "mean_actual_minus_line": 0.26
+   "decided": 53,
+   "over_rate": 0.453,
+   "mean_actual_minus_line": 0.34
   },
   "2026-11-06": {
-   "over": 34,
-   "under": 27,
+   "over": 25,
+   "under": 21,
    "push": 2,
    "void": 0,
    "nomatch": 0,
-   "decided": 61,
-   "over_rate": 0.557,
-   "mean_actual_minus_line": 1.34
+   "decided": 46,
+   "over_rate": 0.543,
+   "mean_actual_minus_line": 0.98
   },
   "2026-11-07": {
    "over": 7,
@@ -128,14 +86,47 @@
    "mean_actual_minus_line": 1.82
   }
  },
- "prizepicks": {
-  "over": 56,
-  "under": 54,
-  "push": 2,
-  "void": 0,
-  "nomatch": 0,
-  "decided": 110,
-  "over_rate": 0.509,
-  "mean_actual_minus_line": 0.75
- }
+ "by_consensus_gap": {
+  "pp below consensus": {
+   "over": 1,
+   "under": 0,
+   "push": 0,
+   "void": 0,
+   "nomatch": 0,
+   "decided": 1,
+   "over_rate": 1.0,
+   "mean_actual_minus_line": 2.0
+  },
+  "pp equal to consensus": {
+   "over": 1,
+   "under": 4,
+   "push": 0,
+   "void": 0,
+   "nomatch": 0,
+   "decided": 5,
+   "over_rate": 0.2,
+   "mean_actual_minus_line": -3.1
+  },
+  "pp above consensus": {
+   "over": 2,
+   "under": 1,
+   "push": 0,
+   "void": 0,
+   "nomatch": 0,
+   "decided": 3,
+   "over_rate": 0.667,
+   "mean_actual_minus_line": 4.67
+  },
+  "no sportsbook line": {
+   "over": 52,
+   "under": 49,
+   "push": 2,
+   "void": 0,
+   "nomatch": 0,
+   "decided": 101,
+   "over_rate": 0.515,
+   "mean_actual_minus_line": 0.82
+  }
+ },
+ "model": {}
 }
