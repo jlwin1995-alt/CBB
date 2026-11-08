@@ -31,6 +31,8 @@ jobs:
       - name: Pull player props for the games about to start
         run: |
           if [ -z "$ODDS_API_KEY" ]; then echo "::notice::ODDS_API_KEY is not set; skipping the lines pull"; else python pipeline/fetch_lines.py; fi
+      - name: Grade finished lines against the box scores
+        run: python pipeline/grade_lines.py
       - name: Commit data
         run: |
           git config user.name "github-actions"
