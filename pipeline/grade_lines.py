@@ -18,7 +18,7 @@ RAW, LOG = os.path.join(ROOT, "data", "raw"), os.path.join(ROOT, "data", "log")
 ET = ZoneInfo("America/New_York")
 MARKET_STAT = {"player_points": "pts", "player_rebounds": "reb", "player_assists": "ast", "player_threes": "fg3m"}   # same as config.MARKET_STAT
 KEY = ["espn_event", "book", "market", "player"]
-OUT_COLS = ["et_date", "espn_event", "home", "away", "book", "market", "player", "point", "over", "under", "pulled_at", "actual", "mins", "result", "avg_prior", "n_prior"]
+OUT_COLS = ["et_date", "espn_event", "home", "away", "book", "market", "player", "point", "over", "under", "pulled_at", "actual", "mins", "result", "avg_prior", "n_prior", "proj", "edge", "pick", "consensus", "n_books", "vs_cons"]
 
 
 def nz(s):
@@ -50,13 +50,38 @@ def tally(df):
     return out
 
 
+def load_proj():
+    """pid, event -> projected stats from the frozen projection log (data/log/proj_log.csv); empty until project.py has run."""
+    p = os.path.join(LOG, "proj_log.csv")
+    if not os.path.exists(p): return {}
+    d = pd.read_csv(p, dtype={"event": str, "pid": str}).dropna(subset=["pts_p"]).drop_duplicates(["event", "pid"], keep="last")
+    return {(r.event, r.pid): r for r in d.itertuples(index=False)}
+
+
+def model_tally(g):
+    """How often the side the projection favours (over if proj > line) won, on decided lines that have a projection; by market and by size of edge (|proj - line| / line)."""
+    m = g[g.result.isin(["over", "under"]) & g.pick.notna()].copy()
+    if not len(m): return {}
+    m["hit"] = m.pick == m.result
+    rel = (m.edge.abs() / m.point.clip(lower=0.5))
+    def rate(d): return {"n": int(len(d)), "hit": int(d.hit.sum()), "hit_rate": round(float(d.hit.mean()), 3) if len(d) else None}
+    out = {"all": rate(m), "by_market": {k: rate(d) for k, d in m.groupby("market")},
+           "by_edge": {"under 10%": rate(m[rel < 0.10]), "10-20%": rate(m[(rel >= 0.10) & (rel < 0.20)]), "20%+": rate(m[rel >= 0.20])},
+           "overs_picked": rate(m[m.pick == "over"]), "unders_picked": rate(m[m.pick == "under"])}
+    return out
+
+
 def main():
     lp = os.path.join(RAW, "lines.csv")
     if not os.path.exists(lp):
         print("no lines.csv yet"); return
     lines = pd.read_csv(lp, dtype={"espn_event": str})
     lines = lines.sort_values("pulled_at").drop_duplicates(KEY, keep="last")
+    # Only PrizePicks lines are graded and shown (the user's call, Nov 8). The sportsbooks' closing lines for the same player and market become the CONSENSUS (median point, count of books).
+    cons = lines[lines.book != "prizepicks"].groupby(["espn_event", "market", "player"]).point.agg(consensus="median", n_books="count").reset_index()
+    lines = lines[lines.book == "prizepicks"].merge(cons, on=["espn_event", "market", "player"], how="left")
     box = load_boxes()
+    proj = load_proj()
     final = set(box["event"])
     by_event = {e: d for e, d in box.groupby("event")}
     rows, unmatched = [], []
@@ -72,10 +97,11 @@ def main():
             b = cand if len(cand) == 1 else b
         et = pd.Timestamp(r.commence).tz_convert(ET).strftime("%Y-%m-%d") if pd.notna(r.commence) else ""
         base = dict(et_date=et, espn_event=r.espn_event, home=r.home, away=r.away, book=r.book, market=r.market, player=r.player, point=r.point,
-                    over=r.over, under=r.under, pulled_at=r.pulled_at)
+                    over=r.over, under=r.under, pulled_at=r.pulled_at,
+                    consensus=r.consensus, n_books=int(r.n_books) if r.n_books == r.n_books else 0, vs_cons=round(r.point - r.consensus, 2) if r.consensus == r.consensus else np.nan)
         if len(b) == 0:
             unmatched.append((r.player, r.home, r.away))
-            rows.append(dict(base, actual=np.nan, mins=np.nan, result="nomatch", avg_prior=np.nan, n_prior=0)); continue
+            rows.append(dict(base, actual=np.nan, mins=np.nan, result="nomatch", avg_prior=np.nan, n_prior=0, proj=np.nan, edge=np.nan, pick=None)); continue
         b = b.iloc[0]; st = MARKET_STAT[r.market]
         actual = b[st]
         res = "void" if b["min"] <= 0 else ("push" if actual == r.point else ("over" if actual > r.point else "under"))
@@ -83,19 +109,26 @@ def main():
         cur = hist[hist.season == b.season]
         use = cur if len(cur) >= 2 else hist
         avg = float(use[st].mean()) if len(use) >= 3 else np.nan
-        rows.append(dict(base, actual=actual, mins=b["min"], result=res, avg_prior=round(avg, 2) if avg == avg else np.nan, n_prior=len(use)))
+        pj = proj.get((r.espn_event, str(b.pid)))
+        pv = float(getattr(pj, st + "_p")) if pj is not None else np.nan
+        rows.append(dict(base, actual=actual, mins=b["min"], result=res, avg_prior=round(avg, 2) if avg == avg else np.nan, n_prior=len(use),
+                         proj=round(pv, 2) if pv == pv else np.nan, edge=round(pv - r.point, 2) if pv == pv else np.nan, pick=("over" if pv > r.point else "under") if pv == pv else None))
     g = pd.DataFrame(rows, columns=OUT_COLS)
     g = g.sort_values(["et_date", "espn_event", "player", "market", "book"]) if len(g) else g
     os.makedirs(LOG, exist_ok=True)
     g.to_csv(os.path.join(LOG, "lines_graded.csv"), index=False)
     pending = int(len(lines) - len(g))
     t = {"through": str(g["et_date"].max()) if len(g) else None, "graded_rows": int(len(g)), "pending_rows": pending,
-         "total": tally(g) if len(g) else {}, "by_market": {}, "by_book": {}, "by_date": {}}
-    for k, col in (("by_market", "market"), ("by_book", "book"), ("by_date", "et_date")):
+         "total": tally(g) if len(g) else {}, "by_market": {}, "by_date": {}}
+    for k, col in (("by_market", "market"), ("by_date", "et_date")):
         for v, d in g.groupby(col):
             t[k][str(v)] = tally(d)
-    pp = g[g.book == "prizepicks"]
-    t["prizepicks"] = tally(pp) if len(pp) else {}
+    # PrizePicks line against the sportsbook consensus: below it (a softer Over), level, or above it (a softer Under)
+    t["by_consensus_gap"] = {}
+    hc = g[g.vs_cons.notna()]
+    for lab, d in (("pp below consensus", hc[hc.vs_cons < 0]), ("pp equal to consensus", hc[hc.vs_cons == 0]), ("pp above consensus", hc[hc.vs_cons > 0]), ("no sportsbook line", g[g.vs_cons.isna()])):
+        t["by_consensus_gap"][lab] = tally(d) if len(d) else {}
+    t["model"] = model_tally(g)
     with open(os.path.join(LOG, "lines_tally.json"), "w") as f:
         json.dump(t, f, indent=1)
     print(f"graded {len(g)} closing lines ({pending} still waiting on box scores); total {t['total']}")
