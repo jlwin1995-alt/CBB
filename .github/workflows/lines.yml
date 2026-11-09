@@ -56,11 +56,13 @@ jobs:
         continue-on-error: true
         run: python pipeline/build_site.py
       - uses: actions/upload-pages-artifact@v3
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != ''     # a failed build must never replace the live site with a data-less one
         continue-on-error: true      # Pages must be switched on once: repo Settings > Pages > Source: GitHub Actions
         with:
           path: site
           name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - uses: actions/deploy-pages@v4
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != ''
         continue-on-error: true
         with:
           artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}

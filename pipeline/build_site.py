@@ -35,8 +35,14 @@ def board(now):
     done = set(pd.read_csv(gp, dtype={"espn_event": str}).espn_event) if os.path.exists(gp) else set()
     box = GL.load_boxes(); done |= set(box["event"])
     lines = lines[~lines.espn_event.isin(done)]
-    cons = lines[lines.book != "prizepicks"].groupby(["espn_event", "market", "player"]).point.agg(consensus="median", n_books="count").reset_index()
-    books = lines[lines.book != "prizepicks"].groupby(["espn_event", "market", "player"]).apply(lambda d: ", ".join(f"{b} {p:g}" for b, p in zip(d.book, d.point)), include_groups=False).rename("book_lines").reset_index()
+    sb = lines[lines.book != "prizepicks"]
+    if len(sb):                                   # no sportsbook lines at all (the usual case) must not crash the build
+        cons = sb.groupby(["espn_event", "market", "player"]).point.agg(consensus="median", n_books="count").reset_index()
+        books = (sb.assign(s=sb.book + " " + sb.point.map(lambda p: f"{p:g}")).groupby(["espn_event", "market", "player"]).s
+                 .agg(", ".join).rename("book_lines").reset_index())
+    else:
+        cons = pd.DataFrame(columns=["espn_event", "market", "player", "consensus", "n_books"])
+        books = pd.DataFrame(columns=["espn_event", "market", "player", "book_lines"])
     pp = lines[lines.book == "prizepicks"].merge(cons, on=["espn_event", "market", "player"], how="left").merge(books, on=["espn_event", "market", "player"], how="left")
     pl = os.path.join(LOG, "proj_log.csv")
     proj = pd.read_csv(pl, dtype={"event": str, "pid": str, "team_id": str}).dropna(subset=["pts_p"]).drop_duplicates(["event", "pid"], keep="last") if os.path.exists(pl) else pd.DataFrame()
