@@ -43,6 +43,11 @@ Availability has no injury feed: infer it from the lines (a player with a line i
 * `pipeline/build_site.py` writes `site/data/board.json` and `site/data/scorecard.json` from `data/` (not committed). The last steps of `lines.yml` build it and publish `site/` to GitHub Pages; they are non-fatal, so a Pages problem never stops the lines from being committed. **One-time setup:** repository Settings > Pages > Source: GitHub Actions.
 * Preview locally: `python pipeline/build_site.py && cd site && python -m http.server`.
 
+## Big-gap watch (flagged Nov 10, 2026)
+* On the first 92 graded model lines, the side the projection favoured won **46% (18 of 39) when the projection was 20%+ away from the PrizePicks line**, against **62% (33 of 53) for smaller gaps**. A big gap looks more like projection error (stars are under-projected, rebounds and assists are small numbers) than an edge. The difference is not yet statistically settled (z = 1.55), so it is a caution, not a rule.
+* `build_site.py` recomputes the flag on every build from the model tally in `lines_tally.json`: it is **on** while the 20%+ bucket has 30+ decided lines and trails the smaller gaps by 5+ points, and **off** otherwise (the Scorecard then says so). When on, the Board shows a "big gap" badge on every line with a 20%+ gap, a red watch note, and a "hide big gaps" filter, and the Scorecard puts a "watch" tag on the 20%+ row.
+* Going forward: every CBB grading report states the three edge buckets (under 10%, 10-20%, 20%+) and whether the watch is on. Revisit at ~2,000 graded lines (phase 3e) before building anything on top of edge size.
+
 ## Layout
 * `pipeline/backfill_espn.py`: resumable ESPN box-score backfill, `python pipeline/backfill_espn.py 2026` (season = ending year)
 * `pipeline/recruits.py`: recruit-rank priors learned from earlier classes only (walk-forward)

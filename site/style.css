@@ -25,3 +25,5 @@ td.l,th.l{text-align:left}tr:hover td{background:var(--head)}
 .pill{padding:1px 7px;border-radius:9px;font-size:11px;border:1px solid var(--line)}
 .note{color:var(--mut);font-size:12px;max-width:900px}
 @media (max-width:640px){header{padding:8px 10px}.brand span{display:none}main{padding:10px}th,td{padding:3px 6px}}
+.flag{padding:1px 6px;border-radius:9px;font-size:10px;border:1px solid var(--bad);color:var(--bad);cursor:help;white-space:nowrap}
+.flagbox{border:1px solid var(--bad);border-left-width:4px;border-radius:6px;padding:8px 12px;margin:8px 0 12px;font-size:13px;max-width:900px}

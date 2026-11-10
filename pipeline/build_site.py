@@ -21,6 +21,29 @@ BACKTEST = [   # research/validate_model.py, roster = who played; FP = PrizePick
     {"window": "2025 Nov 5-30", "fp_model": 7.05, "fp_avg": 7.31, "min_model": 5.62, "min_avg": 5.14},
 ]
 KEY = ["espn_event", "book", "market", "player"]
+BIG_GAP = 0.20          # |projection - PrizePicks line| / line at or above this is a "big gap" (the 20%+ bucket in lines_tally.json)
+BIG_GAP_MIN_N = 30      # the watch flag needs this many decided lines in the big-gap bucket
+BIG_GAP_MARGIN = 0.05   # ... and a hit rate at least this far below the smaller gaps
+
+
+def big_gap_flag(model):
+    """Watch flag (user, Nov 10, 2026): lines where the projection disagrees with PrizePicks by 20%+ have done WORSE than smaller gaps (46% vs 62% on the first 92 graded lines).
+    Recomputed on every build from the model tally, so it switches itself off if the pattern fades."""
+    out = {"active": False, "threshold": BIG_GAP, "min_n": BIG_GAP_MIN_N, "margin": BIG_GAP_MARGIN}
+    try:
+        e = model["by_edge"]; big = e["20%+"]; small = [e["under 10%"], e["10-20%"]]
+    except (KeyError, TypeError):
+        return out
+    sn, sh = sum(x["n"] for x in small), sum(x["hit"] for x in small)
+    out["big"] = {"n": big["n"], "hit": big["hit"], "rate": round(big["hit"] / big["n"], 3) if big["n"] else None}
+    out["rest"] = {"n": sn, "hit": sh, "rate": round(sh / sn, 3) if sn else None}
+    if not big["n"] or not sn: return out
+    rb, rs = big["hit"] / big["n"], sh / sn
+    se = (rb * (1 - rb) / big["n"] + rs * (1 - rs) / sn) ** 0.5
+    z = (rs - rb) / se if se else 0.0
+    out.update({"gap_pts": round(100 * (rs - rb), 1), "z": round(z, 2), "significant": bool(z >= 1.96),
+                "active": bool(big["n"] >= BIG_GAP_MIN_N and rb <= rs - BIG_GAP_MARGIN)})
+    return out
 
 
 def num(x):
@@ -82,7 +105,7 @@ def scorecard(now):
         for r in g.itertuples(index=False):
             recent.append({"date": r.et_date, "game": f"{r.away} @ {r.home}", "player": r.player, "market": MARKET_LABEL.get(r.market, r.market), "pp": num(r.point), "cons": num(r.consensus),
                            "proj": num(r.proj), "actual": num(r.actual), "result": r.result, "pick": r.pick if isinstance(r.pick, str) else None})
-    return {"asof": now.isoformat(timespec="seconds"), "tally": t, "recent": recent, "backtest": BACKTEST, "breakeven": 0.544}
+    return {"asof": now.isoformat(timespec="seconds"), "tally": t, "recent": recent, "backtest": BACKTEST, "breakeven": 0.544, "flags": {"big_gap": big_gap_flag(t.get("model"))}}
 
 
 def main():
