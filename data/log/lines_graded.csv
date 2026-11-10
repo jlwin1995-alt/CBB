@@ -177,3 +177,32 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-08,401920424,Virginia Cavaliers,Arkansas Razorbacks,prizepicks,player_assists,Thijs De Ridder,1.5,-137,-137,2026-11-08T17:43:58+00:00,2,24.0,over,,2,1.72,0.22,over,,0,
 2026-11-08,401920424,Virginia Cavaliers,Arkansas Razorbacks,prizepicks,player_points,Thijs De Ridder,18.5,-137,-137,2026-11-08T17:43:58+00:00,16,24.0,under,,2,16.26,-2.24,under,,0,
 2026-11-08,401920424,Virginia Cavaliers,Arkansas Razorbacks,prizepicks,player_rebounds,Thijs De Ridder,6.5,-137,-137,2026-11-08T17:43:58+00:00,10,24.0,over,,2,6.2,-0.3,under,,0,
+2026-11-09,401906759,Alabama Crimson Tide,Oakland Golden Grizzlies,prizepicks,player_points,Amari Allen,14.5,-137,-137,2026-11-09T23:45:18+00:00,14,19.0,under,,2,12.73,-1.77,under,,0,
+2026-11-09,401906759,Alabama Crimson Tide,Oakland Golden Grizzlies,prizepicks,player_points,Drew Fielder,14.5,-137,-137,2026-11-09T23:45:18+00:00,8,16.0,under,,2,12.96,-1.54,under,,0,
+2026-11-09,401906803,Oklahoma Sooners,North Alabama Lions,prizepicks,player_points,Derrion Reid,16.5,-137,-137,2026-11-09T23:45:18+00:00,10,33.0,under,,2,13.08,-3.42,under,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Aiden Sherrell,11.0,-137,-137,2026-11-09T22:56:22+00:00,6,18.0,under,,2,10.94,-0.06,under,10.5,1,0.5
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_rebounds,Aiden Sherrell,6.5,-137,-137,2026-11-09T22:56:22+00:00,1,18.0,under,,2,6.03,-0.47,under,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Darren Harris,9.5,-137,-137,2026-11-09T22:56:22+00:00,20,31.0,over,,2,6.35,-3.15,under,10.5,1,-1.0
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Gavin Doty,13.5,-137,-137,2026-11-09T22:56:22+00:00,5,28.0,under,,2,16.41,2.91,over,13.5,1,0.0
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_rebounds,Gavin Doty,5.5,-137,-137,2026-11-09T22:56:22+00:00,7,28.0,over,,2,6.34,0.84,over,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_threes,Gavin Doty,1.5,-137,-137,2026-11-09T22:56:22+00:00,0,28.0,under,,2,1.23,-0.27,under,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Jaeden Mustaf,9.5,-137,-137,2026-11-09T22:56:22+00:00,18,33.0,over,,2,9.53,0.03,over,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_rebounds,Jaeden Mustaf,4.0,-137,-137,2026-11-09T22:56:22+00:00,7,33.0,over,,2,3.65,-0.35,under,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Kiyan Anthony,10.5,-137,-137,2026-11-09T22:56:22+00:00,16,26.0,over,,2,9.21,-1.29,under,10.5,1,0.0
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Markus Burton,14.5,-137,-137,2026-11-09T22:56:22+00:00,20,32.0,over,,2,15.88,1.38,over,13.5,1,1.0
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_threes,Markus Burton,1.5,-137,-137,2026-11-09T22:56:22+00:00,3,32.0,over,,2,1.36,-0.14,under,,0,
+2026-11-09,401909718,Indiana Hoosiers,Syracuse Orange,prizepicks,player_points,Sadiq White Jr.,9.5,-137,-137,2026-11-09T22:56:22+00:00,13,29.0,over,,2,7.87,-1.63,under,,0,
+2026-11-09,401916305,Cincinnati Bearcats,Minnesota Golden Gophers,prizepicks,player_points,Isaac Asuma,13.5,-137,-137,2026-11-09T23:45:18+00:00,10,32.0,under,,2,10.86,-2.64,under,,0,
+2026-11-09,401916305,Cincinnati Bearcats,Minnesota Golden Gophers,prizepicks,player_rebounds,Isaac Asuma,4.5,-137,-137,2026-11-09T23:45:18+00:00,7,32.0,over,,2,3.95,-0.55,under,,0,
+2026-11-09,401916305,Cincinnati Bearcats,Minnesota Golden Gophers,prizepicks,player_points,Jaylen Crocker-Johnson,15.5,-137,-137,2026-11-09T23:45:18+00:00,11,24.0,under,,2,11.98,-3.52,under,,0,
+2026-11-09,401916305,Cincinnati Bearcats,Minnesota Golden Gophers,prizepicks,player_threes,Jaylen Crocker-Johnson,1.5,-137,-137,2026-11-09T23:45:18+00:00,1,24.0,under,,2,1.44,-0.06,under,,0,
+2026-11-09,401916315,Ohio State Buckeyes,Marshall Thundering Herd,prizepicks,player_points,John Mobley Jr.,19.5,-137,-137,2026-11-09T22:56:22+00:00,19,35.0,under,,2,16.33,-3.17,under,,0,
+2026-11-09,401918074,Clemson Tigers,North Dakota Fighting Hawks,prizepicks,player_points,Ace Buckner,17.5,-137,-137,2026-11-09T23:45:18+00:00,13,36.0,under,,2,12.14,-5.36,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_points,C.J. Cox,11.5,-137,-137,2026-11-09T23:45:18+00:00,10,32.0,under,,2,10.84,-0.66,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_rebounds,Caden Pierce,7.0,-137,-137,2026-11-09T23:45:18+00:00,5,22.0,under,,2,4.53,-2.47,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_threes,Caden Pierce,0.5,-137,-137,2026-11-09T23:45:18+00:00,1,22.0,over,,2,0.54,0.04,over,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_assists,Daniel Jacobsen,1.5,-137,-137,2026-11-09T23:45:18+00:00,3,32.0,over,,2,0.81,-0.69,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_points,Daniel Jacobsen,15.0,-137,-137,2026-11-09T23:45:18+00:00,20,32.0,over,,2,10.98,-4.02,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_rebounds,Daniel Jacobsen,7.5,-137,-137,2026-11-09T23:45:18+00:00,7,32.0,under,,2,5.46,-2.04,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_points,Gicarri Harris,8.5,-137,-137,2026-11-09T23:45:18+00:00,6,14.0,under,,2,6.81,-1.69,under,,0,
+2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_rebounds,Gicarri Harris,3.5,-137,-137,2026-11-09T23:45:18+00:00,0,14.0,under,,2,2.57,-0.93,under,,0,
