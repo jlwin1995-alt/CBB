@@ -1,5 +1,4 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401911519,2026-11-11T19:00Z,2026-11-11,302,UC Davis Aggies,mid,Mountain West,2916,Incarnate Word Cardinals,low,Southland,0,1,STATUS_IN_PROGRESS
 401918992,2026-11-11T20:00Z,2026-11-11,2603,Saint Joseph's Hawks,mid,Atlantic 10,58,South Florida Bulls,mid,American,1,1,STATUS_IN_PROGRESS
 401911230,2026-11-11T20:00Z,2026-11-11,2005,Air Force Falcons,mid,Mountain West,2350,Loyola Chicago Ramblers,mid,Atlantic 10,0,1,STATUS_IN_PROGRESS
 401918978,2026-11-11T21:00Z,2026-11-11,151,East Carolina Pirates,mid,American,2448,North Carolina A&T Aggies,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
@@ -90,5 +89,5 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401921741,2026-11-13T02:00Z,2026-11-12,252,BYU Cougars,power6,Big 12,147,Montana State Bobcats,low,Big Sky,0,1,STATUS_SCHEDULED
 401920157,2026-11-13T02:00Z,2026-11-12,2239,Cal State Fullerton Titans,mid,Big West,124946,Lincoln (CA) Oaklanders,low,,0,1,STATUS_SCHEDULED
 401911533,2026-11-13T02:00Z,2026-11-12,2638,UTEP Miners,mid,Mountain West,166,New Mexico State Aggies,mid,Conference USA,0,1,STATUS_SCHEDULED
-401920296,2026-11-13T03:00Z,2026-11-12,2463,Cal State Northridge Matadors,mid,Big West,134743,Grace University Lancers,low,,0,1,STATUS_SCHEDULED
+401920296,2026-11-13T03:00Z,2026-11-12,2463,Cal State Northridge Matadors,mid,Big West,134743,Grace (CA) Talons,low,,0,1,STATUS_SCHEDULED
 401911471,2026-11-13T03:00Z,2026-11-12,23,San José State Spartans,mid,Mountain West,27,UC Riverside Highlanders,mid,Big West,0,1,STATUS_SCHEDULED
