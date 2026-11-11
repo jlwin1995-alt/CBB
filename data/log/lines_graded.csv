@@ -226,6 +226,20 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Thomas Haugh,16.5,-137,-137,2026-11-10T22:31:43+00:00,21,34.0,over,,2,17.27,0.77,over,16.5,3,0.0
 2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Thomas Haugh,7.5,-137,-137,2026-11-10T22:31:43+00:00,10,34.0,over,,2,6.99,-0.51,under,7.5,3,0.0
 2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Urban Klavzar,8.5,-137,-137,2026-11-10T22:31:43+00:00,10,18.0,over,,2,9.74,1.24,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_assists,Austin Swartz,1.5,-137,-137,2026-11-10T22:31:43+00:00,2,21.0,over,,2,1.7,0.2,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Austin Swartz,9.5,-137,-137,2026-11-11T01:15:57+00:00,4,21.0,under,,2,10.81,1.31,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_threes,Austin Swartz,1.5,-137,-137,2026-11-11T01:15:57+00:00,0,21.0,under,,2,2.0,0.5,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,BJ Davis,10.0,-137,-137,2026-11-11T01:15:57+00:00,25,34.0,over,,2,10.85,0.85,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Brandon Rechsteiner,17.5,-137,-137,2026-11-11T01:15:57+00:00,26,32.0,over,,2,14.05,-3.45,under,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_threes,Brandon Rechsteiner,2.5,-137,-137,2026-11-10T22:31:43+00:00,6,32.0,over,,2,2.77,0.27,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Isaiah Abraham,9.5,-137,-137,2026-11-11T01:15:57+00:00,12,33.0,over,,2,7.93,-1.57,under,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_assists,Jackson McAndrew,0.5,-137,-137,2026-11-10T22:31:43+00:00,0,10.0,under,,2,0.43,-0.07,under,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Jackson McAndrew,9.5,-137,-137,2026-11-11T01:15:57+00:00,3,10.0,under,,2,6.87,-2.63,under,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_rebounds,Jackson McAndrew,5.5,-137,-137,2026-11-11T01:15:57+00:00,2,10.0,under,,2,3.76,-1.74,under,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Jaden Schutt,9.5,-137,-137,2026-11-11T01:15:57+00:00,14,30.0,over,,2,9.39,-0.11,under,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Oswin Erhunmwunse,6.5,-137,-137,2026-11-10T22:31:43+00:00,4,13.0,under,,2,6.55,0.05,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_rebounds,Oswin Erhunmwunse,5.5,-137,-137,2026-11-11T01:15:57+00:00,6,13.0,over,,2,6.11,0.61,over,,0,
+2026-11-10,401909492,Kansas St Wildcats,Creighton Bluejays,prizepicks,player_points,Wes Enis,17.5,-137,-137,2026-11-11T01:15:57+00:00,18,34.0,over,,2,16.94,-0.56,under,,0,
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_assists,Cayden Boozer,4.5,-137,-137,2026-11-10T22:31:43+00:00,2,22.0,under,,2,3.17,-1.33,under,4.5,3,0.0
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Cayden Boozer,8.5,-137,-137,2026-11-10T22:31:43+00:00,6,22.0,under,,2,7.67,-0.83,under,7.5,3,1.0
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Coen Carr,10.5,-137,-137,2026-11-10T22:31:43+00:00,9,17.0,under,,2,10.63,0.13,over,11.5,3,-1.0
