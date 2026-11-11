@@ -206,3 +206,113 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_rebounds,Daniel Jacobsen,7.5,-137,-137,2026-11-09T23:45:18+00:00,7,32.0,under,,2,5.46,-2.04,under,,0,
 2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_points,Gicarri Harris,8.5,-137,-137,2026-11-09T23:45:18+00:00,6,14.0,under,,2,6.81,-1.69,under,,0,
 2026-11-09,401926132,Purdue Boilermakers,Illinois St Redbirds,prizepicks,player_rebounds,Gicarri Harris,3.5,-137,-137,2026-11-09T23:45:18+00:00,0,14.0,under,,2,2.57,-0.93,under,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Alex Condon,13.5,-137,-137,2026-11-10T22:31:43+00:00,9,34.0,under,,2,14.37,0.87,over,13.5,3,0.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Alex Condon,7.5,-137,-137,2026-11-10T22:31:43+00:00,10,34.0,over,,2,7.56,0.06,over,7.5,3,0.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_assists,Anthony Robinson II,2.5,-137,-137,2026-11-10T22:31:43+00:00,3,35.0,over,,2,3.39,0.89,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Anthony Robinson II,8.5,-137,-137,2026-11-10T22:31:43+00:00,19,35.0,over,,2,9.95,1.45,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_assists,Boogie Fland,4.5,-137,-137,2026-11-10T22:31:43+00:00,4,33.0,under,,2,3.89,-0.61,under,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Boogie Fland,11.5,-137,-137,2026-11-10T22:31:43+00:00,14,33.0,over,,2,12.34,0.84,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Boogie Fland,2.5,-137,-137,2026-11-10T22:31:43+00:00,5,33.0,over,,2,2.69,0.19,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Denzel Aberdeen,11.5,-137,-137,2026-11-10T22:31:43+00:00,7,27.0,under,,2,13.37,1.87,over,10.5,2,1.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Denzel Aberdeen,2.5,-137,-137,2026-11-10T22:31:43+00:00,1,27.0,under,,2,2.52,0.02,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Marcis Ponder,9.5,-137,-137,2026-11-10T22:31:43+00:00,4,21.0,under,,2,9.46,-0.04,under,10.5,3,-1.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_assists,Rueben Chinyelu,0.5,-137,-137,2026-11-10T22:31:43+00:00,0,31.0,under,,2,0.91,0.41,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Rueben Chinyelu,10.5,-137,-137,2026-11-10T22:31:43+00:00,8,31.0,under,,2,11.3,0.8,over,10.5,3,0.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Rueben Chinyelu,10.0,-137,-137,2026-11-10T22:31:43+00:00,6,31.0,under,,2,10.46,0.46,over,10.5,1,-0.5
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Sebastian Rancik,14.5,-137,-137,2026-11-10T22:31:43+00:00,23,33.0,over,,2,13.56,-0.94,under,14.5,3,0.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Shon Abaev,13.5,-137,-137,2026-11-10T22:31:43+00:00,10,31.0,under,,2,9.81,-3.69,under,13.0,2,0.5
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Shon Abaev,4.5,-137,-137,2026-11-10T22:31:43+00:00,6,31.0,over,,2,4.3,-0.2,under,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_assists,Thomas Haugh,2.5,-137,-137,2026-11-10T22:31:43+00:00,0,34.0,under,,2,2.62,0.12,over,,0,
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Thomas Haugh,16.5,-137,-137,2026-11-10T22:31:43+00:00,21,34.0,over,,2,17.27,0.77,over,16.5,3,0.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_rebounds,Thomas Haugh,7.5,-137,-137,2026-11-10T22:31:43+00:00,10,34.0,over,,2,6.99,-0.51,under,7.5,3,0.0
+2026-11-10,401906771,Florida St Seminoles,Florida Gators,prizepicks,player_points,Urban Klavzar,8.5,-137,-137,2026-11-10T22:31:43+00:00,10,18.0,over,,2,9.74,1.24,over,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_assists,Cayden Boozer,4.5,-137,-137,2026-11-10T22:31:43+00:00,2,22.0,under,,2,3.17,-1.33,under,4.5,3,0.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Cayden Boozer,8.5,-137,-137,2026-11-10T22:31:43+00:00,6,22.0,under,,2,7.67,-0.83,under,7.5,3,1.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Coen Carr,10.5,-137,-137,2026-11-10T22:31:43+00:00,9,17.0,under,,2,10.63,0.13,over,11.5,3,-1.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_rebounds,Coen Carr,6.0,-137,-137,2026-11-10T22:31:43+00:00,2,17.0,under,,2,4.89,-1.11,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Dame Sarr,10.5,-137,-137,2026-11-10T22:31:43+00:00,6,26.0,under,,2,7.08,-3.42,under,10.5,2,0.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_rebounds,Dame Sarr,4.0,-137,-137,2026-11-10T22:31:43+00:00,2,26.0,under,,2,3.74,-0.26,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Jasiah Jervis,8.5,-137,-137,2026-11-10T22:31:43+00:00,10,30.0,over,,2,8.21,-0.29,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_threes,Jasiah Jervis,1.5,-137,-137,2026-11-10T22:31:43+00:00,2,30.0,over,,2,1.24,-0.26,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_assists,Jeremy Fears Jr.,8.0,-137,-137,2026-11-10T22:31:43+00:00,11,33.0,over,,2,8.01,0.01,over,8.5,3,-0.5
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Jeremy Fears Jr.,16.5,-137,-137,2026-11-10T22:31:43+00:00,18,33.0,over,,2,12.46,-4.04,under,16.5,3,0.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Joaquim Boumtje Boumtje,12.5,-137,-137,2026-11-10T22:31:43+00:00,5,21.0,under,,2,,,,12.5,1,0.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,John Blackwell,16.5,-137,-137,2026-11-10T22:31:43+00:00,17,32.0,over,,2,15.39,-1.11,under,16.5,3,0.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_threes,John Blackwell,2.5,-137,-137,2026-11-10T22:31:43+00:00,4,32.0,over,,2,2.06,-0.44,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_assists,Jordan Scott,1.5,-137,-137,2026-11-10T22:31:43+00:00,1,31.0,under,,2,1.49,-0.01,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Jordan Scott,9.5,-137,-137,2026-11-10T22:31:43+00:00,5,31.0,under,,2,6.83,-2.67,under,9.5,3,0.0
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Patrick Ngongba II,15.0,-137,-137,2026-11-10T22:31:43+00:00,11,29.0,under,,2,10.75,-4.25,under,14.5,2,0.5
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_rebounds,Patrick Ngongba II,7.0,-137,-137,2026-11-10T22:31:43+00:00,7,29.0,push,,2,5.99,-1.01,under,7.5,2,-0.5
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_points,Alex Wilkins,12.0,-137,-137,2026-11-11T01:15:57+00:00,8,29.0,under,,2,16.11,4.11,over,12.5,3,-0.5
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_points,Malachi Moreno,9.0,-137,-137,2026-11-11T01:15:57+00:00,19,27.0,over,,2,7.72,-1.28,under,9.5,3,-0.5
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_rebounds,Malachi Moreno,8.0,-137,-137,2026-11-11T01:15:57+00:00,10,27.0,over,,2,6.18,-1.82,under,7.5,3,0.5
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_points,Milan Momcilovic,15.5,-137,-137,2026-11-11T01:15:57+00:00,5,36.0,under,,2,16.27,0.77,over,15.5,3,0.0
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_rebounds,Milan Momcilovic,4.5,-137,-137,2026-11-11T01:15:57+00:00,7,36.0,over,,2,3.62,-0.88,under,,0,
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_points,Tre White,15.5,-137,-137,2026-11-11T01:15:57+00:00,30,34.0,over,,2,12.09,-3.41,under,15.5,3,0.0
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_rebounds,Trey Kaufman-Renn,6.5,-137,-137,2026-11-11T01:15:57+00:00,6,24.0,under,,2,6.34,-0.16,under,,0,
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_points,Tyran Stokes,15.0,-137,-137,2026-11-11T01:15:57+00:00,23,32.0,over,,2,14.42,-0.58,under,15.5,3,-0.5
+2026-11-10,401909786,Kentucky Wildcats,Kansas Jayhawks,prizepicks,player_points,Zoom Diallo,12.5,-137,-137,2026-11-11T01:15:57+00:00,24,34.0,over,,2,14.12,1.62,over,12.5,3,0.0
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Gavin Gores,7.5,-137,-137,2026-11-10T22:31:43+00:00,9,19.0,over,,2,6.93,-0.57,under,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Jarin Stevenson,9.5,-137,-137,2026-11-10T22:31:43+00:00,7,29.0,under,,2,7.91,-1.59,under,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Khaden Bennett,10.5,-137,-137,2026-11-10T22:31:43+00:00,2,28.0,under,,2,11.2,0.7,over,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Matt Able,10.5,-137,-137,2026-11-10T22:31:43+00:00,11,26.0,over,,2,9.31,-1.19,under,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Nasir Meyer,15.0,-137,-137,2026-11-10T22:31:43+00:00,17,29.0,over,,2,12.78,-2.22,under,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_rebounds,Nasir Meyer,6.0,-137,-137,2026-11-10T22:31:43+00:00,4,29.0,under,,2,4.63,-1.37,under,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_threes,Nasir Meyer,1.5,-137,-137,2026-11-10T22:31:43+00:00,1,29.0,under,,2,1.56,0.06,over,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Neo Avdalas,10.0,-137,-137,2026-11-10T22:31:43+00:00,1,21.0,under,,2,11.55,1.55,over,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Sayon Keita,7.5,-137,-137,2026-11-10T22:31:43+00:00,13,27.0,over,,2,,,,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_rebounds,Sayon Keita,5.0,-137,-137,2026-11-10T22:31:43+00:00,8,27.0,over,,2,,,,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_points,Terrence Brown,18.5,-137,-137,2026-11-10T22:31:43+00:00,14,31.0,under,,2,17.63,-0.87,under,,0,
+2026-11-10,401913101,North Carolina Tar Heels,Wyoming Cowboys,prizepicks,player_threes,Terrence Brown,0.5,-137,-137,2026-11-10T22:31:43+00:00,0,31.0,under,,2,0.94,0.44,over,,0,
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_points,Andrej Stojakovic,17.5,-137,-137,2026-11-10T22:31:43+00:00,18,33.0,over,,2,13.02,-4.48,under,16.5,1,1.0
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_rebounds,Andrej Stojakovic,6.0,-137,-137,2026-11-10T22:31:43+00:00,3,33.0,under,,2,3.78,-2.22,under,,0,
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_points,Donovan Atwell,12.5,-137,-137,2026-11-10T22:31:43+00:00,13,35.0,over,,2,12.86,0.36,over,12.5,1,0.0
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_points,Ethan Brown,9.5,-137,-137,2026-11-10T22:31:43+00:00,5,25.0,under,,2,,,,10.5,1,-1.0
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_points,Quentin Coleman,14.5,-137,-137,2026-11-10T22:31:43+00:00,19,28.0,over,,2,11.81,-2.69,under,13.5,1,1.0
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_threes,Quentin Coleman,1.5,-137,-137,2026-11-10T22:31:43+00:00,5,28.0,over,,2,0.98,-0.52,under,,0,
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_points,Stefan Vaaks,12.5,-137,-137,2026-11-10T22:31:43+00:00,10,22.0,under,,2,13.11,0.61,over,13.5,1,-1.0
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_points,Tomislav Ivisic,10.5,-137,-137,2026-11-10T22:31:43+00:00,14,30.0,over,,2,9.16,-1.34,under,10.5,1,0.0
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_rebounds,Tomislav Ivisic,6.0,-137,-137,2026-11-10T22:31:43+00:00,6,30.0,push,,2,5.07,-0.93,under,,0,
+2026-11-10,401913527,Texas Tech Red Raiders,Illinois Fighting Illini,prizepicks,player_threes,Tomislav Ivisic,1.5,-137,-137,2026-11-10T22:31:43+00:00,1,30.0,under,,2,1.17,-0.33,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Ace Glass,15.5,-137,-137,2026-11-10T22:31:43+00:00,23,23.0,over,,2,15.88,0.38,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Berke Buyuktuncel,7.5,-137,-137,2026-11-10T22:31:43+00:00,16,30.0,over,,2,7.42,-0.08,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_rebounds,Berke Buyuktuncel,5.5,-137,-137,2026-11-10T22:31:43+00:00,8,30.0,over,,2,5.76,0.26,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Chandler Bing,9.5,-137,-137,2026-11-10T22:31:43+00:00,5,28.0,under,,2,6.01,-3.49,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_assists,Jayden Reid,4.5,-137,-137,2026-11-10T22:31:43+00:00,2,30.0,under,,2,5.09,0.59,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Jayden Reid,18.5,-137,-137,2026-11-10T22:31:43+00:00,11,30.0,under,,2,13.81,-4.69,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_rebounds,Luke Almodovar,3.5,-137,-137,2026-11-10T22:31:43+00:00,4,24.0,over,,2,4.09,0.59,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Maxim Logue,3.5,-137,-137,2026-11-10T22:31:43+00:00,4,13.0,over,,2,4.47,0.97,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Rihards Vavers,12.5,-137,-137,2026-11-10T22:31:43+00:00,5,22.0,under,,2,14.08,1.58,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_rebounds,Rihards Vavers,4.5,-137,-137,2026-11-10T22:31:43+00:00,2,22.0,under,,2,5.01,0.51,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Sebastian Williams-Adams,6.5,-137,-137,2026-11-10T22:31:43+00:00,11,25.0,over,,2,6.81,0.31,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_rebounds,Sebastian Williams-Adams,5.0,-137,-137,2026-11-10T22:31:43+00:00,3,25.0,under,,2,3.61,-1.39,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_assists,Tyler Tanner,4.5,-137,-137,2026-11-10T22:31:43+00:00,2,33.0,under,,2,4.72,0.22,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Tyler Tanner,19.5,-137,-137,2026-11-10T22:31:43+00:00,17,33.0,under,,2,18.03,-1.47,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_rebounds,Tyler Tanner,4.0,-137,-137,2026-11-10T22:31:43+00:00,5,33.0,over,,2,3.76,-0.24,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_threes,Tyler Tanner,1.5,-137,-137,2026-11-10T22:31:43+00:00,1,33.0,under,,2,1.49,-0.01,under,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_assists,Tylik Weeks,1.5,-137,-137,2026-11-10T22:31:43+00:00,2,24.0,over,,2,2.41,0.91,over,,0,
+2026-11-10,401918987,Vanderbilt Commodores,Memphis Tigers,prizepicks,player_points,Tylik Weeks,12.0,-137,-137,2026-11-10T22:31:43+00:00,15,24.0,over,,2,19.65,7.65,over,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Amani Hansberry,15.0,-137,-137,2026-11-10T22:31:43+00:00,16,40.0,over,,2,13.73,-1.27,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Ben Hammond,13.5,-137,-137,2026-11-10T22:31:43+00:00,32,33.0,over,,2,12.63,-0.87,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_rebounds,Ben Hammond,2.5,-137,-137,2026-11-10T22:31:43+00:00,5,33.0,over,,2,2.39,-0.11,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_assists,Cooper Koch,1.5,-137,-137,2026-11-10T22:31:43+00:00,2,45.0,over,,2,1.17,-0.33,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Cooper Koch,9.0,-137,-137,2026-11-10T22:31:43+00:00,26,45.0,over,,2,8.18,-0.82,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_rebounds,Cooper Koch,4.5,-137,-137,2026-11-10T22:31:43+00:00,7,45.0,over,,2,3.44,-1.06,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Isaia Howard,6.5,-137,-137,2026-11-10T22:31:43+00:00,13,41.0,over,,2,4.95,-1.55,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_threes,Isaia Howard,0.5,-137,-137,2026-11-10T22:31:43+00:00,3,41.0,over,,2,0.54,0.04,over,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_assists,Jaylen Curry,2.5,-137,-137,2026-11-10T22:31:43+00:00,1,31.0,under,,2,3.46,0.96,over,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Jaylen Curry,11.5,-137,-137,2026-11-10T22:31:43+00:00,25,31.0,over,,2,11.38,-0.12,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Kael Combs,6.5,-137,-137,2026-11-10T22:31:43+00:00,10,22.0,over,,2,5.58,-0.92,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_rebounds,Kael Combs,2.5,-137,-137,2026-11-10T22:31:43+00:00,0,22.0,under,,2,2.17,-0.33,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Tate Sage,10.5,-137,-137,2026-11-10T22:31:43+00:00,9,26.0,under,,2,7.19,-3.31,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_rebounds,Tate Sage,4.5,-137,-137,2026-11-10T22:31:43+00:00,1,26.0,under,,2,2.36,-2.14,under,,0,
+2026-11-10,401920378,Iowa Hawkeyes,Virginia Tech Hokies,prizepicks,player_points,Ty'Reek Coleman,10.5,-137,-137,2026-11-10T22:31:43+00:00,20,31.0,over,,2,9.79,-0.71,under,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Devin Royal,13.5,-137,-137,2026-11-10T22:31:43+00:00,15,29.0,over,,2,14.14,0.64,over,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_rebounds,Devin Royal,6.5,-137,-137,2026-11-10T22:31:43+00:00,10,29.0,over,,2,6.02,-0.48,under,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Jake Fiegen,11.5,-137,-137,2026-11-10T22:31:43+00:00,10,31.0,under,,2,15.95,4.45,over,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Luigi Suigo,10.5,-137,-137,2026-11-10T22:31:43+00:00,19,31.0,over,,2,,,,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_rebounds,Luigi Suigo,8.5,-137,-137,2026-11-10T22:31:43+00:00,12,31.0,over,,2,,,,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_assists,Rob Dockery,2.5,-137,-137,2026-11-10T22:31:43+00:00,0,11.0,under,,2,2.11,-0.39,under,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Rob Dockery,13.5,-137,-137,2026-11-10T22:31:43+00:00,5,11.0,under,,2,10.26,-3.24,under,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_rebounds,Rob Dockery,6.5,-137,-137,2026-11-10T22:31:43+00:00,0,11.0,under,,2,4.59,-1.91,under,,0,
+2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Tyler Perkins,14.5,-137,-137,2026-11-10T22:31:43+00:00,10,33.0,under,,2,12.27,-2.23,under,,0,
