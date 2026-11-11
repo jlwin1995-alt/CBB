@@ -1,8 +1,8 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
 401911519,2026-11-11T19:00Z,2026-11-11,302,UC Davis Aggies,mid,Mountain West,2916,Incarnate Word Cardinals,low,Southland,0,1,STATUS_IN_PROGRESS
 401918992,2026-11-11T20:00Z,2026-11-11,2603,Saint Joseph's Hawks,mid,Atlantic 10,58,South Florida Bulls,mid,American,1,1,STATUS_IN_PROGRESS
-401911230,2026-11-11T20:00Z,2026-11-11,2005,Air Force Falcons,mid,Mountain West,2350,Loyola Chicago Ramblers,mid,Atlantic 10,0,1,STATUS_HALFTIME
-401918978,2026-11-11T21:00Z,2026-11-11,151,East Carolina Pirates,mid,American,2448,North Carolina A&T Aggies,mid,Coastal Athletic Association,0,1,STATUS_SCHEDULED
+401911230,2026-11-11T20:00Z,2026-11-11,2005,Air Force Falcons,mid,Mountain West,2350,Loyola Chicago Ramblers,mid,Atlantic 10,0,1,STATUS_IN_PROGRESS
+401918978,2026-11-11T21:00Z,2026-11-11,151,East Carolina Pirates,mid,American,2448,North Carolina A&T Aggies,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
 401925717,2026-11-11T22:00Z,2026-11-11,21,San Diego State Aztecs,power6,Pac-12,2065,Bethune-Cookman Wildcats,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401921181,2026-11-11T22:30Z,2026-11-11,2426,Navy Midshipmen,low,Patriot League,219,Pennsylvania Quakers,low,Ivy League,0,0,STATUS_SCHEDULED
 401926211,2026-11-11T23:00Z,2026-11-11,2747,Wofford Terriers,low,Southern,2679,Voorhees Tigers,low,,0,0,STATUS_SCHEDULED
