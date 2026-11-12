@@ -1,5 +1,4 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401920073,2026-11-12T20:00Z,2026-11-12,2244,George Mason Patriots,mid,Atlantic 10,140,Kansas City Roos,low,Summit League,1,1,STATUS_IN_PROGRESS
 401925631,2026-11-12T23:00Z,2026-11-12,2154,Coppin State Eagles,low,Mid-Eastern Athletic,71,Bradley Braves,mid,Missouri Valley,1,1,STATUS_SCHEDULED
 401923400,2026-11-12T23:00Z,2026-11-12,104,Boston University Terriers,low,Patriot League,353,Johnson & Wales Griffins,low,,0,0,STATUS_SCHEDULED
 401921086,2026-11-12T23:00Z,2026-11-12,2378,UMBC Retrievers,low,America East,2415,Morgan State Bears,low,Mid-Eastern Athletic,0,0,STATUS_SCHEDULED
