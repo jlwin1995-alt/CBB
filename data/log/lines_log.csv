@@ -551,3 +551,24 @@ pulled_at,odds_event,espn_event,commence,home,away,book,market,player,point,over
 2026-11-12T03:02:04+00:00,92cc2f2a169d4efd4f1a0ac9d25672bc,401918054,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,player_points,Adonis Ratliff,11.5,-111,-115,2026-11-12T03:01:51Z
 2026-11-12T03:02:04+00:00,92cc2f2a169d4efd4f1a0ac9d25672bc,401918054,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,player_points,Rodney Rice,20.5,100,-128,2026-11-12T03:01:51Z
 2026-11-12T03:02:04+00:00,92cc2f2a169d4efd4f1a0ac9d25672bc,401918054,2026-11-12T04:00:00Z,California Golden Bears,USC Trojans,fanduel,player_points,Alijah Arenas,20.5,-106,-120,2026-11-12T03:01:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,fanduel,player_points,Jordan Burks,13.5,-130,100,2026-11-12T21:29:15Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,fanduel,player_points,Mackenzie Mgbako,11.5,-110,-118,2026-11-12T21:29:15Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,fanduel,player_rebounds,Jordan Burks,6.5,100,-130,2026-11-12T21:29:15Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,fanduel,player_rebounds,Mackenzie Mgbako,5.5,105,-140,2026-11-12T21:29:15Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,williamhill_us,player_points,Jordan Burks,14.5,-105,-127,2026-11-12T21:29:11Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,williamhill_us,player_rebounds,Jordan Burks,6.5,101,-134,2026-11-12T21:29:11Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,williamhill_us,player_rebounds,Mackenzie Mgbako,5.5,-113,-118,2026-11-12T21:29:11Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,betmgm,player_points,Mackenzie Mgbako,11.5,-105,-125,2026-11-12T21:28:36Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,betmgm,player_points,Jordan Burks,13.5,-125,-105,2026-11-12T21:28:36Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,betmgm,player_rebounds,Jordan Burks,6.5,100,-135,2026-11-12T21:28:36Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,betmgm,player_rebounds,Mackenzie Mgbako,5.5,-115,-115,2026-11-12T21:28:36Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Jordan Burks,13.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Mackenzie Mgbako,11.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Kashie Natt,10.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Anthony Felesi,8.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Luka Bogavac,8.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Luka Bogavac,8.0,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Julius Halaifonua,7.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_rebounds,Jordan Burks,6.0,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_rebounds,Kashie Natt,5.5,-137,-137,2026-11-12T21:28:51Z
+2026-11-12T21:29:12+00:00,4dd17035607c57aff8b475d30545a677,401919041,2026-11-13T01:00:00Z,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_threes,Anthony Felesi,0.5,-137,-137,2026-11-12T21:28:51Z
