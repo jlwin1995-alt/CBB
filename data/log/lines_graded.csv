@@ -246,7 +246,7 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_rebounds,Coen Carr,6.0,-137,-137,2026-11-10T22:31:43+00:00,2,17.0,under,,2,4.89,-1.11,under,,0,
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Dame Sarr,10.5,-137,-137,2026-11-10T22:31:43+00:00,6,26.0,under,,2,7.08,-3.42,under,10.5,2,0.0
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_rebounds,Dame Sarr,4.0,-137,-137,2026-11-10T22:31:43+00:00,2,26.0,under,,2,3.74,-0.26,under,,0,
-2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Jasiah Jervis,8.5,-137,-137,2026-11-10T22:31:43+00:00,10,30.0,over,,2,8.21,-0.29,under,,0,
+2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Jasiah Jervis,9.0,-137,-137,2026-11-10T22:31:43+00:00,10,30.0,over,,2,8.21,-0.79,under,,0,
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_threes,Jasiah Jervis,1.5,-137,-137,2026-11-10T22:31:43+00:00,2,30.0,over,,2,1.24,-0.26,under,,0,
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_assists,Jeremy Fears Jr.,8.0,-137,-137,2026-11-10T22:31:43+00:00,11,33.0,over,,2,8.01,0.01,over,8.5,3,-0.5
 2026-11-10,401909564,Duke Blue Devils,Michigan St Spartans,prizepicks,player_points,Jeremy Fears Jr.,16.5,-137,-137,2026-11-10T22:31:43+00:00,18,33.0,over,,2,12.46,-4.04,under,16.5,3,0.0
@@ -330,3 +330,16 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Rob Dockery,13.5,-137,-137,2026-11-10T22:31:43+00:00,5,11.0,under,,2,10.26,-3.24,under,,0,
 2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_rebounds,Rob Dockery,6.5,-137,-137,2026-11-10T22:31:43+00:00,0,11.0,under,,2,4.59,-1.91,under,,0,
 2026-11-10,401921774,Villanova Wildcats,La Salle Explorers,prizepicks,player_points,Tyler Perkins,14.5,-137,-137,2026-11-10T22:31:43+00:00,10,33.0,under,,2,12.27,-2.23,under,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_assists,Adrien Stevens,1.5,-137,-137,2026-11-11T23:01:03+00:00,3,32.0,over,,2,1.77,0.27,over,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,Adrien Stevens,7.5,-137,-137,2026-11-11T23:01:03+00:00,16,32.0,over,,2,7.69,0.19,over,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_assists,Elliot Cadeau,8.0,-137,-137,2026-11-11T23:01:03+00:00,10,34.0,over,,2,6.46,-1.54,under,7.5,1,0.5
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,Elliot Cadeau,11.5,-137,-137,2026-11-11T23:01:03+00:00,17,34.0,over,,2,11.42,-0.08,under,11.5,1,0.0
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_assists,J.P. Estrella,1.5,-137,-137,2026-11-11T23:01:03+00:00,2,31.0,over,,2,1.18,-0.32,under,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,J.P. Estrella,12.5,-137,-137,2026-11-11T23:01:03+00:00,18,31.0,over,,2,12.61,0.11,over,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_rebounds,J.P. Estrella,8.0,-137,-137,2026-11-11T23:01:03+00:00,8,31.0,push,,2,6.66,-1.34,under,8.5,1,-0.5
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,Nigel James Jr.,15.5,-137,-137,2026-11-11T23:01:03+00:00,0,18.0,under,,2,14.06,-1.44,under,15.5,1,0.0
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_assists,Roddy Gayle Jr.,1.5,-137,-137,2026-11-11T23:01:03+00:00,2,25.0,over,,2,1.88,0.38,over,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,Roddy Gayle Jr.,12.0,-137,-137,2026-11-11T23:01:03+00:00,7,25.0,under,,2,9.97,-2.03,under,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,Royce Parham,13.5,-137,-137,2026-11-11T23:01:03+00:00,8,32.0,under,,2,11.09,-2.41,under,12.5,1,1.0
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_assists,Trey McKenney,1.5,-137,-137,2026-11-11T23:01:03+00:00,4,36.0,over,,2,1.45,-0.05,under,,0,
+2026-11-11,401909524,Michigan Wolverines,Marquette Golden Eagles,prizepicks,player_points,Trey McKenney,18.0,-137,-137,2026-11-11T23:01:03+00:00,15,36.0,under,,2,14.1,-3.9,under,18.0,2,0.0
