@@ -355,3 +355,12 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-11,401918054,California Golden Bears,USC Trojans,prizepicks,player_rebounds,Nojus Indrusaitis,4.0,-137,-137,2026-11-12T03:02:04+00:00,6,30.0,over,3.33,3,3.61,-0.39,under,,0,
 2026-11-11,401918054,California Golden Bears,USC Trojans,prizepicks,player_points,Rodney Rice,20.0,-137,-137,2026-11-12T03:02:04+00:00,18,39.0,under,,2,12.29,-7.71,under,20.5,1,-0.5
 2026-11-11,401918054,California Golden Bears,USC Trojans,prizepicks,player_rebounds,Rodney Rice,3.5,-137,-137,2026-11-12T03:02:04+00:00,5,39.0,over,,2,2.32,-1.18,under,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Anthony Felesi,8.5,-137,-137,2026-11-12T22:01:24+00:00,14,34.0,over,,2,8.04,-0.46,under,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_threes,Anthony Felesi,0.5,-137,-137,2026-11-12T22:01:24+00:00,0,34.0,under,,2,0.56,0.06,over,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Jordan Burks,13.5,-137,-137,2026-11-12T22:01:24+00:00,8,22.0,under,,2,11.83,-1.67,under,13.5,3,0.0
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_rebounds,Jordan Burks,6.0,-137,-137,2026-11-12T22:01:24+00:00,5,22.0,under,,2,4.72,-1.28,under,6.5,3,-0.5
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Julius Halaifonua,8.5,-137,-137,2026-11-12T22:01:24+00:00,10,24.0,over,,2,8.66,0.16,over,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Kashie Natt,10.5,-137,-137,2026-11-12T22:01:24+00:00,12,25.0,over,,2,10.3,-0.2,under,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_rebounds,Kashie Natt,5.5,-137,-137,2026-11-12T22:01:24+00:00,5,25.0,under,,2,6.46,0.96,over,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Luka Bogavac,8.5,-137,-137,2026-11-12T22:01:24+00:00,3,9.0,under,,2,9.28,0.78,over,,0,
+2026-11-12,401919041,Texas A&M Aggies,Oklahoma St Cowboys,prizepicks,player_points,Mackenzie Mgbako,11.5,-137,-137,2026-11-12T22:01:24+00:00,7,19.0,under,10.33,3,8.88,-2.62,under,11.5,2,0.0
