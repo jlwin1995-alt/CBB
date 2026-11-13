@@ -1,7 +1,7 @@
 {
  "through": "2026-11-12",
  "graded_rows": 365,
- "pending_rows": 0,
+ "pending_rows": 158,
  "total": {
   "over": 183,
   "under": 175,
@@ -10,7 +10,7 @@
   "nomatch": 0,
   "decided": 358,
   "over_rate": 0.511,
-  "mean_actual_minus_line": 0.48
+  "mean_actual_minus_line": 0.49
  },
  "by_market": {
   "player_assists": {
@@ -31,7 +31,7 @@
    "nomatch": 0,
    "decided": 200,
    "over_rate": 0.515,
-   "mean_actual_minus_line": 0.82
+   "mean_actual_minus_line": 0.83
   },
   "player_rebounds": {
    "over": 43,
@@ -133,7 +133,7 @@
    "nomatch": 0,
    "decided": 9,
    "over_rate": 0.333,
-   "mean_actual_minus_line": -1.0
+   "mean_actual_minus_line": -0.94
   }
  },
  "by_consensus_gap": {
@@ -208,14 +208,14 @@
   },
   "by_edge": {
    "under 10%": {
-    "n": 88,
+    "n": 87,
     "hit": 40,
-    "hit_rate": 0.455
+    "hit_rate": 0.46
    },
    "10-20%": {
-    "n": 67,
+    "n": 68,
     "hit": 37,
-    "hit_rate": 0.552
+    "hit_rate": 0.544
    },
    "20%+": {
     "n": 86,

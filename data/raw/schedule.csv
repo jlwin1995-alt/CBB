@@ -1,6 +1,5 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401928807,2026-11-13T17:00Z,2026-11-13,2739,Green Bay Phoenix,low,Horizon League,2677,Viterbo V-Hawks,low,,0,0,STATUS_SCHEDULED
-401921167,2026-11-13T20:00Z,2026-11-13,325,Cleveland State Vikings,low,Horizon League,2697,West Florida Argonauts,low,Atlantic Sun,1,0,STATUS_SCHEDULED
+401921167,2026-11-13T20:00Z,2026-11-13,325,Cleveland State Vikings,low,Horizon League,2697,West Florida Argonauts,low,Atlantic Sun,1,0,STATUS_HALFTIME
 401921721,2026-11-13T22:00Z,2026-11-13,2390,Miami Hurricanes,power6,Atlantic Coast,2453,North Alabama Lions,low,United Athletic,0,1,STATUS_SCHEDULED
 401909696,2026-11-13T22:00Z,2026-11-13,52,Florida State Seminoles,power6,Atlantic Coast,357,Texas A&M-Corpus Christi Islanders,low,Southland,0,1,STATUS_SCHEDULED
 401923270,2026-11-13T23:00Z,2026-11-13,164,Rutgers Scarlet Knights,power6,Big Ten,2803,Bryant Bulldogs,low,America East,0,1,STATUS_SCHEDULED
