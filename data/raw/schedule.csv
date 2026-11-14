@@ -1,22 +1,14 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
 401924720,2026-11-14T16:00Z,2026-11-14,172,Cornell Big Red,low,Ivy League,2430,UNC Greensboro Spartans,low,Southern,0,0,STATUS_POSTPONED
-401921038,2026-11-14T19:30Z,2026-11-14,2737,Winthrop Eagles,low,Big South,2296,Jackson State Tigers,low,Southwestern Athletic,0,0,STATUS_IN_PROGRESS
-401921689,2026-11-14T20:30Z,2026-11-14,2250,Gonzaga Bulldogs,power6,Pac-12,99,LSU Tigers,power6,Southeastern,0,1,STATUS_IN_PROGRESS
-401911016,2026-11-14T20:30Z,2026-11-14,94,Northern Kentucky Norse,low,Horizon League,2117,Central Michigan Chippewas,mid,Mid-American,0,1,STATUS_IN_PROGRESS
-401934189,2026-11-14T21:00Z,2026-11-14,350,UNC Wilmington Seahawks,mid,Coastal Athletic Association,2410,Montreat Cavaliers,low,,0,1,STATUS_HALFTIME
-401928804,2026-11-14T21:00Z,2026-11-14,2174,Detroit Mercy Titans,low,Horizon League,2649,Toledo Rockets,mid,Mid-American,0,1,STATUS_HALFTIME
-401925889,2026-11-14T21:00Z,2026-11-14,2458,Northern Colorado Bears,low,Big Sky,2571,South Dakota State Jackrabbits,low,Summit League,1,0,STATUS_HALFTIME
-401922046,2026-11-14T21:00Z,2026-11-14,295,Old Dominion Monarchs,mid,Sun Belt,2344,Longwood Lancers,low,Big South,0,1,STATUS_HALFTIME
-401921221,2026-11-14T21:00Z,2026-11-14,2426,Navy Midshipmen,low,Patriot League,2261,Hampton Pirates,mid,Coastal Athletic Association,0,1,STATUS_HALFTIME
-401920307,2026-11-14T21:00Z,2026-11-14,59,Georgia Tech Yellow Jackets,power6,Atlantic Coast,2427,UNC Asheville Bulldogs,low,Big South,0,1,STATUS_HALFTIME
-401918979,2026-11-14T21:00Z,2026-11-14,151,East Carolina Pirates,mid,American,2169,Delaware State Hornets,low,Mid-Eastern Athletic,0,1,STATUS_HALFTIME
-401911264,2026-11-14T21:00Z,2026-11-14,179,St. Bonaventure Bonnies,mid,Atlantic 10,322,Lafayette Leopards,low,Patriot League,0,1,STATUS_HALFTIME
-401909728,2026-11-14T21:00Z,2026-11-14,154,Wake Forest Demon Deacons,power6,Atlantic Coast,253,Southern Utah Thunderbirds,low,Big Sky,0,1,STATUS_HALFTIME
+401922046,2026-11-14T21:00Z,2026-11-14,295,Old Dominion Monarchs,mid,Sun Belt,2344,Longwood Lancers,low,Big South,0,1,STATUS_IN_PROGRESS
+401921221,2026-11-14T21:00Z,2026-11-14,2426,Navy Midshipmen,low,Patriot League,2261,Hampton Pirates,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
+401920307,2026-11-14T21:00Z,2026-11-14,59,Georgia Tech Yellow Jackets,power6,Atlantic Coast,2427,UNC Asheville Bulldogs,low,Big South,0,1,STATUS_IN_PROGRESS
+401909728,2026-11-14T21:00Z,2026-11-14,154,Wake Forest Demon Deacons,power6,Atlantic Coast,253,Southern Utah Thunderbirds,low,Big Sky,0,1,STATUS_IN_PROGRESS
 401917529,2026-11-14T21:00Z,2026-11-14,279,Pacific Tigers,mid,West Coast,2005,Air Force Falcons,mid,Mountain West,0,1,STATUS_POSTPONED
 401920741,2026-11-14T21:30Z,2026-11-14,2097,Campbell Fighting Camels,mid,Coastal Athletic Association,2908,South Carolina Upstate Spartans,low,Big South,0,1,STATUS_IN_PROGRESS
-401927387,2026-11-14T22:00Z,2026-11-14,2473,Oakland Golden Grizzlies,low,Horizon League,2460,Northern Iowa Panthers,mid,Missouri Valley,0,1,STATUS_SCHEDULED
-401920567,2026-11-14T22:00Z,2026-11-14,2352,Loyola Maryland Greyhounds,low,Patriot League,2415,Morgan State Bears,low,Mid-Eastern Athletic,1,0,STATUS_SCHEDULED
-401918055,2026-11-14T22:00Z,2026-11-14,25,California Golden Bears,power6,Atlantic Coast,3101,Utah Tech Trailblazers,low,Big Sky,0,1,STATUS_SCHEDULED
+401927387,2026-11-14T22:00Z,2026-11-14,2473,Oakland Golden Grizzlies,low,Horizon League,2460,Northern Iowa Panthers,mid,Missouri Valley,0,1,STATUS_HALFTIME
+401920567,2026-11-14T22:00Z,2026-11-14,2352,Loyola Maryland Greyhounds,low,Patriot League,2415,Morgan State Bears,low,Mid-Eastern Athletic,1,0,STATUS_HALFTIME
+401918055,2026-11-14T22:00Z,2026-11-14,25,California Golden Bears,power6,Atlantic Coast,3101,Utah Tech Trailblazers,low,Big Sky,0,1,STATUS_HALFTIME
 401926777,2026-11-14T23:00Z,2026-11-14,278,Fresno State Bulldogs,power6,Pac-12,27,UC Riverside Highlanders,mid,Big West,0,1,STATUS_SCHEDULED
 401925948,2026-11-14T23:00Z,2026-11-14,2692,Weber State Wildcats,low,Big Sky,124946,Lincoln (CA) Oaklanders,low,,0,0,STATUS_SCHEDULED
 401925827,2026-11-14T23:00Z,2026-11-14,249,North Texas Mean Green,mid,American,6,South Alabama Jaguars,mid,Sun Belt,0,1,STATUS_SCHEDULED

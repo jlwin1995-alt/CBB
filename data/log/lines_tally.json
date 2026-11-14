@@ -1,57 +1,57 @@
 {
- "through": "2026-11-13",
- "graded_rows": 528,
- "pending_rows": 14,
+ "through": "2026-11-14",
+ "graded_rows": 536,
+ "pending_rows": 6,
  "total": {
-  "over": 255,
-  "under": 258,
+  "over": 258,
+  "under": 263,
   "push": 13,
   "void": 0,
   "nomatch": 2,
-  "decided": 513,
-  "over_rate": 0.497,
-  "mean_actual_minus_line": 0.35
+  "decided": 521,
+  "over_rate": 0.495,
+  "mean_actual_minus_line": 0.34
  },
  "by_market": {
   "player_assists": {
    "over": 32,
-   "under": 36,
+   "under": 37,
    "push": 2,
    "void": 0,
    "nomatch": 0,
-   "decided": 68,
-   "over_rate": 0.471,
+   "decided": 69,
+   "over_rate": 0.464,
    "mean_actual_minus_line": -0.15
   },
   "player_points": {
-   "over": 144,
-   "under": 138,
+   "over": 145,
+   "under": 140,
    "push": 3,
    "void": 0,
    "nomatch": 1,
-   "decided": 282,
-   "over_rate": 0.511,
-   "mean_actual_minus_line": 0.62
+   "decided": 285,
+   "over_rate": 0.509,
+   "mean_actual_minus_line": 0.59
   },
   "player_rebounds": {
-   "over": 61,
-   "under": 65,
+   "over": 63,
+   "under": 66,
    "push": 8,
    "void": 0,
    "nomatch": 1,
-   "decided": 126,
-   "over_rate": 0.484,
-   "mean_actual_minus_line": 0.04
+   "decided": 129,
+   "over_rate": 0.488,
+   "mean_actual_minus_line": 0.09
   },
   "player_threes": {
    "over": 18,
-   "under": 19,
+   "under": 20,
    "push": 0,
    "void": 0,
    "nomatch": 0,
-   "decided": 37,
-   "over_rate": 0.486,
-   "mean_actual_minus_line": 0.23
+   "decided": 38,
+   "over_rate": 0.474,
+   "mean_actual_minus_line": 0.21
   }
  },
  "by_date": {
@@ -144,28 +144,38 @@
    "decided": 155,
    "over_rate": 0.465,
    "mean_actual_minus_line": 0.02
+  },
+  "2026-11-14": {
+   "over": 3,
+   "under": 5,
+   "push": 0,
+   "void": 0,
+   "nomatch": 0,
+   "decided": 8,
+   "over_rate": 0.375,
+   "mean_actual_minus_line": 0.19
   }
  },
  "by_consensus_gap": {
   "pp below consensus": {
-   "over": 12,
+   "over": 13,
    "under": 14,
    "push": 3,
    "void": 0,
    "nomatch": 0,
-   "decided": 26,
-   "over_rate": 0.462,
-   "mean_actual_minus_line": -0.13
+   "decided": 27,
+   "over_rate": 0.481,
+   "mean_actual_minus_line": -0.07
   },
   "pp equal to consensus": {
    "over": 28,
-   "under": 40,
+   "under": 41,
    "push": 0,
    "void": 0,
    "nomatch": 0,
-   "decided": 68,
-   "over_rate": 0.412,
-   "mean_actual_minus_line": -0.94
+   "decided": 69,
+   "over_rate": 0.406,
+   "mean_actual_minus_line": -0.99
   },
   "pp above consensus": {
    "over": 11,
@@ -178,70 +188,70 @@
    "mean_actual_minus_line": 1.25
   },
   "no sportsbook line": {
-   "over": 204,
-   "under": 195,
+   "over": 206,
+   "under": 199,
    "push": 8,
    "void": 0,
    "nomatch": 2,
-   "decided": 399,
-   "over_rate": 0.511,
+   "decided": 405,
+   "over_rate": 0.509,
    "mean_actual_minus_line": 0.55
   }
  },
  "model": {
   "all": {
-   "n": 396,
-   "hit": 210,
-   "hit_rate": 0.53
+   "n": 404,
+   "hit": 212,
+   "hit_rate": 0.525
   },
   "by_market": {
    "player_assists": {
-    "n": 54,
+    "n": 55,
     "hit": 30,
-    "hit_rate": 0.556
+    "hit_rate": 0.545
    },
    "player_points": {
-    "n": 218,
-    "hit": 111,
-    "hit_rate": 0.509
+    "n": 221,
+    "hit": 113,
+    "hit_rate": 0.511
    },
    "player_rebounds": {
-    "n": 94,
+    "n": 97,
     "hit": 53,
-    "hit_rate": 0.564
+    "hit_rate": 0.546
    },
    "player_threes": {
-    "n": 30,
+    "n": 31,
     "hit": 16,
-    "hit_rate": 0.533
+    "hit_rate": 0.516
    }
   },
   "by_edge": {
    "under 10%": {
-    "n": 140,
+    "n": 141,
     "hit": 67,
-    "hit_rate": 0.479
+    "hit_rate": 0.475
    },
    "10-20%": {
-    "n": 120,
-    "hit": 62,
-    "hit_rate": 0.517
+    "n": 124,
+    "hit": 63,
+    "hit_rate": 0.508
    },
    "20%+": {
-    "n": 136,
-    "hit": 81,
-    "hit_rate": 0.596
+    "n": 139,
+    "hit": 82,
+    "hit_rate": 0.59
    }
   },
   "overs_picked": {
-   "n": 135,
-   "hit": 72,
-   "hit_rate": 0.533
+   "n": 140,
+   "hit": 73,
+   "hit_rate": 0.521
   },
   "unders_picked": {
-   "n": 261,
-   "hit": 138,
-   "hit_rate": 0.529
+   "n": 264,
+   "hit": 139,
+   "hit_rate": 0.527
   }
  }
 }
