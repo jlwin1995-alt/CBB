@@ -920,3 +920,46 @@ pulled_at,odds_event,espn_event,commence,home,away,book,market,player,point,over
 2026-11-15T12:04:46+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_rebounds,BJ Davis,3.5,-137,-137,2026-11-15T12:04:28Z
 2026-11-15T12:04:46+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_rebounds,Ty'Reek Coleman,3.5,-137,-137,2026-11-15T12:04:28Z
 2026-11-15T12:04:46+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_threes,Wes Enis,2.5,-137,-137,2026-11-15T12:04:28Z
+2026-11-15T16:01:15+00:00,4907c399e1707ee794cd6acb25c791cc,401926063,2026-11-15T18:00:00Z,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_assists,Pryce Sandfort,2.5,-137,-137,2026-11-15T16:01:07Z
+2026-11-15T16:01:15+00:00,460c23d41c84519f5edf6c04d47cb25a,401918949,2026-11-15T18:00:00Z,Memphis Tigers,Louisville Cardinals,fanduel,player_points,Adrian Wooley,11.5,-130,100,2026-11-15T16:00:37Z
+2026-11-15T16:01:15+00:00,460c23d41c84519f5edf6c04d47cb25a,401918949,2026-11-15T18:00:00Z,Memphis Tigers,Louisville Cardinals,williamhill_us,player_points,Adrian Wooley,12.5,-113,-118,2026-11-15T16:01:01Z
+2026-11-15T16:01:15+00:00,460c23d41c84519f5edf6c04d47cb25a,401918949,2026-11-15T18:00:00Z,Memphis Tigers,Louisville Cardinals,betmgm,player_points,Adrian Wooley,11.5,-120,-110,2026-11-15T16:01:00Z
+2026-11-15T16:01:15+00:00,460c23d41c84519f5edf6c04d47cb25a,401918949,2026-11-15T18:00:00Z,Memphis Tigers,Louisville Cardinals,prizepicks,player_assists,Adrian Wooley,2.5,-137,-137,2026-11-15T16:01:06Z
+2026-11-15T16:01:15+00:00,460c23d41c84519f5edf6c04d47cb25a,401918949,2026-11-15T18:00:00Z,Memphis Tigers,Louisville Cardinals,prizepicks,player_points,Adrian Wooley,11.5,-137,-137,2026-11-15T16:01:06Z
+2026-11-15T16:01:15+00:00,460c23d41c84519f5edf6c04d47cb25a,401918949,2026-11-15T18:00:00Z,Memphis Tigers,Louisville Cardinals,prizepicks,player_threes,Adrian Wooley,1.5,-137,-137,2026-11-15T16:01:06Z
+2026-11-15T16:01:15+00:00,35b185fdcbab65a367699da415b5d32b,401925812,2026-11-15T19:00:00Z,La Salle Explorers,Temple Owls,prizepicks,player_assists,Rob Dockery,2.5,-137,-137,2026-11-15T16:00:12Z
+2026-11-15T16:01:15+00:00,35b185fdcbab65a367699da415b5d32b,401925812,2026-11-15T19:00:00Z,La Salle Explorers,Temple Owls,prizepicks,player_points,Rob Dockery,12.5,-137,-137,2026-11-15T16:00:12Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_assists,Nigel James Jr.,4.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_points,Royce Parham,12.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_points,Nigel James Jr.,12.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_points,Adrien Stevens,9.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_rebounds,Sananda Fru,5.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_rebounds,Nigel James Jr.,2.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3a6ab42e6e00f60dad67f3ff4cfed815,401909525,2026-11-15T19:30:00Z,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_threes,Adrien Stevens,1.5,-137,-137,2026-11-15T16:00:55Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,fanduel,player_points,Tate Sage,10.5,100,-130,2026-11-15T16:01:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,fanduel,player_points,Wes Enis,16.5,-106,-122,2026-11-15T16:01:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,fanduel,player_points,Cooper Koch,13.5,-104,-125,2026-11-15T16:01:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,fanduel,player_points,BJ Davis,12.5,-104,-125,2026-11-15T16:01:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_assists,Isaia Howard,1.5,-137,-137,2026-11-15T16:00:11Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Wes Enis,17.5,-137,-137,2026-11-15T16:00:11Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_threes,Cooper Koch,2.5,-137,-137,2026-11-15T16:00:11Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_assists,Ty'Reek Coleman,2.5,-105,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_assists,BJ Davis,2.5,-150,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Wes Enis,18.5,-104,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Cooper Koch,14.5,-117,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,BJ Davis,12.5,-106,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Tate Sage,10.5,-115,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Austin Swartz,8.5,-113,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Kael Combs,7.5,-109,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Isaia Howard,8.5,-120,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_points,Ty'Reek Coleman,12.5,-103,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_rebounds,Isaia Howard,6.5,102,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_rebounds,Cooper Koch,5.5,117,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_rebounds,BJ Davis,3.5,-112,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_threes,Austin Swartz,1.5,-104,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_threes,Wes Enis,2.5,-129,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betrivers,player_threes,Cooper Koch,2.5,-118,,2026-11-15T16:01:15Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betmgm,player_assists,Austin Swartz,1.5,-110,-135,2026-11-15T16:00:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betmgm,player_points,Austin Swartz,7.5,100,-135,2026-11-15T16:00:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betmgm,player_rebounds,Austin Swartz,3.5,105,-140,2026-11-15T16:00:07Z
+2026-11-15T16:01:15+00:00,3ab5a8599cd00fad06d1d7f8c1fd0fb2,401909493,2026-11-15T20:00:00Z,Iowa Hawkeyes,Creighton Bluejays,betmgm,player_threes,Austin Swartz,0.5,-235,175,2026-11-15T16:00:07Z

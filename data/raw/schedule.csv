@@ -46,7 +46,7 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401920962,2026-11-16T16:00Z,2026-11-16,2413,Morehead State Eagles,low,Ohio Valley,124809,Miami (OH) Hamilton Harriers,low,,0,0,STATUS_SCHEDULED
 401929371,2026-11-16T17:00Z,2026-11-16,2453,North Alabama Lions,low,United Athletic,2225,Fisk Bulldogs,low,,0,0,STATUS_SCHEDULED
 401911211,2026-11-16T17:00Z,2026-11-16,45,George Washington Revolutionaries,mid,Atlantic 10,366,Ferrum Panthers,low,,0,1,STATUS_SCHEDULED
-401929419,2026-11-16T18:00Z,2026-11-16,2638,UTEP Miners,mid,Mountain West,50,Florida A&M Rattlers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
+401929419,2026-11-16T19:00Z,2026-11-16,2638,UTEP Miners,mid,Mountain West,50,Florida A&M Rattlers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401921087,2026-11-16T23:00Z,2026-11-16,2378,UMBC Retrievers,low,America East,314,Iona Gaels,low,Metro,0,0,STATUS_SCHEDULED
 401916298,2026-11-16T23:00Z,2026-11-16,120,Maryland Terrapins,power6,Big Ten,2016,Alcorn State Braves,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401916317,2026-11-16T23:30Z,2026-11-16,194,Ohio State Buckeyes,power6,Big Ten,2504,Prairie View A&M Panthers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
@@ -64,7 +64,6 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401926153,2026-11-17T00:30Z,2026-11-16,2546,Southeast Missouri State Redhawks,low,Ohio Valley,111166,Midway Eagles,low,,0,0,STATUS_SCHEDULED
 401929411,2026-11-17T01:00Z,2026-11-16,2571,South Dakota State Jackrabbits,low,Summit League,561,Mayville State Comets,low,,0,0,STATUS_SCHEDULED
 401928997,2026-11-17T01:00Z,2026-11-16,2674,Valparaiso Beacons,mid,Missouri Valley,502,Calumet St. Joseph Crimson Wave,low,,0,1,STATUS_SCHEDULED
-401926143,2026-11-17T01:00Z,2026-11-16,155,North Dakota Fighting Hawks,low,Summit League,2565,SIU Edwardsville Cougars,low,Ohio Valley,0,0,STATUS_SCHEDULED
 401920735,2026-11-17T01:00Z,2026-11-16,77,Northwestern Wildcats,power6,Big Ten,171,Columbia Lions,low,Ivy League,0,1,STATUS_SCHEDULED
 401917964,2026-11-17T01:00Z,2026-11-16,2623,Missouri State Bears,mid,Conference USA,2000,Abilene Christian Wildcats,low,United Athletic,0,1,STATUS_SCHEDULED
 401917917,2026-11-17T01:00Z,2026-11-16,197,Oklahoma State Cowboys,power6,Big 12,2110,Central Arkansas Bears,low,United Athletic,0,1,STATUS_SCHEDULED
