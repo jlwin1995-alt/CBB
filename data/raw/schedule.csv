@@ -1,19 +1,9 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
 401924720,2026-11-14T16:00Z,2026-11-14,172,Cornell Big Red,low,Ivy League,2430,UNC Greensboro Spartans,low,Southern,0,0,STATUS_POSTPONED
 401917529,2026-11-14T21:00Z,2026-11-14,279,Pacific Tigers,mid,West Coast,2005,Air Force Falcons,mid,Mountain West,0,1,STATUS_POSTPONED
-401925108,2026-11-15T00:00Z,2026-11-14,250,UT Arlington Mavericks,low,United Athletic,292,UT Rio Grande Valley Vaqueros,low,Southland,0,0,STATUS_IN_PROGRESS
 401926864,2026-11-15T00:00Z,2026-11-14,350,UNC Wilmington Seahawks,mid,Coastal Athletic Association,309,Louisiana Ragin' Cajuns,mid,Sun Belt,0,1,STATUS_POSTPONED
-401920568,2026-11-15T00:30Z,2026-11-14,119,Towson Tigers,mid,Coastal Athletic Association,2378,UMBC Retrievers,low,America East,0,1,STATUS_IN_PROGRESS
-401929444,2026-11-15T01:00Z,2026-11-14,2032,Arkansas State Red Wolves,mid,Sun Belt,2176,Dillard Blue Devils,low,,0,1,STATUS_IN_PROGRESS
-401929400,2026-11-15T01:00Z,2026-11-14,198,Oral Roberts Golden Eagles,low,Summit League,2481,Oklahoma City Okies,low,,0,0,STATUS_IN_PROGRESS
-401925079,2026-11-15T01:00Z,2026-11-14,2031,Little Rock Trojans,low,United Athletic,2466,Northwestern State Demons,low,Southland,0,0,STATUS_IN_PROGRESS
-401925063,2026-11-15T01:00Z,2026-11-14,2447,Nicholls Colonels,low,Southland,2348,Louisiana Tech Bulldogs,mid,Sun Belt,0,1,STATUS_IN_PROGRESS
-401911520,2026-11-15T01:00Z,2026-11-14,16,Sacramento State Hornets,mid,Big West,302,UC Davis Aggies,mid,Mountain West,0,1,STATUS_IN_PROGRESS
-401911347,2026-11-15T01:00Z,2026-11-14,2253,Grand Canyon Lopes,mid,Mountain West,2433,UL Monroe Warhawks,mid,Sun Belt,0,1,STATUS_IN_PROGRESS
-401920760,2026-11-15T01:30Z,2026-11-14,2057,Belmont Bruins,mid,Missouri Valley,231,Furman Paladins,low,Southern,0,1,STATUS_HALFTIME
-401922031,2026-11-15T02:00Z,2026-11-14,155,North Dakota Fighting Hawks,low,Summit League,149,Montana Grizzlies,low,Big Sky,0,0,STATUS_IN_PROGRESS
-401917530,2026-11-15T03:00Z,2026-11-14,2541,Santa Clara Broncos,mid,West Coast,167,New Mexico Lobos,mid,Mountain West,0,1,STATUS_SCHEDULED
-401911455,2026-11-15T03:00Z,2026-11-14,2440,Nevada Wolf Pack,mid,Mountain West,3084,Utah Valley Wolverines,mid,Big West,0,1,STATUS_SCHEDULED
+401917530,2026-11-15T03:00Z,2026-11-14,2541,Santa Clara Broncos,mid,West Coast,167,New Mexico Lobos,mid,Mountain West,0,1,STATUS_IN_PROGRESS
+401911455,2026-11-15T03:00Z,2026-11-14,2440,Nevada Wolf Pack,mid,Mountain West,3084,Utah Valley Wolverines,mid,Big West,0,1,STATUS_IN_PROGRESS
 401929458,2026-11-15T17:00Z,2026-11-15,526,Florida Gulf Coast Eagles,low,Atlantic Sun,134875,Abraham Baldwin Agricultural Stallions,low,,0,0,STATUS_SCHEDULED
 401918949,2026-11-15T18:00Z,2026-11-15,235,Memphis Tigers,mid,American,97,Louisville Cardinals,power6,Atlantic Coast,0,1,STATUS_SCHEDULED
 401926063,2026-11-15T18:00Z,2026-11-15,158,Nebraska Cornhuskers,power6,Big Ten,68,Boise State Broncos,power6,Pac-12,1,1,STATUS_SCHEDULED
@@ -54,7 +44,6 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401920124,2026-11-15T23:00Z,2026-11-15,147,Montana State Bobcats,low,Big Sky,13,Cal Poly Mustangs,mid,Big West,0,1,STATUS_SCHEDULED
 401920681,2026-11-16T00:00Z,2026-11-15,2599,St. John's Red Storm,power6,Big East,183,Syracuse Orange,power6,Atlantic Coast,0,1,STATUS_SCHEDULED
 401926772,2026-11-16T00:00Z,2026-11-15,30,USC Trojans,power6,Big Ten,2029,Arkansas-Pine Bluff Golden Lions,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
-401929419,2026-11-16T01:00Z,2026-11-15,2638,UTEP Miners,mid,Mountain West,50,Florida A&M Rattlers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401929200,2026-11-16T01:00Z,2026-11-15,2636,UTSA Roadrunners,mid,American,326,Texas State Bobcats,power6,Pac-12,0,1,STATUS_SCHEDULED
 401925718,2026-11-16T01:00Z,2026-11-15,2065,Bethune-Cookman Wildcats,low,Southwestern Athletic,2488,Paine Lions,low,,0,0,STATUS_SCHEDULED
 401920896,2026-11-16T01:00Z,2026-11-15,275,Wisconsin Badgers,power6,Big Ten,324,Coastal Carolina Chanticleers,mid,Sun Belt,0,1,STATUS_SCHEDULED
