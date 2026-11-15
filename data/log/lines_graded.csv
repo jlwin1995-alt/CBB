@@ -541,3 +541,44 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-14,401921689,Gonzaga Bulldogs,LSU Tigers,prizepicks,player_points,Xaivian Lee,10.5,-137,-137.0,2026-11-14T19:11:53+00:00,9.0,13.0,under,,2,13.36,2.86,over,,0,
 2026-11-14,401921689,Gonzaga Bulldogs,LSU Tigers,prizepicks,player_rebounds,Xaivian Lee,3.5,-137,-137.0,2026-11-14T19:11:53+00:00,1.0,13.0,under,,2,4.03,0.53,over,,0,
 2026-11-14,401921689,Gonzaga Bulldogs,LSU Tigers,prizepicks,player_threes,Xaivian Lee,1.5,-137,-137.0,2026-11-14T19:11:53+00:00,1.0,13.0,under,,2,1.78,0.28,over,,0,
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Austin Swartz,7.5,-137,-137.0,2026-11-15T19:47:38+00:00,18.0,34.0,over,5.33,3,9.44,1.94,over,8.0,2,-0.5
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,BJ Davis,12.5,-137,-137.0,2026-11-15T19:47:38+00:00,8.0,23.0,under,15.67,3,11.36,-1.14,under,12.5,3,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_rebounds,BJ Davis,3.5,-137,-137.0,2026-11-15T19:47:38+00:00,2.0,23.0,under,4.33,3,3.21,-0.29,under,3.5,1,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_threes,BJ Davis,1.5,-137,-137.0,2026-11-15T19:47:38+00:00,0.0,23.0,under,3.0,3,1.44,-0.06,under,,0,
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_assists,Cooper Koch,1.5,-137,-137.0,2026-11-15T19:47:38+00:00,1.0,33.0,under,1.33,3,1.31,-0.19,under,,0,
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Cooper Koch,13.5,-137,-137.0,2026-11-15T19:47:38+00:00,16.0,33.0,over,13.67,3,9.74,-3.76,under,13.5,2,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_threes,Cooper Koch,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,2.0,33.0,under,1.67,3,1.8,-0.7,under,2.5,1,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_assists,Isaia Howard,1.5,-137,-137.0,2026-11-15T19:47:38+00:00,3.0,36.0,over,0.0,3,1.21,-0.29,under,,0,
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Isaia Howard,7.5,-137,-137.0,2026-11-15T19:47:38+00:00,6.0,36.0,under,7.33,3,6.46,-1.04,under,8.5,1,-1.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Tate Sage,10.5,-137,-137.0,2026-11-15T19:47:38+00:00,0.0,13.0,under,9.33,3,7.68,-2.82,under,10.5,2,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_assists,Ty'Reek Coleman,2.5,-137,-137.0,2026-11-15T19:47:38+00:00,1.0,10.0,under,3.33,3,2.06,-0.44,under,2.5,1,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Ty'Reek Coleman,12.5,-137,-137.0,2026-11-15T19:47:38+00:00,0.0,10.0,under,14.33,3,10.85,-1.65,under,12.0,2,0.5
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_rebounds,Ty'Reek Coleman,3.5,-137,-137.0,2026-11-15T12:04:46+00:00,1.0,10.0,under,3.67,3,2.82,-0.68,under,,0,
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_assists,Wes Enis,1.5,-137,-137.0,2026-11-15T19:47:38+00:00,1.0,25.0,under,2.0,3,2.33,0.83,over,,0,
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_points,Wes Enis,16.5,-137,-137.0,2026-11-15T19:47:38+00:00,9.0,25.0,under,19.67,3,15.79,-0.71,under,16.5,3,0.0
+2026-11-15,401909493,Iowa Hawkeyes,Creighton Bluejays,prizepicks,player_threes,Wes Enis,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,2.0,25.0,under,4.0,3,3.06,0.56,over,2.5,1,0.0
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_points,Adrien Stevens,9.5,-137,-137.0,2026-11-15T16:01:15+00:00,8.0,36.0,under,10.33,3,8.65,-0.85,under,,0,
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_threes,Adrien Stevens,1.5,-137,-137.0,2026-11-15T16:01:15+00:00,2.0,36.0,over,2.0,3,1.7,0.2,over,,0,
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_assists,Nigel James Jr.,4.5,-137,-137.0,2026-11-15T16:01:15+00:00,11.0,36.0,over,4.0,3,4.11,-0.39,under,,0,
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_points,Nigel James Jr.,12.5,-137,-137.0,2026-11-15T16:01:15+00:00,11.0,36.0,under,4.33,3,12.84,0.34,over,,0,
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_rebounds,Nigel James Jr.,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,6.0,36.0,over,1.33,3,2.73,0.23,over,,0,
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_points,Royce Parham,12.5,-137,-137.0,2026-11-15T16:01:15+00:00,9.0,36.0,under,12.0,3,11.61,-0.89,under,,0,
+2026-11-15,401909525,Marquette Golden Eagles,Missouri Tigers,prizepicks,player_rebounds,Sananda Fru,5.5,-137,-137.0,2026-11-15T16:01:15+00:00,2.0,20.0,under,7.33,3,6.03,0.53,over,,0,
+2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_assists,Adrian Wooley,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,4.0,32.0,over,,2,2.33,-0.17,under,,0,
+2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_points,Adrian Wooley,11.5,-137,-137.0,2026-11-15T16:01:15+00:00,8.0,32.0,under,,2,11.52,0.02,over,11.5,3,0.0
+2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_threes,Adrian Wooley,1.5,-137,-137.0,2026-11-15T16:01:15+00:00,0.0,32.0,under,,2,1.4,-0.1,under,,0,
+2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_points,Jayden Reid,17.5,-137,-137.0,2026-11-15T16:01:15+00:00,24.0,32.0,over,23.0,3,13.83,-3.67,under,,0,
+2026-11-15,401925812,La Salle Explorers,Temple Owls,prizepicks,player_assists,Rob Dockery,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,2.0,27.0,under,2.33,3,1.83,-0.67,under,,0,
+2026-11-15,401925812,La Salle Explorers,Temple Owls,prizepicks,player_points,Rob Dockery,12.5,-137,-137.0,2026-11-15T16:01:15+00:00,14.0,27.0,over,8.0,3,9.16,-3.34,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_points,Boden Kapke,9.5,-137,-137.0,2026-11-15T16:01:15+00:00,13.0,22.0,over,9.33,3,8.5,-1.0,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_assists,Braden Frager,1.5,-137,-137.0,2026-11-15T16:01:15+00:00,3.0,29.0,over,2.0,3,1.28,-0.22,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_points,Braden Frager,14.5,-137,-137.0,2026-11-15T16:01:15+00:00,26.0,29.0,over,11.0,3,12.46,-2.04,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_rebounds,Braden Frager,4.0,-137,-137.0,2026-11-15T16:01:15+00:00,7.0,29.0,over,3.33,3,4.09,0.09,over,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_points,Cale Jacobsen,8.5,-137,-137.0,2026-11-15T16:01:15+00:00,13.0,29.0,over,11.33,3,6.88,-1.62,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_rebounds,Cale Jacobsen,4.0,-137,-137.0,2026-11-15T16:01:15+00:00,6.0,29.0,over,3.0,3,3.27,-0.73,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_assists,Pryce Sandfort,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,3.0,31.0,over,3.33,3,2.06,-0.44,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_points,Pryce Sandfort,21.5,-137,-137.0,2026-11-15T16:01:15+00:00,17.0,31.0,under,22.33,3,17.06,-4.44,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_rebounds,Pryce Sandfort,5.5,-137,-137.0,2026-11-15T16:01:15+00:00,4.0,31.0,under,4.67,3,4.57,-0.93,under,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_points,Trevan Leonhardt,5.5,-137,-137.0,2026-11-15T16:01:15+00:00,0.0,17.0,under,2.33,3,7.72,2.22,over,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_rebounds,Trevan Leonhardt,3.5,-137,-137.0,2026-11-15T16:01:15+00:00,3.0,17.0,under,2.67,3,3.69,0.19,over,,0,
+2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_threes,Trevan Leonhardt,0.5,-137,-137.0,2026-11-15T16:01:15+00:00,0.0,17.0,under,0.67,3,0.89,0.39,over,,0,
