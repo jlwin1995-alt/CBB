@@ -95,7 +95,6 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401920426,2026-11-18T02:00Z,2026-11-17,258,Virginia Cavaliers,power6,Atlantic Coast,295,Old Dominion Monarchs,mid,Sun Belt,0,1,STATUS_SCHEDULED
 401911521,2026-11-18T02:00Z,2026-11-17,302,UC Davis Aggies,mid,Mountain West,2011,Alabama State Hornets,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401909787,2026-11-18T02:30Z,2026-11-17,2305,Kansas Jayhawks,power6,Big 12,2439,UNLV Rebels,mid,Mountain West,1,1,STATUS_SCHEDULED
-401934595,2026-11-18T03:00Z,2026-11-17,264,Washington Huskies,power6,Big Ten,2829,Simon Fraser Red Leafs,low,,0,1,STATUS_SCHEDULED
 401921729,2026-11-18T03:00Z,2026-11-17,24,Stanford Cardinal,power6,Atlantic Coast,300,UC Irvine Anteaters,mid,Big West,0,1,STATUS_SCHEDULED
 401917533,2026-11-18T03:00Z,2026-11-17,2856,California Baptist Lancers,mid,Big West,2547,Seattle U Redhawks,mid,West Coast,0,1,STATUS_SCHEDULED
 401925879,2026-11-18T04:00Z,2026-11-17,2250,Gonzaga Bulldogs,power6,Pac-12,147,Montana State Bobcats,low,Big Sky,0,1,STATUS_SCHEDULED
