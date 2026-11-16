@@ -568,6 +568,9 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_points,Adrian Wooley,11.5,-137,-137.0,2026-11-15T16:01:15+00:00,8.0,32.0,under,,2,11.52,0.02,over,11.5,3,0.0
 2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_threes,Adrian Wooley,1.5,-137,-137.0,2026-11-15T16:01:15+00:00,0.0,32.0,under,,2,1.4,-0.1,under,,0,
 2026-11-15,401918949,Memphis Tigers,Louisville Cardinals,prizepicks,player_points,Jayden Reid,17.5,-137,-137.0,2026-11-15T16:01:15+00:00,24.0,32.0,over,23.0,3,13.83,-3.67,under,,0,
+2026-11-15,401920896,Wisconsin Badgers,Coastal Carolina Chanticleers,prizepicks,player_points,Braeden Carrington,13.5,-137,-137.0,2026-11-15T23:58:48+00:00,11.0,30.0,under,15.0,3,10.37,-3.13,under,,0,
+2026-11-15,401920896,Wisconsin Badgers,Coastal Carolina Chanticleers,prizepicks,player_rebounds,Braeden Carrington,4.5,-137,-137.0,2026-11-15T23:58:48+00:00,3.0,30.0,under,4.0,3,3.37,-1.13,under,,0,
+2026-11-15,401920896,Wisconsin Badgers,Coastal Carolina Chanticleers,prizepicks,player_points,Owen Foxwell,17.5,-137,-137.0,2026-11-15T23:58:48+00:00,33.0,32.0,over,14.67,3,10.36,-7.14,under,,0,
 2026-11-15,401925812,La Salle Explorers,Temple Owls,prizepicks,player_assists,Rob Dockery,2.5,-137,-137.0,2026-11-15T16:01:15+00:00,2.0,27.0,under,2.33,3,1.83,-0.67,under,,0,
 2026-11-15,401925812,La Salle Explorers,Temple Owls,prizepicks,player_points,Rob Dockery,12.5,-137,-137.0,2026-11-15T16:01:15+00:00,14.0,27.0,over,8.0,3,9.16,-3.34,under,,0,
 2026-11-15,401926063,Nebraska Cornhuskers,Boise State Broncos,prizepicks,player_points,Boden Kapke,9.5,-137,-137.0,2026-11-15T16:01:15+00:00,13.0,22.0,over,9.33,3,8.5,-1.0,under,,0,
