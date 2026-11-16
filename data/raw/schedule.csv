@@ -1,6 +1,6 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401921087,2026-11-16T23:00Z,2026-11-16,2378,UMBC Retrievers,low,America East,314,Iona Gaels,low,Metro,0,0,STATUS_SCHEDULED
-401916298,2026-11-16T23:00Z,2026-11-16,120,Maryland Terrapins,power6,Big Ten,2016,Alcorn State Braves,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
+401921087,2026-11-16T23:00Z,2026-11-16,2378,UMBC Retrievers,low,America East,314,Iona Gaels,low,Metro,0,0,STATUS_IN_PROGRESS
+401916298,2026-11-16T23:00Z,2026-11-16,120,Maryland Terrapins,power6,Big Ten,2016,Alcorn State Braves,low,Southwestern Athletic,0,1,STATUS_IN_PROGRESS
 401916317,2026-11-16T23:30Z,2026-11-16,194,Ohio State Buckeyes,power6,Big Ten,2504,Prairie View A&M Panthers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401928841,2026-11-17T00:00Z,2026-11-16,2309,Kent State Golden Flashes,mid,Mid-American,2198,Eastern Kentucky Colonels,low,United Athletic,0,1,STATUS_SCHEDULED
 401927352,2026-11-17T00:00Z,2026-11-16,2428,North Carolina Central Eagles,low,Mid-Eastern Athletic,3229,Virginia Lynchburg Dragons,low,,0,0,STATUS_SCHEDULED
