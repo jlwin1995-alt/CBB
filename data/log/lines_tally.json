@@ -1,7 +1,7 @@
 {
  "through": "2026-11-16",
  "graded_rows": 629,
- "pending_rows": 0,
+ "pending_rows": 111,
  "total": {
   "over": 298,
   "under": 314,
@@ -133,7 +133,7 @@
    "nomatch": 0,
    "decided": 9,
    "over_rate": 0.333,
-   "mean_actual_minus_line": -1.0
+   "mean_actual_minus_line": -0.94
   },
   "2026-11-13": {
    "over": 72,
@@ -215,7 +215,7 @@
    "nomatch": 3,
    "decided": 484,
    "over_rate": 0.504,
-   "mean_actual_minus_line": 0.5
+   "mean_actual_minus_line": 0.51
   }
  },
  "model": {
@@ -248,14 +248,14 @@
   },
   "by_edge": {
    "under 10%": {
-    "n": 177,
+    "n": 176,
     "hit": 85,
-    "hit_rate": 0.48
+    "hit_rate": 0.483
    },
    "10-20%": {
-    "n": 152,
+    "n": 153,
     "hit": 77,
-    "hit_rate": 0.507
+    "hit_rate": 0.503
    },
    "20%+": {
     "n": 166,
