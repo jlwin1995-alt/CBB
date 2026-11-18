@@ -1,7 +1,5 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401909753,2026-11-18T17:00Z,2026-11-18,239,Baylor Bears,power6,Big 12,2296,Jackson State Tigers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
-401920513,2026-11-18T19:00Z,2026-11-18,87,Notre Dame Fighting Irish,power6,Atlantic Coast,164,Rutgers Scarlet Knights,power6,Big Ten,1,1,STATUS_SCHEDULED
-401920514,2026-11-18T21:30Z,2026-11-18,57,Florida Gators,power6,Southeastern,248,Houston Cougars,power6,Big 12,1,1,STATUS_SCHEDULED
+401920514,2026-11-18T21:48Z,2026-11-18,57,Florida Gators,power6,Southeastern,248,Houston Cougars,power6,Big 12,1,1,STATUS_IN_PROGRESS
 401922292,2026-11-18T23:30Z,2026-11-18,2427,UNC Asheville Bulldogs,low,Big South,2635,Tennessee Tech Golden Eagles,low,Southern,0,0,STATUS_SCHEDULED
 401922283,2026-11-18T23:30Z,2026-11-18,2908,South Carolina Upstate Spartans,low,Big South,2535,Samford Bulldogs,low,Southern,0,0,STATUS_SCHEDULED
 401920974,2026-11-18T23:30Z,2026-11-18,2737,Winthrop Eagles,low,Big South,236,Chattanooga Mocs,low,Southern,0,0,STATUS_SCHEDULED
