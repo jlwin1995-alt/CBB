@@ -34,7 +34,7 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401911309,2026-11-19T00:00Z,2026-11-18,107,Holy Cross Crusaders,low,Patriot League,225,Brown Bears,low,Ivy League,0,0,STATUS_SCHEDULED
 401911277,2026-11-19T00:00Z,2026-11-18,322,Lafayette Leopards,low,Patriot League,2066,Binghamton Bearcats,low,America East,0,0,STATUS_SCHEDULED
 401921134,2026-11-19T00:30Z,2026-11-18,2641,Texas Tech Red Raiders,power6,Big 12,2443,LSU New Orleans Privateers,low,Southland,0,1,STATUS_SCHEDULED
-401920515,2026-11-19T00:30Z,2026-11-18,-1,TBD,low,,2305,Kansas Jayhawks,power6,Big 12,1,1,STATUS_SCHEDULED
+401920515,2026-11-19T00:30Z,2026-11-18,277,West Virginia Mountaineers,power6,Big 12,2305,Kansas Jayhawks,power6,Big 12,1,1,STATUS_SCHEDULED
 401928829,2026-11-19T00:30Z,2026-11-18,2750,Wright State Raiders,low,Horizon League,556,Malone Pioneers,low,,0,0,STATUS_SCHEDULED
 401925109,2026-11-19T00:30Z,2026-11-18,292,UT Rio Grande Valley Vaqueros,low,Southland,128256,College of Biblical Studies Ambassadors,low,,0,0,STATUS_SCHEDULED
 401920761,2026-11-19T00:30Z,2026-11-18,2057,Belmont Bruins,mid,Missouri Valley,2841,Union Commonwealth (KY) Bulldogs,low,,0,1,STATUS_SCHEDULED
@@ -67,7 +67,7 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401929146,2026-11-19T03:00Z,2026-11-18,21,San Diego State Aztecs,power6,Pac-12,2640,Texas Southern Tigers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401929004,2026-11-19T03:00Z,2026-11-18,62,Hawai'i Rainbow Warriors,mid,Mountain West,265,Washington State Cougars,power6,Pac-12,1,1,STATUS_SCHEDULED
 401921064,2026-11-19T03:00Z,2026-11-18,2539,San Francisco Dons,mid,West Coast,309,Louisiana Ragin' Cajuns,mid,Sun Belt,0,1,STATUS_SCHEDULED
-401920516,2026-11-19T03:00Z,2026-11-18,-1,TBD,low,,2439,UNLV Rebels,mid,Mountain West,1,1,STATUS_SCHEDULED
+401920516,2026-11-19T03:00Z,2026-11-18,2,Auburn Tigers,power6,Southeastern,2439,UNLV Rebels,mid,Mountain West,1,1,STATUS_SCHEDULED
 401911456,2026-11-19T03:00Z,2026-11-18,2440,Nevada Wolf Pack,mid,Mountain West,70,Idaho Vandals,low,Big Sky,0,1,STATUS_SCHEDULED
 401920158,2026-11-19T03:30Z,2026-11-18,26,UCLA Bruins,power6,Big Ten,2239,Cal State Fullerton Titans,mid,Big West,0,1,STATUS_SCHEDULED
 401920517,2026-11-19T19:30Z,2026-11-19,-1,TBD,low,,-2,TBD,low,,1,0,STATUS_SCHEDULED
