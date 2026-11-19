@@ -740,3 +740,26 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-18,401920512,Auburn Tigers,West Virginia Mountaineers,prizepicks,player_points,Tahaad Pettiford,16.0,-137,-137.0,2026-11-18T04:24:28+00:00,21.0,30.0,over,17.67,3,13.69,-2.31,under,16.5,1,-0.5
 2026-11-18,401920512,Auburn Tigers,West Virginia Mountaineers,prizepicks,player_rebounds,Tahaad Pettiford,2.5,-137,-137.0,2026-11-18T04:24:28+00:00,2.0,30.0,under,1.67,3,2.52,0.02,over,,0,
 2026-11-18,401920512,Auburn Tigers,West Virginia Mountaineers,prizepicks,player_threes,Thomas Dowd,1.5,-137,-137.0,2026-11-17T22:31:25+00:00,0.0,23.0,under,2.0,3,1.57,0.07,over,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_points,Finley Bizjack,14.5,-137,-137.0,2026-11-18T22:00:58+00:00,9.0,27.0,under,14.25,4,14.05,-0.45,under,14.5,3,0.0
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_threes,Finley Bizjack,1.5,-137,-137.0,2026-11-18T22:00:58+00:00,0.0,27.0,under,1.75,4,1.87,0.37,over,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_points,Leroy Blyden Jr.,12.5,-137,-137.0,2026-11-18T22:00:58+00:00,13.0,33.0,over,13.0,4,13.7,1.2,over,12.0,2,0.5
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_rebounds,Leroy Blyden Jr.,2.5,-137,-137.0,2026-11-18T22:00:58+00:00,1.0,33.0,under,1.0,4,3.04,0.54,over,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_threes,Leroy Blyden Jr.,1.5,-137,-137.0,2026-11-18T22:00:58+00:00,1.0,33.0,under,1.25,4,1.76,0.26,over,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_assists,Miles Sadler,5.5,-137,-137.0,2026-11-18T22:00:58+00:00,3.0,29.0,under,6.75,4,4.55,-0.95,under,5.5,1,0.0
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_points,Miles Sadler,16.5,-137,-137.0,2026-11-18T22:00:58+00:00,34.0,29.0,over,17.75,4,14.26,-2.24,under,16.5,3,0.0
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_rebounds,Seydou Traore,4.5,-137,-137.0,2026-11-18T22:00:58+00:00,5.0,22.0,over,4.0,4,2.99,-1.51,under,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_rebounds,Taylen Kinney,2.5,-137,-137.0,2026-11-18T22:00:58+00:00,2.0,26.0,under,1.25,4,2.42,-0.08,under,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_points,Tre White,16.5,-137,-137.0,2026-11-18T22:00:58+00:00,21.0,38.0,over,19.0,4,12.2,-4.3,under,16.5,3,0.0
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_rebounds,Tre White,6.5,-137,-137.0,2026-11-18T22:00:58+00:00,6.0,38.0,under,4.0,4,5.03,-1.47,under,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_points,Trey Kaufman-Renn,12.5,-137,-137.0,2026-11-18T22:00:58+00:00,19.0,29.0,over,10.75,4,12.54,0.04,over,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_rebounds,Trey Kaufman-Renn,6.5,-137,-137.0,2026-11-18T22:00:58+00:00,7.0,29.0,over,4.0,4,5.86,-0.64,under,,0,
+2026-11-18,401920515,West Virginia Mountaineers,Kansas Jayhawks,prizepicks,player_points,Tyran Stokes,15.5,-137,-137.0,2026-11-18T22:00:58+00:00,,,nomatch,,0,,,,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_points,Aleksas Bieliauskas,8.5,-137,-137.0,2026-11-18T22:00:58+00:00,8.0,23.0,under,13.0,4,7.5,-1.0,under,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_rebounds,Aleksas Bieliauskas,4.5,-137,-137.0,2026-11-18T22:00:58+00:00,7.0,23.0,over,3.75,4,4.63,0.13,over,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_points,Jakub Necas,7.5,-137,-137.0,2026-11-18T22:00:58+00:00,24.0,27.0,over,9.0,4,8.15,0.65,over,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_points,Juan Fernandez,16.5,-137,-137.0,2026-11-18T22:00:58+00:00,15.0,23.0,under,15.25,4,10.82,-5.68,under,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_assists,Kory Mincy,2.5,-137,-137.0,2026-11-18T22:00:58+00:00,3.0,32.0,over,2.75,4,3.03,0.53,over,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_points,Kory Mincy,10.5,-137,-137.0,2026-11-18T22:00:58+00:00,6.0,32.0,under,8.75,4,13.07,2.57,over,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_assists,Marcus Johnson,3.5,-137,-137.0,2026-11-18T22:00:58+00:00,0.0,22.0,under,3.67,3,2.3,-1.2,under,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_points,Marcus Johnson,14.5,-137,-137.0,2026-11-18T22:00:58+00:00,10.0,22.0,under,15.33,3,10.44,-4.06,under,,0,
+2026-11-18,401921141,South Carolina Gamecocks,Elon Phoenix,prizepicks,player_rebounds,Marcus Johnson,2.5,-137,-137.0,2026-11-18T22:00:58+00:00,3.0,22.0,over,2.0,3,2.56,0.06,over,,0,
