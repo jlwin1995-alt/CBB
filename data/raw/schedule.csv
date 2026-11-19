@@ -1,6 +1,6 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401920519,2026-11-19T22:00Z,2026-11-19,2,Auburn Tigers,power6,Southeastern,87,Notre Dame Fighting Irish,power6,Atlantic Coast,1,1,STATUS_IN_PROGRESS
-401918959,2026-11-19T23:00Z,2026-11-19,93,Murray State Racers,mid,Missouri Valley,152,NC State Wolfpack,power6,Atlantic Coast,1,1,STATUS_SCHEDULED
+401920519,2026-11-19T22:00Z,2026-11-19,2,Auburn Tigers,power6,Southeastern,87,Notre Dame Fighting Irish,power6,Atlantic Coast,1,1,STATUS_HALFTIME
+401918959,2026-11-19T23:00Z,2026-11-19,152,NC State Wolfpack,power6,Atlantic Coast,93,Murray State Racers,mid,Missouri Valley,1,1,STATUS_SCHEDULED
 401928826,2026-11-20T00:00Z,2026-11-19,2649,Toledo Rockets,mid,Mid-American,2523,Robert Morris Colonials,low,Horizon League,0,1,STATUS_SCHEDULED
 401928812,2026-11-20T00:00Z,2026-11-19,94,Northern Kentucky Norse,low,Horizon League,2061,Berea Mountaineers,low,,0,0,STATUS_SCHEDULED
 401926144,2026-11-20T00:00Z,2026-11-19,2565,SIU Edwardsville Cougars,low,Ohio Valley,75,North Park Vikings,low,,0,0,STATUS_SCHEDULED
