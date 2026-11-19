@@ -1289,3 +1289,84 @@ pulled_at,odds_event,espn_event,commence,home,away,book,market,player,point,over
 2026-11-18T22:00:58+00:00,b86b3fdea018ce4da96e2f720e3a5842,401920516,2026-11-19T03:00:00Z,Auburn Tigers,UNLV Rebels,prizepicks,player_rebounds,Kevin Overton,2.5,-137,-137,2026-11-18T22:00:27Z
 2026-11-18T22:00:58+00:00,b86b3fdea018ce4da96e2f720e3a5842,401920516,2026-11-19T03:00:00Z,Auburn Tigers,UNLV Rebels,prizepicks,player_threes,Kevin Overton,1.5,-137,-137,2026-11-18T22:00:27Z
 2026-11-19T03:31:20+00:00,b86b3fdea018ce4da96e2f720e3a5842,401920516,2026-11-19T03:35:00Z,Auburn Tigers,UNLV Rebels,fanduel,player_rebounds,Tyrin Jones,6.5,116,-152,2026-11-19T03:29:24Z
+2026-11-19T22:10:46+00:00,d6ff4d964a24be574d7438aa33061cd7,401916318,2026-11-20T00:00:00Z,Ohio State Buckeyes,UMBC Retrievers,prizepicks,player_assists,Amare Bynum,1.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,d6ff4d964a24be574d7438aa33061cd7,401916318,2026-11-20T00:00:00Z,Ohio State Buckeyes,UMBC Retrievers,prizepicks,player_points,Amare Bynum,13.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,d6ff4d964a24be574d7438aa33061cd7,401916318,2026-11-20T00:00:00Z,Ohio State Buckeyes,UMBC Retrievers,prizepicks,player_rebounds,Amare Bynum,5.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_assists,Brock Harding,7.5,110,-145,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_points,Mackenzie Mgbako,11.5,-108,-120,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_points,Brock Harding,11.5,-104,-125,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_points,PJ Haggerty,20.5,-120,-108,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_points,Jordan Pope,12.5,-125,-104,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_points,Micah Robinson,14.5,-125,-104,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_points,Xavier Edmonds,16.5,100,-130,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,fanduel,player_rebounds,Xavier Edmonds,10.5,105,-140,2026-11-19T22:09:53Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_assists,Brock Harding,7.5,120,-165,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_points,Brock Harding,11.5,-112,-120,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_points,Xavier Edmonds,16.5,-108,-124,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_points,Micah Robinson,14.5,-122,-109,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_points,Jordan Pope,12.5,-121,-110,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_points,PJ Haggerty,20.5,-120,-112,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_rebounds,Xavier Edmonds,10.5,108,-143,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_threes,Jordan Pope,2.5,136,,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_threes,Brock Harding,1.5,107,,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,williamhill_us,player_threes,Micah Robinson,1.5,-134,,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_assists,Brock Harding,7.5,-105,-140,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_points,Brock Harding,11.5,-110,-120,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_points,PJ Haggerty,21.5,110,-150,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_points,Mackenzie Mgbako,10.5,-105,-125,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_points,Jordan Pope,12.5,-120,-110,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_points,Xavier Edmonds,15.5,-125,-105,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_points,Micah Robinson,14.5,-105,-130,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,betmgm,player_rebounds,Xavier Edmonds,10.5,100,-135,2026-11-19T22:10:40Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_assists,Xavier Edmonds,1.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,PJ Haggerty,20.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,Xavier Edmonds,16.0,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,Micah Robinson,14.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,Jordan Pope,12.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,Brock Harding,11.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,Mackenzie Mgbako,11.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_points,Tanner Toolson,9.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_rebounds,Xavier Edmonds,10.0,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_rebounds,Micah Robinson,5.0,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_rebounds,PJ Haggerty,4.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_rebounds,Tanner Toolson,4.0,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,a21492045a6fa8b2a6e9d8b136534ac4,401919050,2026-11-20T01:00:00Z,TCU Horned Frogs,Texas A&M Aggies,prizepicks,player_threes,Micah Robinson,1.5,-137,-137,2026-11-19T22:10:10Z
+2026-11-19T22:10:46+00:00,112a3e561a6b673b4ca74bb0e0605c2c,401930884,2026-11-20T02:00:00Z,Oregon Ducks,Oregon St Beavers,prizepicks,player_assists,Taylor Bol Bowen,1.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,112a3e561a6b673b4ca74bb0e0605c2c,401930884,2026-11-20T02:00:00Z,Oregon Ducks,Oregon St Beavers,prizepicks,player_points,Fred Payne,16.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,112a3e561a6b673b4ca74bb0e0605c2c,401930884,2026-11-20T02:00:00Z,Oregon Ducks,Oregon St Beavers,prizepicks,player_points,Malique Ewin,12.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,112a3e561a6b673b4ca74bb0e0605c2c,401930884,2026-11-20T02:00:00Z,Oregon Ducks,Oregon St Beavers,prizepicks,player_points,Andrew Meadow,9.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,112a3e561a6b673b4ca74bb0e0605c2c,401930884,2026-11-20T02:00:00Z,Oregon Ducks,Oregon St Beavers,prizepicks,player_points,Taylor Bol Bowen,8.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,112a3e561a6b673b4ca74bb0e0605c2c,401930884,2026-11-20T02:00:00Z,Oregon Ducks,Oregon St Beavers,prizepicks,player_rebounds,Andrew Meadow,2.5,-137,-137,2026-11-19T22:09:26Z
+2026-11-19T22:10:46+00:00,42a35684e7ff6f13af5834f9a5004df6,401917536,2026-11-20T03:30:00Z,Santa Clara Broncos,VCU Rams,prizepicks,player_points,Lazar Djokovic,13.5,-137,-137,2026-11-19T22:10:52Z
+2026-11-19T22:10:46+00:00,42a35684e7ff6f13af5834f9a5004df6,401917536,2026-11-20T03:30:00Z,Santa Clara Broncos,VCU Rams,prizepicks,player_points,Nyk Lewis,12.5,-137,-137,2026-11-19T22:10:52Z
+2026-11-19T22:10:46+00:00,42a35684e7ff6f13af5834f9a5004df6,401917536,2026-11-20T03:30:00Z,Santa Clara Broncos,VCU Rams,prizepicks,player_points,Brandon Jennings,7.5,-137,-137,2026-11-19T22:10:52Z
+2026-11-19T22:10:46+00:00,42a35684e7ff6f13af5834f9a5004df6,401917536,2026-11-20T03:30:00Z,Santa Clara Broncos,VCU Rams,prizepicks,player_rebounds,Lazar Djokovic,5.5,-137,-137,2026-11-19T22:10:52Z
+2026-11-19T22:10:46+00:00,42a35684e7ff6f13af5834f9a5004df6,401917536,2026-11-20T03:30:00Z,Santa Clara Broncos,VCU Rams,prizepicks,player_rebounds,Brandon Jennings,3.5,-137,-137,2026-11-19T22:10:52Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_assists,Dedan Thomas Jr.,4.5,-140,105,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_points,Tre White,18.5,100,-130,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_points,Leroy Blyden Jr.,12.5,-108,-120,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_points,Mercy Miller,9.5,-125,-104,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_points,Dedan Thomas Jr.,17.5,-110,-118,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_points,Joseph Tugler,9.5,-114,-114,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,fanduel,player_rebounds,Joseph Tugler,6.5,-135,100,2026-11-19T22:09:51Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,williamhill_us,player_assists,Dedan Thomas Jr.,4.5,-148,111,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,williamhill_us,player_points,Tre White,18.5,-120,-112,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,williamhill_us,player_points,Joseph Tugler,9.5,-121,-110,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,williamhill_us,player_rebounds,Joseph Tugler,7.5,109,-145,2026-11-19T22:07:34Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,betmgm,player_assists,Dedan Thomas Jr.,4.5,-155,105,2026-11-19T22:09:43Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,betmgm,player_points,Mercy Miller,9.5,-110,-120,2026-11-19T22:09:43Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,betmgm,player_points,Dedan Thomas Jr.,17.5,-120,-110,2026-11-19T22:09:43Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,betmgm,player_points,Joseph Tugler,9.5,-105,-125,2026-11-19T22:09:43Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,betmgm,player_rebounds,Joseph Tugler,6.5,-135,100,2026-11-19T22:09:43Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Tre White,18.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Dedan Thomas Jr.,17.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Trey Kaufman-Renn,14.0,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Leroy Blyden Jr.,12.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Chase McCarty,10.0,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Delrecco Gillespie,9.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Joseph Tugler,9.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_points,Mercy Miller,9.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_rebounds,Joseph Tugler,7.0,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_rebounds,Tre White,6.0,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_rebounds,Trey Kaufman-Renn,5.5,-137,-137,2026-11-19T22:10:54Z
+2026-11-19T22:10:46+00:00,6d51497e3276256e5dd07220b624c37f,401920518,2026-11-20T04:00:00Z,Kansas Jayhawks,Houston Cougars,prizepicks,player_rebounds,Mercy Miller,3.5,-137,-137,2026-11-19T22:10:54Z
