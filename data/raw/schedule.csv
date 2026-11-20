@@ -1,20 +1,19 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401920380,2026-11-20T20:00Z,2026-11-20,259,Virginia Tech Hokies,power6,Atlantic Coast,77,Northwestern Wildcats,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401919826,2026-11-20T20:00Z,2026-11-20,2710,Western Illinois Leathernecks,low,Ohio Valley,399,UAlbany Great Danes,low,America East,1,0,STATUS_IN_PROGRESS
 401916123,2026-11-20T20:00Z,2026-11-20,2617,Stephen F. Austin Lumberjacks,low,Southland,282,Indiana State Sycamores,mid,Missouri Valley,1,1,STATUS_IN_PROGRESS
-401922022,2026-11-20T21:00Z,2026-11-20,304,Idaho State Bengals,low,Big Sky,2571,South Dakota State Jackrabbits,low,Summit League,0,0,STATUS_IN_PROGRESS
+401922022,2026-11-20T21:00Z,2026-11-20,304,Idaho State Bengals,low,Big Sky,2571,South Dakota State Jackrabbits,low,Summit League,0,0,STATUS_HALFTIME
 401920066,2026-11-20T21:30Z,2026-11-20,2335,Liberty Flames,mid,Conference USA,227,Rhode Island Rams,mid,Atlantic 10,1,1,STATUS_IN_PROGRESS
 401921723,2026-11-20T22:00Z,2026-11-20,2390,Miami Hurricanes,power6,Atlantic Coast,2363,Manhattan Jaspers,low,Metro,0,1,STATUS_SCHEDULED
 401921419,2026-11-20T22:30Z,2026-11-20,254,Utah Utes,power6,Big 12,2168,Dayton Flyers,mid,Atlantic 10,1,1,STATUS_SCHEDULED
 401919827,2026-11-20T22:30Z,2026-11-20,2099,Canisius Golden Griffins,low,Metro,2385,Mercyhurst Lakers,low,Northeast,0,0,STATUS_SCHEDULED
 401916124,2026-11-20T22:30Z,2026-11-20,79,Southern Illinois Salukis,mid,Missouri Valley,2630,UT Martin Skyhawks,low,Ohio Valley,1,1,STATUS_SCHEDULED
 401929460,2026-11-20T23:00Z,2026-11-20,2803,Bryant Bulldogs,low,America East,402,Worcester State Lancers,low,,0,0,STATUS_SCHEDULED
-401929353,2026-11-20T23:00Z,2026-11-20,2916,Incarnate Word Cardinals,low,Southland,3079,Central Baptist Mustangs,low,,0,0,STATUS_SCHEDULED
 401928834,2026-11-20T23:00Z,2026-11-20,2006,Akron Zips,mid,Mid-American,2706,WVU Tech Golden Bears,low,,0,1,STATUS_SCHEDULED
 401920298,2026-11-20T23:00Z,2026-11-20,2463,Cal State Northridge Matadors,mid,Big West,48,Delaware Blue Hens,mid,Conference USA,0,1,STATUS_SCHEDULED
 401925828,2026-11-20T23:30Z,2026-11-20,2026,App State Mountaineers,mid,Sun Belt,249,North Texas Mean Green,mid,American,0,1,STATUS_SCHEDULED
 401920427,2026-11-21T00:00Z,2026-11-20,258,Virginia Cavaliers,power6,Atlantic Coast,2352,Loyola Maryland Greyhounds,low,Patriot League,0,1,STATUS_SCHEDULED
 401906852,2026-11-21T00:00Z,2026-11-20,2633,Tennessee Volunteers,power6,Southeastern,324,Coastal Carolina Chanticleers,mid,Sun Belt,0,1,STATUS_SCHEDULED
+401929353,2026-11-21T00:00Z,2026-11-20,2916,Incarnate Word Cardinals,low,Southland,3079,Central Baptist Mustangs,low,,0,0,STATUS_SCHEDULED
 401927396,2026-11-21T00:00Z,2026-11-20,98,Western Kentucky Hilltoppers,mid,Conference USA,257,Richmond Spiders,mid,Atlantic 10,1,1,STATUS_SCHEDULED
 401926782,2026-11-21T00:00Z,2026-11-20,55,Jacksonville State Gamecocks,mid,Conference USA,2247,Georgia State Panthers,mid,Sun Belt,0,1,STATUS_SCHEDULED
 401926134,2026-11-21T00:00Z,2026-11-20,2509,Purdue Boilermakers,power6,Big Ten,2473,Oakland Golden Grizzlies,low,Horizon League,0,1,STATUS_SCHEDULED
