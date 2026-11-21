@@ -53,3 +53,12 @@ Availability has no injury feed: infer it from the lines (a player with a line i
 * `pipeline/recruits.py`: recruit-rank priors learned from earlier classes only (walk-forward)
 * `pipeline/config.py`: scope, credit cap, break-even
 * `research/`: backtests and scoring scripts (`backtest.py`, `backtest2.py`, `score*.py`); outputs go to `research/out/` (not committed)
+
+### Matchups tab, unit strength and consistency tags (display only)
+
+`pipeline/teams_site.py` (called from `build_site.py`, soft-fail) writes `site/data/teams.json` and `site/data/consistency.json`. The **Matchups** tab compares two teams per game: stats scored and allowed
+(including offensive / defensive rebounds, 3-point attempts and fouls, which the NBA site does not have), unit strength (fantasy points per 40 minutes from each team's guards / forwards / centers, ranked in
+thirds among Division I teams), what each defence has allowed per minute to each position, and the opponent mix so far. **There is no schedule adjustment**: with about five games a team, who it has played
+dominates. The allowed-by-position cells are mostly noise this early (reliability under 0.3). The **Board** gets a **Consistency** column: over a player's last 20 games of 12+ minutes (this and last season,
+8 needed) his spread in fantasy points against comparable players, Steady / Average / Volatile (bottom / middle / top third), with Spiky / Dud-prone / Boom-bust for Volatile players; players with fewer
+games show n/a. Spread repeats only modestly (odd vs even games r 0.42, earlier vs later 0.36). Nothing here feeds the projections.
