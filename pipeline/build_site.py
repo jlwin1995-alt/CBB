@@ -78,6 +78,9 @@ def board(now):
         t0 = pd.Timestamp(r.commence)
         if t0 < now - pd.Timedelta(hours=4): continue
         g = games.setdefault(r.espn_event, {"event": r.espn_event, "start_utc": r.commence, "home": r.home, "away": r.away, "spread_home": None, "total": None, "lines": []})
+        if "home_id" not in g:
+            try: g["home_id"], g["away_id"] = int(sm.loc[r.espn_event, "home_id"]), int(sm.loc[r.espn_event, "away_id"])
+            except Exception: g["home_id"] = g["away_id"] = None
         pr = pidx.get((r.espn_event, GL.nz(r.player)))
         st = GL.MARKET_STAT[r.market]
         pv = float(getattr(pr, st + "_p")) if pr is not None else None
@@ -89,7 +92,7 @@ def board(now):
         g["lines"].append({"player": r.player, "team": team, "market": MARKET_LABEL.get(r.market, r.market), "pp": float(r.point), "cons": cs, "n_books": int(r.n_books) if r.n_books == r.n_books else 0,
                            "book_lines": r.book_lines if isinstance(r.book_lines, str) else "", "gap": num(float(r.point) - cs) if cs is not None else None,
                            "proj": num(pv), "edge": num(pv - float(r.point)) if pv is not None else None, "min": num(pr.min_p) if pr is not None else None,
-                           "new": bool(pr.newcomer) if pr is not None else None, "pulled": r.pulled_at})
+                           "new": bool(pr.newcomer) if pr is not None else None, "pid": str(pr.pid) if pr is not None else None, "pulled": r.pulled_at})
     out = sorted(games.values(), key=lambda g: g["start_utc"])
     for g in out: g["lines"].sort(key=lambda l: (l["team"] or "", l["player"], l["market"]))
     return {"asof": now.isoformat(timespec="seconds"), "games": out}
@@ -114,6 +117,10 @@ def main():
     b = board(now); s = scorecard(now)
     json.dump(b, open(os.path.join(OUT, "board.json"), "w"), separators=(",", ":"), allow_nan=False)
     json.dump(s, open(os.path.join(OUT, "scorecard.json"), "w"), separators=(",", ":"), allow_nan=False)
+    try:                                           # team comparison, unit strength, allowed-by-position and consistency tags (display only; Matchups tab and Board)
+        import teams_site; teams_site.main()
+    except Exception as e:
+        print(f"teams_site skipped: {e}")
     n = sum(len(g["lines"]) for g in b["games"])
     print(f"site data: board {len(b['games'])} games / {n} PrizePicks lines; scorecard {len(s['recent'])} recent graded lines")
 

@@ -9,7 +9,7 @@ function wilson(k, n) { if (!n) return [0, 1]; const z = 1.96, p = k / n, d = 1 
 const rate = o => !o || !o.n ? "–" : `${pct(o.hit / o.n)} <span class="mut">(${o.hit}/${o.n}, ${pct(wilson(o.hit, o.n)[0])}–${pct(wilson(o.hit, o.n)[1])})</span>`;
 const D = {};
 async function load() {
-  for (const k of ["board", "scorecard"]) { const r = await fetch(`data/${k}.json?v=${Date.now()}`); D[k] = r.ok ? await r.json() : null; }
+  for (const k of ["board", "scorecard", "teams", "consistency"]) { const r = await fetch(`data/${k}.json?v=${Date.now()}`); D[k] = r.ok ? await r.json() : null; }
   const a = D.scorecard && D.scorecard.asof; if (a) $("#asof").textContent = "updated " + fmtT(a);
   const m = D.scorecard && D.scorecard.tally && D.scorecard.tally.model && D.scorecard.tally.model.all;
   const b = $("#banner"); b.hidden = false;
@@ -22,6 +22,26 @@ function sortRows(rows) {
   const {k, asc} = S.sort, v = r => k === "edge" ? (r.edge == null ? null : Math.abs(r.edge) / Math.max(r.pp, .5)) : r[k];
   return rows.slice().sort((a, b) => { const x = v(a), y = v(b); if (x == null) return 1; if (y == null) return -1; return (typeof x === "string" ? x.localeCompare(y) : x - y) * (asc ? 1 : -1); });
 }
+
+// ---------- player consistency: spikes or steady? (display only) ------------------------------------------------------------------
+const esc = t => String(t ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const CONS_CLASS = {Steady: "good", Average: "mut", Volatile: "hot"};
+function consBars(c, w = 62, h = 18) {
+  const a = c.last || []; if (a.length < 3) return "";
+  const mx = Math.max(...a, c.fp.median * 1.1), bw = w / a.length, my = (h - c.fp.median / mx * h).toFixed(1);
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" class="cbars">${a.map((v, i) => { const bh = Math.max(1, v / mx * h), hi = v >= c.fp.median * 1.3, lo = v <= c.fp.median * 0.7;
+    return `<rect x="${(i * bw + 0.5).toFixed(1)}" y="${(h - bh).toFixed(1)}" width="${(bw - 1).toFixed(1)}" height="${bh.toFixed(1)}" fill="${hi ? "var(--good)" : lo ? "var(--bad)" : "var(--mut)"}"/>`; }).join("")}<line x1="0" x2="${w}" y1="${my}" y2="${my}" stroke="var(--fg)" stroke-width=".6" stroke-dasharray="2 2"/></svg>`;
+}
+function consTip(c) {
+  const f = c.fp, rel = D.consistency.rel || {}, t = k => c[k] && c[k].tag ? `${k.toUpperCase()}: ${c[k].tag}${c[k].shape ? " (" + c[k].shape + ")" : ""}` : "";
+  return esc(`Last ${c.n} games of ${D.consistency.min_minutes}+ min (this and last season). FP median ${n1(f.median)}, floor ${n1(f.floor)}, ceiling ${n1(f.ceil)}; CV ${f.cv} (${f.adj} x comparable players). Spikes (1.3x his median or more) in ${Math.round((f.spike || 0) * 100)}% of games, duds (0.7x or less) in ${Math.round((f.dud || 0) * 100)}%. ${["pts", "reb", "ast"].map(t).filter(Boolean).join("; ")}. Bars: his last 10 FP games (green = spike, red = dud), dashed = median. The tag describes recent games; it is not a forecast (spread repeats only modestly: split-half r ${rel.odd_even ?? "n/a"} odd vs even games, ${rel.earlier_later ?? "n/a"} earlier vs later).`);
+}
+function consCell(pid) {
+  const c = D.consistency && D.consistency.players && pid ? D.consistency.players[pid] : null;
+  if (!c || !c.fp.tag) return `<span class="mut" title="Needs ${D.consistency ? D.consistency.min_games : 8}+ games of ${D.consistency ? D.consistency.min_minutes : 12}+ minutes across this and last season">n/a</span>`;
+  return `<span title="${consTip(c)}"><span class="pill ${CONS_CLASS[c.fp.tag]}">${c.fp.tag}${c.fp.shape ? " · " + c.fp.shape : ""}</span> ${consBars(c)}</span>`;
+}
+
 function board() {
   const B = D.board; if (!B || !B.games.length) { $("#view").innerHTML = "<h2>Board</h2><p class='sub'>No upcoming PrizePicks lines yet. Lines appear a few hours before tip for marquee games.</p>"; return; }
   const markets = [...new Set(B.games.flatMap(g => g.lines.map(l => l.market)))];
@@ -32,7 +52,7 @@ function board() {
   <label><input type="checkbox" id="fc" ${S.cons ? "checked" : ""}> only lines with a consensus</label>
   ${bigGap() ? `<label><input type="checkbox" id="fb" ${S.hideBig ? "checked" : ""}> hide big gaps (${Math.round(bigGap().threshold * 100)}%+)</label>` : ""}
   <label>Player <input id="fq" value="${S.q}" placeholder="search"></label></div>`;
-  const cols = [["player", "Player", 1], ["team", "Team", 1], ["market", "Market", 1], ["pp", "PrizePicks"], ["cons", "Consensus"], ["gap", "PP − cons"], ["proj", "Proj"], ["edge", "Edge"], ["lean", "Lean"], ["min", "Min"]];
+  const cols = [["player", "Player", 1], ["team", "Team", 1], ["market", "Market", 1], ["pp", "PrizePicks"], ["cons", "Consensus"], ["gap", "PP − cons"], ["proj", "Proj"], ["edge", "Edge"], ["lean", "Lean"], ["min", "Min"], ["consist", "Consistency", 1]];
   let shown = 0;
   for (const g of B.games) {
     let rows = g.lines.filter(l => (!S.market || l.market === S.market) && (!S.cons || l.cons != null) && (!S.q || l.player.toLowerCase().includes(S.q.toLowerCase()))
@@ -45,7 +65,7 @@ function board() {
       const rel = l.edge == null ? null : l.edge / Math.max(l.pp, .5), lean = l.edge == null ? "–" : (l.edge > 0 ? "Over" : "Under");
       h += `<tr><td class="l">${l.player}</td><td class="l mut">${(l.team || "").replace(/ [A-Z][\w.'’&-]*( [A-Z][\w.'’&-]*)?$/, "")}</td><td class="l">${l.market}</td><td>${n1(l.pp)}</td>
       <td ${l.book_lines ? `title="${l.book_lines}"` : ""}>${l.cons == null ? "–" : n1(l.cons) + ` <span class="mut">×${l.n_books}</span>`}</td><td class="${l.gap == null ? "mut" : ""}">${signed(l.gap)}</td>
-      <td>${n1(l.proj)}</td><td class="${rel == null ? "mut" : rel > 0 ? "good" : "bad"}">${signed(l.edge)}${rel == null ? "" : ` <span class="mut">${Math.round(rel * 100)}%</span>`}${rel != null && bigGap() && Math.abs(rel) >= bigGap().threshold ? ` <span class="flag" title="${bigTxt(bigGap()).replace(/"/g, "'")}">big gap</span>` : ""}</td><td>${lean}</td><td class="mut">${l.min == null ? "–" : Math.round(l.min)}</td></tr>`;
+      <td>${n1(l.proj)}</td><td class="${rel == null ? "mut" : rel > 0 ? "good" : "bad"}">${signed(l.edge)}${rel == null ? "" : ` <span class="mut">${Math.round(rel * 100)}%</span>`}${rel != null && bigGap() && Math.abs(rel) >= bigGap().threshold ? ` <span class="flag" title="${bigTxt(bigGap()).replace(/"/g, "'")}">big gap</span>` : ""}</td><td>${lean}</td><td class="mut">${l.min == null ? "–" : Math.round(l.min)}</td><td class="l">${consCell(l.pid)}</td></tr>`;
     }
     h += "</tbody></table></div>";
   }
@@ -91,10 +111,80 @@ function scorecard() {
   <td class="${!r.pick || !["over", "under"].includes(r.result) ? "mut" : r.pick === r.result ? "good" : "bad"}">${r.pick || "–"}</td></tr>`).join("")}</tbody></table></div>`;
   $("#view").innerHTML = h;
 }
+
+// ---------- Matchups: team comparison, unit strength, allowed by position (display only) ---------------------------------------------
+const MS = {tca: "", tcb: "", tcw: "season", tcg: ""};
+function matchups() {
+  const T = D.teams;
+  if (!T || !T.teams || !T.teams.length) { $("#view").innerHTML = "<h2>Matchups</h2><p class='sub'>No team data yet.</p>"; return; }
+  const tm = Object.fromEntries(T.teams.map(r => [r.id, r])), list = [...T.teams].sort((a, b) => a.team.localeCompare(b.team));
+  const games = ((D.board && D.board.games) || []).filter(g => g.home_id != null && tm[g.home_id] && tm[g.away_id]);
+  if (!MS.tca || !tm[MS.tca] || !MS.tcb || !tm[MS.tcb]) {
+    if (games[0]) { MS.tcg = games[0].event; MS.tca = games[0].away_id; MS.tcb = games[0].home_id; } else { MS.tca = list[0].id; MS.tcb = list[1].id; }
+  }
+  const A = tm[MS.tca], B = tm[MS.tcb], w = MS.tcw, a = A[w], b = B[w], lg = T.league[w];
+  const rk = (side, r, k) => { const v = r[w]["rk_" + side] && r[w]["rk_" + side][k], n = T.teams.length; return v ? `<span class="rkn ${v <= n / 6 ? "good" : v > n - n / 6 ? "bad" : "mut"}">${v}</span>` : ""; };
+  const f1 = x => x == null ? "–" : (Math.round(x * 10) / 10).toFixed(1);
+  const ROWS = [
+    {l: "Points", k: "pts", v: x => x.pts, t: x => f1(x.pts)},
+    {l: "FG", k: "fg_pct", v: x => x.fg_pct, t: x => `${f1(x.fgm)}/${f1(x.fga)} <span class="mut">${f1(x.fg_pct)}%</span>`},
+    {l: "3PT", k: "fg3_pct", v: x => x.fg3_pct, t: x => `${f1(x.fg3m)}/${f1(x.fg3a)} <span class="mut">${f1(x.fg3_pct)}%</span>`},
+    {l: "FT", k: "ft_pct", v: x => x.ft_pct, t: x => `${f1(x.ftm)}/${f1(x.fta)} <span class="mut">${f1(x.ft_pct)}%</span>`},
+    {l: "Rebounds", k: "reb", v: x => x.reb, t: x => f1(x.reb)}, {l: "Offensive reb", k: "oreb", v: x => x.oreb, t: x => f1(x.oreb)}, {l: "Defensive reb", k: "dreb", v: x => x.dreb, t: x => f1(x.dreb)},
+    {l: "Assists", k: "ast", v: x => x.ast, t: x => f1(x.ast)}, {l: "Steals", k: "stl", v: x => x.stl, t: x => f1(x.stl)}, {l: "Blocks", k: "blk", v: x => x.blk, t: x => f1(x.blk)},
+    {l: "Turnovers", k: "tov", v: x => x.tov, t: x => f1(x.tov)}, {l: "Personal fouls", k: "pf", v: x => x.pf, t: x => f1(x.pf)},
+    {l: "Points per 100 poss", k: "ortg", v: x => x.ortg, t: x => f1(x.ortg)}];
+  const sec = (title, side, note) => `<h3>${title}</h3><p class="sub">${note}</p><div class="cmp">${ROWS.map(r => {
+    const x = a[side], y = b[side], vx = r.v(x), vy = r.v(y), sh = vx != null && vy != null && vx + vy > 0 ? 100 * vx / (vx + vy) : 50;
+    return `<div class="cr"><div class="cv l">${rk(side === "for" ? "for" : "al", A, r.k)}${r.t(x)}</div><div class="cl">${r.l}</div><div class="cv r">${r.t(y)}${rk(side === "for" ? "for" : "al", B, r.k)}</div><div class="cb"><i style="width:${sh}%"></i></div></div>`; }).join("")}</div>`;
+  const tblh = (cols, rows) => `<div class="tw"><table><thead><tr>${cols.map(([k, t, l]) => `<th class="${l ? "l" : ""}">${t}</th>`).join("")}</tr></thead><tbody>${rows.map(r => `<tr>${cols.map(([k, t, l]) => `<td class="${l ? "l" : ""}">${r[k]}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  const meet = (X, Y, label) => {
+    const rows = [["Points", "pts"], ["FG%", "fg_pct"], ["3PM", "fg3m"], ["FTA", "fta"], ["Rebounds", "reb"], ["Assists", "ast"], ["Turnovers", "tov"], ["Pts / 100 poss", "ortg"]];
+    const data = rows.map(([n, k]) => { const o = X[w].for[k], d = Y[w].allowed[k], l = lg.for[k], hi = k !== "tov", up = (o - l) * (hi ? 1 : -1) > 0, dn = (d - l) * (hi ? 1 : -1) > 0;
+      return {s: n, o: f1(o), d: f1(d), lg: f1(l), e: up && dn ? `<span class="good">both help</span>` : !up && !dn ? `<span class="bad">both hurt</span>` : `<span class="mut">mixed</span>`}; });
+    return tblh([["s", esc(label), 1], ["o", `${esc(X.team.split(" ").slice(0, -1).join(" "))} scored`], ["d", `${esc(Y.team.split(" ").slice(0, -1).join(" "))} allowed`], ["lg", "League"], ["e", "Both above/below league"]], data);
+  };
+  // unit strength
+  const UN = {G: "Guards", F: "Forwards", C: "Centers"}, tierCls = t => t === "Top third" ? "good" : t === "Bottom third" ? "bad" : "mut";
+  const uside = (U, pos, right) => { const u = U && U[w] && U[w][pos]; if (!u) return `<div class="cv ${right ? "r" : "l"} mut">no minutes yet</div>`;
+    const pct_ = 100 * (u.of - u.rank + 1) / u.of, chip = `<span class="pill ${tierCls(u.tier)}">${u.tier}</span>`, txt = `<b>${f1(u.fp40)}</b> <span class="mut">FP/40 · #${u.rank}</span>`;
+    return `<div class="cv ${right ? "r" : "l"}" title="${f1(u.fp40)} fantasy points per 40 minutes (${f1(u.pts40)} pts, ${f1(u.reb40)} reb, ${f1(u.ast40)} ast), rank ${u.rank} of ${u.of} teams; ${f1(u.mpg)} of the team's 200 minutes a game">${right ? chip + " " + txt : txt + " " + chip}<div class="meter ${right ? "r" : ""}"><i class="${tierCls(u.tier)}" style="width:${pct_.toFixed(0)}%"></i></div></div>`; };
+  const unitSec = () => `<h3>Unit strength</h3><p class="sub">Fantasy points per 40 minutes produced by each team's guards, forwards and centers (PrizePicks scoring), ranked among all Division I teams with ${T.min_games}+ games: <span class="good">top third</span>, middle, <span class="bad">bottom third</span>. Units seen for few minutes are pulled toward the league average before ranking. It describes the players, not who is available tonight. Display only.</p>
+    <div class="cmp">${["G", "F", "C"].map(pos => `<div class="cr">${uside(A.units, pos, false)}<div class="cl">${UN[pos]}</div>${uside(B.units, pos, true)}</div>`).join("")}</div>`;
+  // allowed by position
+  const rel = T.vspos_rel || {}, PN = {G: "guards", F: "forwards", C: "centers"}, VS = ["pts", "reb", "ast", "fg3m", "stl", "blk", "tov"], LB = {pts: "PTS", reb: "REB", ast: "AST", fg3m: "3PM", stl: "STL", blk: "BLK", tov: "TOV"};
+  const vrank = {};
+  for (const pos of ["G", "F", "C"]) for (const st of VS) { const k = pos + "_" + st; T.teams.filter(r => r.vspos && r.vspos[k] != null).sort((x, y) => y.vspos[k] - x.vspos[k]).forEach((r, i, arr) => { (vrank[r.id] = vrank[r.id] || {})[k] = {rank: i + 1, of: arr.length}; }); }
+  const vpos = team => {
+    const nm = team.team.split(" ").slice(0, -1).join(" "), cells = ["G", "F", "C"], data = VS.map(st => { const row = {s: LB[st]};
+      for (const pos of cells) { const k = pos + "_" + st, v = team.vspos[k], r_ = vrank[team.id] && vrank[team.id][k], r2 = rel[k] == null ? 0 : rel[k], noisy = r2 < 0.2;
+        row[pos] = v == null ? "" : `<span class="${noisy ? "mut" : v > 1 ? "good" : v < -1 ? "bad" : "mut"}" title="Reliability (odd vs even games, across teams) ${r2.toFixed(2)}${noisy ? ": mostly noise" : ""}">${v > 0 ? "+" : ""}${f1(v)}%</span> <span class="rkn mut">${r_ ? r_.rank : ""}</span>`; }
+      return row; });
+    return `<div>${tblh([["s", `${esc(nm)} allows to`, 1], ["G", "Guards"], ["F", "Forwards"], ["C", "Centers"]], data)}</div>`;
+  };
+  const gsel = games.length ? `<label>Game <select id="mg"><option value="" ${MS.tcg ? "" : "selected"}>custom</option>${games.map(g => `<option value="${g.event}" ${g.event === MS.tcg ? "selected" : ""}>${esc(g.away)} @ ${esc(g.home)}</option>`).join("")}</select></label>` : "";
+  const opt = (id, cur) => `<select id="${id}">${list.map(r => `<option value="${r.id}" ${r.id == cur ? "selected" : ""}>${esc(r.team)}</option>`).join("")}</select>`;
+  const oppTxt = r => Object.entries(r.opp_tiers).map(([k, v]) => `${v} ${k}`).join(", ");
+  const head = (r, win) => `<b>${esc(r.team)}</b> <span class="pill">${r.tier}</span> <span class="mut">${r.w}-${r.l} · ${win.g} g · pace ${f1(r.pace)}<br>opponents so far: ${oppTxt(r)}</span>`;
+  $("#view").innerHTML = `<h2>Matchups</h2><p class="sub">Per-game team stats from ESPN box scores, and what each team has <b>allowed</b> (the other side's totals in the same games). The small number is the rank among the ${T.teams.length} Division I teams with ${T.min_games}+ games (1 = best for that side: most scored, fewest allowed; green = top sixth, red = bottom sixth). <b>No schedule adjustment:</b> with about five games a team, who it has played dominates, so check the opponent mix under each name before reading anything into a rank. Season to date through ${esc(T.asof)}. Display only: none of this feeds the projections.</p>
+    <div class="bar">${gsel}<label>Away ${opt("ma", MS.tca)}</label><label>Home ${opt("mb", MS.tcb)}</label><label>Window <select id="mw">${[["season", "Season"], ["l3", "Last 3"]].map(([k, n]) => `<option value="${k}" ${k === w ? "selected" : ""}>${n}</option>`).join("")}</select></label></div>
+    <div class="cmphead"><div class="l">${head(A, a)}</div><div class="r">${head(B, b)}</div></div>
+    ${unitSec()}
+    ${sec("Scored per game", "for", "What each team does with the ball.")}
+    ${sec("Allowed per game", "allowed", "What each team gives up to its opponents (turnovers and steals here are the ones it forced).")}
+    <h3>Each offence against the other defence</h3><div class="two"><div>${meet(A, B, A.team.split(" ").slice(0, -1).join(" ") + " offence")}</div><div>${meet(B, A, B.team.split(" ").slice(0, -1).join(" ") + " offence")}</div></div>
+    <h3>Allowed by position</h3><p class="sub">Per-minute stats each defence has allowed to guards, forwards and centers, against the league at that position (green = allows more, red = allows less), pulled toward zero by minutes seen. The small number is the rank (1 = allows the most). Grey = split-half reliability under 0.2, which is most of the table this early: with about five games a team, none of these cells is steady yet. Display only.</p>
+    <div class="two">${vpos(A)}${vpos(B)}</div>`;
+  const on = (id, fn) => { const el = $("#" + id); if (el) el.onchange = fn; };
+  on("mg", e => { const g = games.find(x => x.event === e.target.value); if (g) { MS.tcg = g.event; MS.tca = g.away_id; MS.tcb = g.home_id; } else MS.tcg = ""; matchups(); });
+  on("ma", e => { MS.tca = +e.target.value; MS.tcg = ""; matchups(); }); on("mb", e => { MS.tcb = +e.target.value; MS.tcg = ""; matchups(); });
+  on("mw", e => { MS.tcw = e.target.value; matchups(); });
+}
+
 function route() {
   const v = location.hash.replace("#", "") || "board";
   document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.v === v));
-  (v === "scorecard" ? scorecard : board)();
+  (v === "scorecard" ? scorecard : v === "matchups" ? matchups : board)();
 }
 window.addEventListener("hashchange", route);
 load().then(route).catch(e => { $("#view").innerHTML = "<p class='bad'>Could not load data: " + e + "</p>"; });
