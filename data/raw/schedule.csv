@@ -1,12 +1,12 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401902281,2026-11-22T17:00Z,2026-11-22,2086,Butler Bulldogs,power6,Big East,158,Nebraska Cornhuskers,power6,Big Ten,1,1,STATUS_SCHEDULED
-401911024,2026-11-22T17:00Z,2026-11-22,82,UIC Flames,mid,Missouri Valley,193,Miami (OH) RedHawks,mid,Mid-American,1,1,STATUS_SCHEDULED
-401929023,2026-11-22T18:00Z,2026-11-22,2099,Canisius Golden Griffins,low,Metro,2710,Western Illinois Leathernecks,low,Ohio Valley,0,0,STATUS_SCHEDULED
-401921088,2026-11-22T18:00Z,2026-11-22,2378,UMBC Retrievers,low,America East,123306,Lancaster Bible Chargers,low,,0,0,STATUS_SCHEDULED
-401920736,2026-11-22T18:00Z,2026-11-22,77,Northwestern Wildcats,power6,Big Ten,2168,Dayton Flyers,mid,Atlantic 10,1,1,STATUS_SCHEDULED
-401919809,2026-11-22T18:00Z,2026-11-22,112358,Long Island University Sharks,low,Northeast,2217,Fairfield Stags,low,Metro,0,0,STATUS_SCHEDULED
-401912212,2026-11-22T18:00Z,2026-11-22,44,American University Eagles,low,Patriot League,119,Towson Tigers,mid,Coastal Athletic Association,0,1,STATUS_SCHEDULED
-401909527,2026-11-22T18:00Z,2026-11-22,269,Marquette Golden Eagles,power6,Big East,2130,Chicago State Cougars,low,Northeast,0,1,STATUS_SCHEDULED
+401902281,2026-11-22T17:00Z,2026-11-22,2086,Butler Bulldogs,power6,Big East,158,Nebraska Cornhuskers,power6,Big Ten,1,1,STATUS_IN_PROGRESS
+401911024,2026-11-22T17:00Z,2026-11-22,82,UIC Flames,mid,Missouri Valley,193,Miami (OH) RedHawks,mid,Mid-American,1,1,STATUS_IN_PROGRESS
+401929023,2026-11-22T18:00Z,2026-11-22,2099,Canisius Golden Griffins,low,Metro,2710,Western Illinois Leathernecks,low,Ohio Valley,0,0,STATUS_IN_PROGRESS
+401921088,2026-11-22T18:00Z,2026-11-22,2378,UMBC Retrievers,low,America East,123306,Lancaster Bible Chargers,low,,0,0,STATUS_IN_PROGRESS
+401920736,2026-11-22T18:00Z,2026-11-22,77,Northwestern Wildcats,power6,Big Ten,2168,Dayton Flyers,mid,Atlantic 10,1,1,STATUS_IN_PROGRESS
+401919809,2026-11-22T18:00Z,2026-11-22,112358,Long Island University Sharks,low,Northeast,2217,Fairfield Stags,low,Metro,0,0,STATUS_IN_PROGRESS
+401912212,2026-11-22T18:00Z,2026-11-22,44,American University Eagles,low,Patriot League,119,Towson Tigers,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
+401909527,2026-11-22T18:00Z,2026-11-22,269,Marquette Golden Eagles,power6,Big East,2130,Chicago State Cougars,low,Northeast,0,1,STATUS_IN_PROGRESS
 401928802,2026-11-22T19:00Z,2026-11-22,98,Western Kentucky Hilltoppers,mid,Conference USA,45,George Washington Revolutionaries,mid,Atlantic 10,1,1,STATUS_SCHEDULED
 401925942,2026-11-22T19:00Z,2026-11-22,3101,Utah Tech Trailblazers,low,Big Sky,233,South Dakota Coyotes,low,Summit League,1,0,STATUS_SCHEDULED
 401921748,2026-11-22T19:00Z,2026-11-22,2132,Cincinnati Bearcats,power6,Big 12,2349,UMass Lowell River Hawks,low,America East,0,1,STATUS_SCHEDULED
