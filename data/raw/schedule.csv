@@ -1,34 +1,16 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401917953,2026-11-21T20:00Z,2026-11-21,2046,Austin Peay Governors,low,United Athletic,292,UT Rio Grande Valley Vaqueros,low,Southland,0,0,STATUS_IN_PROGRESS
-401911278,2026-11-21T20:30Z,2026-11-21,2066,Binghamton Bearcats,low,America East,349,Army Black Knights,low,Patriot League,0,0,STATUS_IN_PROGRESS
-401926113,2026-11-21T21:00Z,2026-11-21,231,Furman Paladins,low,Southern,126954,Clinton Golden Bears,low,,0,0,STATUS_IN_PROGRESS
-401925890,2026-11-21T21:00Z,2026-11-21,2458,Northern Colorado Bears,low,Big Sky,130183,Justice Lions,low,,0,0,STATUS_IN_PROGRESS
-401923322,2026-11-21T21:00Z,2026-11-21,2099,Canisius Golden Griffins,low,Metro,399,UAlbany Great Danes,low,America East,0,0,STATUS_HALFTIME
-401922048,2026-11-21T21:00Z,2026-11-21,2193,East Tennessee State Buccaneers,low,Southern,2344,Longwood Lancers,low,Big South,0,0,STATUS_IN_PROGRESS
-401921183,2026-11-21T21:00Z,2026-11-21,2325,La Salle Explorers,mid,Atlantic 10,219,Pennsylvania Quakers,low,Ivy League,0,1,STATUS_IN_PROGRESS
-401918995,2026-11-21T21:00Z,2026-11-21,2244,George Mason Patriots,mid,Atlantic 10,58,South Florida Bulls,mid,American,0,1,STATUS_IN_PROGRESS
-401917918,2026-11-21T21:00Z,2026-11-21,294,Jacksonville Dolphins,low,Atlantic Sun,2110,Central Arkansas Bears,low,United Athletic,0,0,STATUS_IN_PROGRESS
-401917538,2026-11-21T21:30Z,2026-11-21,300,UC Irvine Anteaters,mid,Big West,301,San Diego Toreros,mid,West Coast,1,1,STATUS_IN_PROGRESS
-401925709,2026-11-21T22:00Z,2026-11-21,2747,Wofford Terriers,low,Southern,2737,Winthrop Eagles,low,Big South,0,0,STATUS_IN_PROGRESS
-401925065,2026-11-21T22:00Z,2026-11-21,2447,Nicholls Colonels,low,Southland,2572,Southern Miss Golden Eagles,mid,Sun Belt,1,1,STATUS_IN_PROGRESS
-401919849,2026-11-21T22:00Z,2026-11-21,284,Stonehill Skyhawks,low,Northeast,111,Northeastern Huskies,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
-401911337,2026-11-21T22:00Z,2026-11-21,2636,UTSA Roadrunners,mid,American,2005,Air Force Falcons,mid,Mountain West,0,1,STATUS_IN_PROGRESS
-401920570,2026-11-21T22:30Z,2026-11-21,151,East Carolina Pirates,mid,American,79,Southern Illinois Salukis,mid,Missouri Valley,1,1,STATUS_SCHEDULED
-401925897,2026-11-21T23:00Z,2026-11-21,2450,Norfolk State Spartans,low,Mid-Eastern Athletic,350,UNC Wilmington Seahawks,mid,Coastal Athletic Association,0,1,STATUS_SCHEDULED
-401911023,2026-11-21T23:00Z,2026-11-21,113,Massachusetts Minutemen,mid,Mid-American,311,Maine Black Bears,low,America East,0,1,STATUS_SCHEDULED
-401909517,2026-11-21T23:00Z,2026-11-21,46,Georgetown Hoyas,power6,Big East,2154,Coppin State Eagles,low,Mid-Eastern Athletic,0,1,STATUS_SCHEDULED
-401921776,2026-11-22T00:00Z,2026-11-21,222,Villanova Wildcats,power6,Big East,130,Michigan Wolverines,power6,Big Ten,0,1,STATUS_SCHEDULED
-401920975,2026-11-22T00:00Z,2026-11-21,236,Chattanooga Mocs,low,Southern,2515,Radford Highlanders,low,Big South,0,0,STATUS_SCHEDULED
-401920964,2026-11-22T00:00Z,2026-11-21,2210,Elon Phoenix,mid,Coastal Athletic Association,2413,Morehead State Eagles,low,Ohio Valley,0,1,STATUS_SCHEDULED
-401920125,2026-11-22T00:00Z,2026-11-21,13,Cal Poly Mustangs,mid,Big West,2464,Northern Arizona Lumberjacks,low,Big Sky,0,1,STATUS_SCHEDULED
-401917539,2026-11-22T00:00Z,2026-11-21,2351,Loyola Marymount Lions,mid,West Coast,2856,California Baptist Lancers,mid,Big West,1,1,STATUS_SCHEDULED
-401911394,2026-11-22T00:00Z,2026-11-21,2678,VMI Keydets,low,Southern,2241,Gardner-Webb Runnin' Bulldogs,low,Big South,0,0,STATUS_SCHEDULED
-401911378,2026-11-22T00:00Z,2026-11-21,2382,Mercer Bears,low,Southern,2127,Charleston Southern Buccaneers,low,Big South,0,0,STATUS_SCHEDULED
-401911310,2026-11-22T00:00Z,2026-11-21,261,Vermont Catamounts,low,America East,225,Brown Bears,low,Ivy League,0,0,STATUS_SCHEDULED
-401926217,2026-11-22T00:30Z,2026-11-21,2635,Tennessee Tech Golden Eagles,low,Southern,2506,Presbyterian Blue Hose,low,Big South,0,0,STATUS_SCHEDULED
-401928998,2026-11-22T01:00Z,2026-11-21,2674,Valparaiso Beacons,mid,Missouri Valley,2653,Troy Trojans,mid,Sun Belt,1,1,STATUS_SCHEDULED
-401925099,2026-11-22T01:00Z,2026-11-21,198,Oral Roberts Golden Eagles,low,Summit League,357,Texas A&M-Corpus Christi Islanders,low,Southland,0,0,STATUS_SCHEDULED
-401917966,2026-11-22T01:00Z,2026-11-21,2000,Abilene Christian Wildcats,low,United Athletic,2903,Southwestern Adventist Knights,low,,0,0,STATUS_SCHEDULED
+401921776,2026-11-22T00:00Z,2026-11-21,222,Villanova Wildcats,power6,Big East,130,Michigan Wolverines,power6,Big Ten,0,1,STATUS_IN_PROGRESS
+401920975,2026-11-22T00:00Z,2026-11-21,236,Chattanooga Mocs,low,Southern,2515,Radford Highlanders,low,Big South,0,0,STATUS_IN_PROGRESS
+401920964,2026-11-22T00:00Z,2026-11-21,2210,Elon Phoenix,mid,Coastal Athletic Association,2413,Morehead State Eagles,low,Ohio Valley,0,1,STATUS_IN_PROGRESS
+401920125,2026-11-22T00:00Z,2026-11-21,13,Cal Poly Mustangs,mid,Big West,2464,Northern Arizona Lumberjacks,low,Big Sky,0,1,STATUS_IN_PROGRESS
+401917539,2026-11-22T00:00Z,2026-11-21,2856,California Baptist Lancers,mid,Big West,2351,Loyola Marymount Lions,mid,West Coast,1,1,STATUS_IN_PROGRESS
+401911394,2026-11-22T00:00Z,2026-11-21,2678,VMI Keydets,low,Southern,2241,Gardner-Webb Runnin' Bulldogs,low,Big South,0,0,STATUS_IN_PROGRESS
+401911378,2026-11-22T00:00Z,2026-11-21,2382,Mercer Bears,low,Southern,2127,Charleston Southern Buccaneers,low,Big South,0,0,STATUS_IN_PROGRESS
+401911310,2026-11-22T00:00Z,2026-11-21,261,Vermont Catamounts,low,America East,225,Brown Bears,low,Ivy League,0,0,STATUS_IN_PROGRESS
+401926217,2026-11-22T00:30Z,2026-11-21,2635,Tennessee Tech Golden Eagles,low,Southern,2506,Presbyterian Blue Hose,low,Big South,0,0,STATUS_IN_PROGRESS
+401928998,2026-11-22T01:00Z,2026-11-21,2653,Troy Trojans,mid,Sun Belt,2674,Valparaiso Beacons,mid,Missouri Valley,1,1,STATUS_IN_PROGRESS
+401925099,2026-11-22T01:00Z,2026-11-21,198,Oral Roberts Golden Eagles,low,Summit League,357,Texas A&M-Corpus Christi Islanders,low,Southland,0,0,STATUS_IN_PROGRESS
+401917966,2026-11-22T01:00Z,2026-11-21,2000,Abilene Christian Wildcats,low,United Athletic,2903,Southwestern Adventist Knights,low,,0,0,STATUS_IN_PROGRESS
 401925049,2026-11-22T01:30Z,2026-11-21,2640,Texas Southern Tigers,low,Southwestern Athletic,2443,LSU New Orleans Privateers,low,Southland,0,0,STATUS_SCHEDULED
 401917537,2026-11-22T03:00Z,2026-11-21,279,Pacific Tigers,mid,West Coast,71,Bradley Braves,mid,Missouri Valley,0,1,STATUS_SCHEDULED
 401909567,2026-11-22T04:00Z,2026-11-21,150,Duke Blue Devils,power6,Atlantic Coast,265,Washington State Cougars,power6,Pac-12,1,1,STATUS_SCHEDULED
