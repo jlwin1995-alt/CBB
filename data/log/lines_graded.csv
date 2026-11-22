@@ -957,3 +957,11 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-21,401921776,Villanova Wildcats,Michigan Wolverines,prizepicks,player_points,Tyler Perkins,13.5,-137,-137.0,2026-11-21T22:23:17+00:00,23.0,35.0,over,12.4,5,12.93,-0.57,under,13.5,3,0.0
 2026-11-21,401921776,Villanova Wildcats,Michigan Wolverines,prizepicks,player_rebounds,Tyler Perkins,5.0,-137,-137.0,2026-11-21T22:23:17+00:00,5.0,35.0,push,4.6,5,5.2,0.2,over,,0,
 2026-11-21,401921776,Villanova Wildcats,Michigan Wolverines,prizepicks,player_threes,Tyler Perkins,2.5,-137,-137.0,2026-11-21T22:23:17+00:00,1.0,35.0,under,2.2,5,2.0,-0.5,under,2.5,1,0.0
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_assists,Aiden Derkack,2.5,-137,-137.0,2026-11-22T12:09:44+00:00,2.0,27.0,under,2.67,6,2.2,-0.3,under,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_rebounds,Aiden Derkack,6.5,-137,-137.0,2026-11-22T12:09:44+00:00,2.0,27.0,under,8.33,6,5.94,-0.56,under,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_points,Jake West,16.5,-137,-137.0,2026-11-22T12:09:44+00:00,21.0,38.0,over,18.67,6,11.38,-5.12,under,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_threes,Jake West,1.5,-137,-137.0,2026-11-22T12:09:44+00:00,3.0,38.0,over,2.17,6,1.52,0.02,over,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_points,LA Pratt,11.5,-137,-137.0,2026-11-22T12:09:44+00:00,13.0,33.0,over,14.17,6,11.12,-0.38,under,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_threes,LA Pratt,1.5,-137,-137.0,2026-11-22T12:09:44+00:00,3.0,33.0,over,1.83,6,1.31,-0.19,under,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_rebounds,Tristian Ford,2.5,-137,-137.0,2026-11-22T12:09:44+00:00,3.0,36.0,over,2.5,6,2.74,0.24,over,,0,
+2026-11-22,401920736,Northwestern Wildcats,Dayton Flyers,prizepicks,player_threes,Tristian Ford,1.5,-137,-137.0,2026-11-22T12:09:44+00:00,1.0,36.0,under,2.0,6,1.5,0.0,over,,0,
