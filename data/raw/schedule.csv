@@ -1,9 +1,8 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401911457,2026-11-23T21:30Z,2026-11-23,2440,Nevada Wolf Pack,mid,Mountain West,2539,San Francisco Dons,mid,West Coast,1,1,STATUS_IN_PROGRESS
 401921708,2026-11-23T22:00Z,2026-11-23,252,BYU Cougars,power6,Big 12,264,Washington Huskies,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401921210,2026-11-23T23:00Z,2026-11-23,2630,UT Martin Skyhawks,low,Ohio Valley,218,Temple Owls,mid,American,1,1,STATUS_IN_PROGRESS
-401920752,2026-11-23T23:30Z,2026-11-23,2754,Youngstown State Penguins,low,Horizon League,2379,Maryland Eastern Shore Hawks,low,Mid-Eastern Athletic,0,0,STATUS_SCHEDULED
-401911025,2026-11-23T23:30Z,2026-11-23,2084,Buffalo Bulls,mid,Mid-American,178,RIT Tigers,low,,0,1,STATUS_SCHEDULED
+401920752,2026-11-23T23:30Z,2026-11-23,2754,Youngstown State Penguins,low,Horizon League,2379,Maryland Eastern Shore Hawks,low,Mid-Eastern Athletic,0,0,STATUS_IN_PROGRESS
+401911025,2026-11-23T23:30Z,2026-11-23,2084,Buffalo Bulls,mid,Mid-American,178,RIT Tigers,low,,0,1,STATUS_IN_PROGRESS
 401932055,2026-11-24T00:00Z,2026-11-23,47,Howard Bison,low,Mid-Eastern Athletic,128342,Notre Dame (MD) Gators,low,,0,0,STATUS_SCHEDULED
 401928838,2026-11-24T00:00Z,2026-11-23,2050,Ball State Cardinals,mid,Mid-American,2589,Spalding Pelicans,low,,0,1,STATUS_SCHEDULED
 401926106,2026-11-24T00:00Z,2026-11-23,2193,East Tennessee State Buccaneers,low,Southern,2310,Kentucky State Thorobreds,low,,0,0,STATUS_SCHEDULED
