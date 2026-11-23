@@ -63,8 +63,37 @@ jobs:
         with:
           path: site
           name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+      # deploy-pages sometimes runs right after the upload and reports "Found 0 artifact(s)" (a GitHub-side race: about one run in two on Nov 21-23, and nothing in the run turned red). So: try up to three times,
+      # waiting a little between tries, and fail the run visibly if all three miss, so a stale site is never silent. The data commit above has already happened, so a failure here loses nothing.
       - uses: actions/deploy-pages@v4
+        id: deploy1
         if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != ''
         continue-on-error: true
         with:
           artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Wait before deploy retry 2
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != '' && steps.deploy1.outcome == 'failure'
+        run: sleep 20
+      - uses: actions/deploy-pages@v4
+        id: deploy2
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != '' && steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Wait before deploy retry 3
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != '' && steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 45
+      - uses: actions/deploy-pages@v4
+        id: deploy3
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != '' && steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        continue-on-error: true
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Fail visibly if the site was not deployed
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != '' && steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure' && steps.deploy3.outcome == 'failure'
+        run: |
+          echo "::error::the Pages deploy failed three times, so the live site is stale (data is committed); re-run the workflow"
+          exit 1
+      - name: Note a deploy that needed a retry
+        if: hashFiles('site/data/board.json') != '' && hashFiles('site/data/scorecard.json') != '' && steps.deploy1.outcome == 'failure' && (steps.deploy2.outcome == 'success' || steps.deploy3.outcome == 'success')
+        run: echo "::notice::the Pages deploy needed a retry (first attempt found no artifact) but succeeded"
