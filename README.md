@@ -62,3 +62,8 @@ thirds among Division I teams), what each defence has allowed per minute to each
 dominates. The allowed-by-position cells are mostly noise this early (reliability under 0.3). The **Board** gets a **Consistency** column: over a player's last 20 games of 12+ minutes (this and last season,
 8 needed) his spread in fantasy points against comparable players, Steady / Average / Volatile (bottom / middle / top third), with Spiky / Dud-prone / Boom-bust for Volatile players; players with fewer
 games show n/a. Spread repeats only modestly (odd vs even games r 0.42, earlier vs later 0.36). Nothing here feeds the projections.
+
+### Game page (opening page)
+
+The **Game** tab is the opening page: pick a game once and get the team matchup (a collapsible comparison, with a one-line unit-strength summary in its header), then every PrizePicks line for the game with the model's
+projection, edge, lean and each player's consistency tag, sortable. **Board** still shows every game's lines at once with filters, and **Matchups** still compares any two Division I teams. Display only.

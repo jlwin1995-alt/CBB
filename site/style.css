@@ -36,4 +36,7 @@ td.l,th.l{text-align:left}tr:hover td{background:var(--head)}
 .meter{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:3px}.meter i{display:block;height:100%;opacity:.85}
 .meter i.good{background:var(--good)}.meter i.bad{background:var(--bad)}.meter i.mut{background:var(--mut)}.meter.r i{margin-left:auto}
 @media (max-width:640px){.cr{grid-template-columns:1fr 100px 1fr}.cv{font-size:13px}}
+details.gsec{border:1px solid var(--line);border-radius:8px;margin:12px 0;padding:0 12px 8px}
+details.gsec>summary{cursor:pointer;padding:8px 0;list-style:none}details.gsec>summary::before{content:"\25B8 ";color:var(--mut)}details.gsec[open]>summary::before{content:"\25BE "}
+.cmpgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:0 28px}.cmpgrid .cmp{max-width:none}
 

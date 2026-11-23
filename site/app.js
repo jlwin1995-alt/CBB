@@ -15,6 +15,7 @@ async function load() {
   const b = $("#banner"); b.hidden = false;
   b.textContent = "Model v1 is unproven against PrizePicks lines" + (m ? `: its side won ${m.hit} of ${m.n} graded lines so far (break-even is 54.4%).` : " (no graded projections yet; it is tied with a season average in backtests).") + " Only PrizePicks lines are shown; the consensus is the other books' median.";
 }
+let CUR = null;                                   // the page being shown, so sort clicks and selects re-render the right one
 const S = {market: "", edge: 0, cons: false, hideBig: false, q: "", sort: {k: "edge", asc: false}};
 const bigGap = () => { const f = D.scorecard && D.scorecard.flags && D.scorecard.flags.big_gap; return f && f.active ? f : null; };
 const bigTxt = f => `Lines where the projection is ${Math.round(f.threshold * 100)}%+ away from the PrizePicks line have won ${f.big.hit} of ${f.big.n} (${pct(f.big.rate)}), against ${f.rest.hit} of ${f.rest.n} (${pct(f.rest.rate)}) for smaller gaps. ${f.significant ? "The difference is statistically clear." : "That difference is not yet statistically settled (z = " + f.z + "), so treat it as a caution, not a rule."} A big gap looks more like projection error than an edge.`;
@@ -42,7 +43,27 @@ function consCell(pid) {
   return `<span title="${consTip(c)}"><span class="pill ${CONS_CLASS[c.fp.tag]}">${c.fp.tag}${c.fp.shape ? " · " + c.fp.shape : ""}</span> ${consBars(c)}</span>`;
 }
 
+const LINE_COLS = [["player", "Player", 1], ["team", "Team", 1], ["market", "Market", 1], ["pp", "PrizePicks"], ["cons", "Consensus"], ["gap", "PP − cons"], ["proj", "Proj"], ["edge", "Edge"], ["lean", "Lean"], ["min", "Min"], ["consist", "Consistency", 1]];
+function gameLinesHTML(g) {
+  let h = "", shown = 0;
+    let rows = g.lines.filter(l => (!S.market || l.market === S.market) && (!S.cons || l.cons != null) && (!S.q || l.player.toLowerCase().includes(S.q.toLowerCase()))
+      && (!S.edge || (l.edge != null && Math.abs(l.edge) / Math.max(l.pp, .5) >= S.edge))
+      && !(S.hideBig && bigGap() && l.edge != null && Math.abs(l.edge) / Math.max(l.pp, .5) >= bigGap().threshold));
+    if (!rows.length) return {html: "", n: 0}; shown += rows.length; rows = sortRows(rows);
+    const sp = g.spread_home == null ? "" : ` · spread ${g.home} ${g.spread_home > 0 ? "+" : ""}${g.spread_home}, total ${g.total}`;
+    h += `<div class="gh"><b>${g.away} @ ${g.home}</b><span>${fmtT(g.start_utc)}${sp}</span></div><div class="tw"><table><thead><tr>${LINE_COLS.map(([k, t, l]) => `<th class="${l ? "l " : ""}${S.sort.k === k ? "on" + (S.sort.asc ? " asc" : "") : ""}" data-k="${k}">${t}</th>`).join("")}</tr></thead><tbody>`;
+    for (const l of rows) {
+      const rel = l.edge == null ? null : l.edge / Math.max(l.pp, .5), lean = l.edge == null ? "–" : (l.edge > 0 ? "Over" : "Under");
+      h += `<tr><td class="l">${l.player}</td><td class="l mut">${(l.team || "").replace(/ [A-Z][\w.'’&-]*( [A-Z][\w.'’&-]*)?$/, "")}</td><td class="l">${l.market}</td><td>${n1(l.pp)}</td>
+      <td ${l.book_lines ? `title="${l.book_lines}"` : ""}>${l.cons == null ? "–" : n1(l.cons) + ` <span class="mut">×${l.n_books}</span>`}</td><td class="${l.gap == null ? "mut" : ""}">${signed(l.gap)}</td>
+      <td>${n1(l.proj)}</td><td class="${rel == null ? "mut" : rel > 0 ? "good" : "bad"}">${signed(l.edge)}${rel == null ? "" : ` <span class="mut">${Math.round(rel * 100)}%</span>`}${rel != null && bigGap() && Math.abs(rel) >= bigGap().threshold ? ` <span class="flag" title="${bigTxt(bigGap()).replace(/"/g, "'")}">big gap</span>` : ""}</td><td>${lean}</td><td class="mut">${l.min == null ? "–" : Math.round(l.min)}</td><td class="l">${consCell(l.pid)}</td></tr>`;
+    }
+    h += "</tbody></table></div>";
+  return {html: h, n: shown};
+}
+
 function board() {
+  CUR = board;
   const B = D.board; if (!B || !B.games.length) { $("#view").innerHTML = "<h2>Board</h2><p class='sub'>No upcoming PrizePicks lines yet. Lines appear a few hours before tip for marquee games.</p>"; return; }
   const markets = [...new Set(B.games.flatMap(g => g.lines.map(l => l.market)))];
   let h = `<h2>Board</h2><p class="sub">PrizePicks lines for games that have not been graded. Edge = projection minus the PrizePicks line; “Lean” is the side the projection favours. Click a header to sort.</p>
@@ -52,31 +73,17 @@ function board() {
   <label><input type="checkbox" id="fc" ${S.cons ? "checked" : ""}> only lines with a consensus</label>
   ${bigGap() ? `<label><input type="checkbox" id="fb" ${S.hideBig ? "checked" : ""}> hide big gaps (${Math.round(bigGap().threshold * 100)}%+)</label>` : ""}
   <label>Player <input id="fq" value="${S.q}" placeholder="search"></label></div>`;
-  const cols = [["player", "Player", 1], ["team", "Team", 1], ["market", "Market", 1], ["pp", "PrizePicks"], ["cons", "Consensus"], ["gap", "PP − cons"], ["proj", "Proj"], ["edge", "Edge"], ["lean", "Lean"], ["min", "Min"], ["consist", "Consistency", 1]];
   let shown = 0;
-  for (const g of B.games) {
-    let rows = g.lines.filter(l => (!S.market || l.market === S.market) && (!S.cons || l.cons != null) && (!S.q || l.player.toLowerCase().includes(S.q.toLowerCase()))
-      && (!S.edge || (l.edge != null && Math.abs(l.edge) / Math.max(l.pp, .5) >= S.edge))
-      && !(S.hideBig && bigGap() && l.edge != null && Math.abs(l.edge) / Math.max(l.pp, .5) >= bigGap().threshold));
-    if (!rows.length) continue; shown += rows.length; rows = sortRows(rows);
-    const sp = g.spread_home == null ? "" : ` · spread ${g.home} ${g.spread_home > 0 ? "+" : ""}${g.spread_home}, total ${g.total}`;
-    h += `<div class="gh"><b>${g.away} @ ${g.home}</b><span>${fmtT(g.start_utc)}${sp}</span></div><div class="tw"><table><thead><tr>${cols.map(([k, t, l]) => `<th class="${l ? "l " : ""}${S.sort.k === k ? "on" + (S.sort.asc ? " asc" : "") : ""}" data-k="${k}">${t}</th>`).join("")}</tr></thead><tbody>`;
-    for (const l of rows) {
-      const rel = l.edge == null ? null : l.edge / Math.max(l.pp, .5), lean = l.edge == null ? "–" : (l.edge > 0 ? "Over" : "Under");
-      h += `<tr><td class="l">${l.player}</td><td class="l mut">${(l.team || "").replace(/ [A-Z][\w.'’&-]*( [A-Z][\w.'’&-]*)?$/, "")}</td><td class="l">${l.market}</td><td>${n1(l.pp)}</td>
-      <td ${l.book_lines ? `title="${l.book_lines}"` : ""}>${l.cons == null ? "–" : n1(l.cons) + ` <span class="mut">×${l.n_books}</span>`}</td><td class="${l.gap == null ? "mut" : ""}">${signed(l.gap)}</td>
-      <td>${n1(l.proj)}</td><td class="${rel == null ? "mut" : rel > 0 ? "good" : "bad"}">${signed(l.edge)}${rel == null ? "" : ` <span class="mut">${Math.round(rel * 100)}%</span>`}${rel != null && bigGap() && Math.abs(rel) >= bigGap().threshold ? ` <span class="flag" title="${bigTxt(bigGap()).replace(/"/g, "'")}">big gap</span>` : ""}</td><td>${lean}</td><td class="mut">${l.min == null ? "–" : Math.round(l.min)}</td><td class="l">${consCell(l.pid)}</td></tr>`;
-    }
-    h += "</tbody></table></div>";
-  }
+  for (const g of B.games) { const r = gameLinesHTML(g); h += r.html; shown += r.n; }
   if (!shown) h += "<p class='mut'>Nothing matches these filters.</p>";
   h += `<p class="note">Projection = expected minutes × shrunk per-minute rates × opponent × pace (points, threes), un-shrunk on points/assists/threes. A blank projection means the player is an unranked newcomer with under 3 games or is not on the ESPN roster. Availability is not modelled: a player with a line is assumed to play.</p>`;
   $("#view").innerHTML = h;
   $("#fm").onchange = e => { S.market = e.target.value; board(); }; $("#fe").onchange = e => { S.edge = +e.target.value; board(); };
   $("#fc").onchange = e => { S.cons = e.target.checked; board(); };
   if ($("#fb")) $("#fb").onchange = e => { S.hideBig = e.target.checked; board(); }; $("#fq").onchange = e => { S.q = e.target.value; board(); };
-  document.querySelectorAll("th[data-k]").forEach(th => th.onclick = () => { const k = th.dataset.k; S.sort = {k, asc: S.sort.k === k ? !S.sort.asc : false}; board(); });
+  bindSort();
 }
+function bindSort() { document.querySelectorAll("th[data-k]").forEach(th => th.onclick = () => { const k = th.dataset.k; S.sort = {k, asc: S.sort.k === k ? !S.sort.asc : false}; CUR(); }); }
 function tallyRow(label, t) {
   if (!t || !t.decided) return `<tr><td class="l">${label}</td><td colspan="5" class="mut">no decided lines</td></tr>`;
   const w = wilson(t.over, t.decided);
@@ -114,11 +121,13 @@ function scorecard() {
 
 // ---------- Matchups: team comparison, unit strength, allowed by position (display only) ---------------------------------------------
 const MS = {tca: "", tcb: "", tcw: "season", tcg: ""};
-function matchups() {
+let MBIND = null;
+function matchupHTML(o = {}) {
   const T = D.teams;
-  if (!T || !T.teams || !T.teams.length) { $("#view").innerHTML = "<h2>Matchups</h2><p class='sub'>No team data yet.</p>"; return; }
+  if (!T || !T.teams || !T.teams.length) return o.embed ? "" : "<h2>Matchups</h2><p class='sub'>No team data yet.</p>";
   const tm = Object.fromEntries(T.teams.map(r => [r.id, r])), list = [...T.teams].sort((a, b) => a.team.localeCompare(b.team));
   const games = ((D.board && D.board.games) || []).filter(g => g.home_id != null && tm[g.home_id] && tm[g.away_id]);
+  if (o.away != null && tm[o.away] && tm[o.home]) { MS.tca = o.away; MS.tcb = o.home; }
   if (!MS.tca || !tm[MS.tca] || !MS.tcb || !tm[MS.tcb]) {
     if (games[0]) { MS.tcg = games[0].event; MS.tca = games[0].away_id; MS.tcb = games[0].home_id; } else { MS.tca = list[0].id; MS.tcb = list[1].id; }
   }
@@ -166,25 +175,63 @@ function matchups() {
   const opt = (id, cur) => `<select id="${id}">${list.map(r => `<option value="${r.id}" ${r.id == cur ? "selected" : ""}>${esc(r.team)}</option>`).join("")}</select>`;
   const oppTxt = r => Object.entries(r.opp_tiers).map(([k, v]) => `${v} ${k}`).join(", ");
   const head = (r, win) => `<b>${esc(r.team)}</b> <span class="pill">${r.tier}</span> <span class="mut">${r.w}-${r.l} · ${win.g} g · pace ${f1(r.pace)}<br>opponents so far: ${oppTxt(r)}</span>`;
-  $("#view").innerHTML = `<h2>Matchups</h2><p class="sub">Per-game team stats from ESPN box scores, and what each team has <b>allowed</b> (the other side's totals in the same games). The small number is the rank among the ${T.teams.length} Division I teams with ${T.min_games}+ games (1 = best for that side: most scored, fewest allowed; green = top sixth, red = bottom sixth). <b>No schedule adjustment:</b> with about five games a team, who it has played dominates, so check the opponent mix under each name before reading anything into a rank. Season to date through ${esc(T.asof)}. Display only: none of this feeds the projections.</p>
-    <div class="bar">${gsel}<label>Away ${opt("ma", MS.tca)}</label><label>Home ${opt("mb", MS.tcb)}</label><label>Window <select id="mw">${[["season", "Season"], ["l3", "Last 3"]].map(([k, n]) => `<option value="${k}" ${k === w ? "selected" : ""}>${n}</option>`).join("")}</select></label></div>
+  const intro = `<p class="sub">Per-game team stats from ESPN box scores, and what each team has <b>allowed</b> (the other side's totals in the same games). The small number is the rank among the ${T.teams.length} Division I teams with ${T.min_games}+ games (1 = best for that side: most scored, fewest allowed; green = top sixth, red = bottom sixth). <b>No schedule adjustment:</b> with about five games a team, who it has played dominates, so check the opponent mix under each name before reading anything into a rank. Season to date through ${esc(T.asof)}. Display only: none of this feeds the projections.</p>`;
+  const html = `${o.embed ? "" : "<h2>Matchups</h2>" + intro}
+    <div class="bar">${o.embed ? "" : `${gsel}<label>Away ${opt("ma", MS.tca)}</label><label>Home ${opt("mb", MS.tcb)}</label>`}<label>Window <select id="mw">${[["season", "Season"], ["l3", "Last 3"]].map(([k, n]) => `<option value="${k}" ${k === w ? "selected" : ""}>${n}</option>`).join("")}</select></label></div>
     <div class="cmphead"><div class="l">${head(A, a)}</div><div class="r">${head(B, b)}</div></div>
-    ${unitSec()}
-    ${sec("Scored per game", "for", "What each team does with the ball.")}
-    ${sec("Allowed per game", "allowed", "What each team gives up to its opponents (turnovers and steals here are the ones it forced).")}
+    <div class="cmpgrid"><div>${unitSec()}</div>
+    <div>${sec("Scored per game", "for", "What each team does with the ball.")}</div>
+    <div>${sec("Allowed per game", "allowed", "What each team gives up to its opponents (turnovers and steals here are the ones it forced).")}</div></div>
     <h3>Each offence against the other defence</h3><div class="two"><div>${meet(A, B, A.team.split(" ").slice(0, -1).join(" ") + " offence")}</div><div>${meet(B, A, B.team.split(" ").slice(0, -1).join(" ") + " offence")}</div></div>
     <h3>Allowed by position</h3><p class="sub">Per-minute stats each defence has allowed to guards, forwards and centers, against the league at that position (green = allows more, red = allows less), pulled toward zero by minutes seen. The small number is the rank (1 = allows the most). Grey = split-half reliability under 0.2, which is most of the table this early: with about five games a team, none of these cells is steady yet. Display only.</p>
     <div class="two">${vpos(A)}${vpos(B)}</div>`;
-  const on = (id, fn) => { const el = $("#" + id); if (el) el.onchange = fn; };
-  on("mg", e => { const g = games.find(x => x.event === e.target.value); if (g) { MS.tcg = g.event; MS.tca = g.away_id; MS.tcb = g.home_id; } else MS.tcg = ""; matchups(); });
-  on("ma", e => { MS.tca = +e.target.value; MS.tcg = ""; matchups(); }); on("mb", e => { MS.tcb = +e.target.value; MS.tcg = ""; matchups(); });
-  on("mw", e => { MS.tcw = e.target.value; matchups(); });
+  MBIND = () => {
+    const on = (id, fn) => { const el = $("#" + id); if (el) el.onchange = fn; };
+    on("mg", e => { const g = games.find(x => x.event === e.target.value); if (g) { MS.tcg = g.event; MS.tca = g.away_id; MS.tcb = g.home_id; } else MS.tcg = ""; CUR(); });
+    on("ma", e => { MS.tca = +e.target.value; MS.tcg = ""; CUR(); }); on("mb", e => { MS.tcb = +e.target.value; MS.tcg = ""; CUR(); });
+    on("mw", e => { MS.tcw = e.target.value; CUR(); });
+  };
+  return html;
+}
+function matchups() { CUR = matchups; $("#view").innerHTML = matchupHTML(); if (MBIND) MBIND(); }
+
+// one-line unit strength for a team id: guards / forwards / centers as a tier arrow
+function unitBrief(id) {
+  const t = (D.teams && D.teams.teams || []).find(r => r.id === id), u = t && t.units && t.units.season; if (!u) return "";
+  const nm = t.team.split(" ").slice(0, -1).join(" ");
+  const mk = (pos, n) => { const x = u[pos]; if (!x) return ""; const c = x.tier === "Top third" ? "good" : x.tier === "Bottom third" ? "bad" : "mut", a = x.tier === "Top third" ? "▲" : x.tier === "Bottom third" ? "▼" : "•";
+    return `<span class="${c}" title="${esc(nm)} ${n}: ${x.tier}, #${x.rank} of ${x.of} (${x.fp40} FP/40)">${pos}${a}</span>`; };
+  return `<b>${esc(nm)}</b> ${["G", "F", "C"].map(p => mk(p, {G: "guards", F: "forwards", C: "centers"}[p])).join(" ")}`;
 }
 
+// ---------- Game: the matchup, the players' lines with projections and the consistency tag, all for one game ------------------------------
+const G = {ev: "", cmp: false, lines: true};
+function game() {
+  CUR = game;
+  const B = D.board;
+  if (!B || !B.games.length) { $("#view").innerHTML = "<h2>Game</h2><p class='sub'>No upcoming PrizePicks lines yet. Lines appear a few hours before tip for marquee games. Use Matchups to compare any two teams.</p>"; return; }
+  if (!B.games.some(x => x.event === G.ev)) G.ev = B.games[0].event;
+  const g = B.games.find(x => x.event === G.ev), tm = D.teams && D.teams.teams ? Object.fromEntries(D.teams.teams.map(r => [r.id, r])) : {};
+  const sect = (id, title, hint, body, open) => `<details class="gsec" data-gs="${id}" ${open ? "open" : ""}><summary><b>${title}</b> <span class="mut">${hint}</span></summary>${body}</details>`;
+  const hasT = g.home_id != null && tm[g.home_id] && tm[g.away_id];
+  const lines = gameLinesHTML(g);
+  const sp = g.spread_home == null ? "" : ` · spread ${esc(g.home)} ${g.spread_home > 0 ? "+" : ""}${g.spread_home}, total ${g.total}`;
+  $("#view").innerHTML = `<h2>Game</h2><p class="sub">Pick a game once: the team matchup, then every PrizePicks line for it with the model's projection, edge and each player's consistency tag. Edge = projection minus the PrizePicks line; "Lean" is the side the projection favours. Click a header to sort.</p>
+    ${bigGap() ? `<div class="flagbox"><b>Big-gap watch.</b> ${bigTxt(bigGap())}</div>` : ""}
+    <div class="bar"><label>Game <select id="gg">${B.games.map(x => `<option value="${x.event}" ${x.event === G.ev ? "selected" : ""}>${esc(x.away)} @ ${esc(x.home)} · ${fmtT(x.start_utc)}</option>`).join("")}</select></label><span class="mut">${esc(g.away)} @ ${esc(g.home)}${sp}</span></div>
+    ${hasT ? sect("cmp", "Team comparison", unitBrief(g.away_id) + " &nbsp;vs&nbsp; " + unitBrief(g.home_id) + " <span class='mut'>(click to open: scored and allowed, vs position, opponent mix)</span>", matchupHTML({embed: true, away: g.away_id, home: g.home_id}), G.cmp === true) : ""}
+    <h3>Lines and projections</h3>${lines.html || "<p class='mut'>No lines match.</p>"}
+    <p class="note">Projection = expected minutes × shrunk per-minute rates × opponent × pace (points, threes), un-shrunk on points/assists/threes. A blank projection means the player is an unranked newcomer with under 3 games or is not on the ESPN roster. Availability is not modelled: a player with a line is assumed to play.</p>`;
+  $("#gg").onchange = e => { G.ev = e.target.value; game(); };
+  if (MBIND && hasT) MBIND();
+  bindSort();
+}
+document.addEventListener("toggle", e => { const t = e.target; if (t && t.dataset && t.dataset.gs) G[t.dataset.gs] = t.open; }, true);
+
 function route() {
-  const v = location.hash.replace("#", "") || "board";
+  const v = location.hash.replace("#", "") || "game";
   document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.v === v));
-  (v === "scorecard" ? scorecard : v === "matchups" ? matchups : board)();
+  (v === "scorecard" ? scorecard : v === "matchups" ? matchups : v === "board" ? board : game)();
 }
 window.addEventListener("hashchange", route);
 load().then(route).catch(e => { $("#view").innerHTML = "<p class='bad'>Could not load data: " + e + "</p>"; });
