@@ -1024,3 +1024,15 @@ et_date,espn_event,home,away,book,market,player,point,over,under,pulled_at,actua
 2026-11-23,401909743,Arizona Wildcats,Colorado St Rams,prizepicks,player_rebounds,Motiejus Krivas,10.0,-137,-137.0,2026-11-24T01:42:07+00:00,7.0,29.0,under,9.6,5,8.64,-1.36,under,10.5,1,-0.5
 2026-11-23,401918057,California Golden Bears,Alabama St Hornets,prizepicks,player_points,Nojus Indrusaitis,17.5,-137,-137.0,2026-11-24T01:42:07+00:00,18.0,28.0,over,18.83,6,13.67,-3.83,under,,0,
 2026-11-23,401921664,UC San Diego Tritons,San José St Spartans,prizepicks,player_points,Pasha Goodarzi,6.5,-137,-137.0,2026-11-24T01:42:07+00:00,,,nomatch,,0,,,,,0,
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_assists,Adam Clark,4.5,-137,-137.0,2026-11-24T18:04:11+00:00,5.0,37.0,over,4.6,5,4.8,0.3,over,4.5,2,0.0
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_points,Adam Clark,13.5,-137,-137.0,2026-11-24T18:04:11+00:00,20.0,37.0,over,15.0,5,13.98,0.48,over,14.0,2,-0.5
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_points,Bruce Branch III,15.5,-137,-137.0,2026-11-24T18:04:11+00:00,10.0,29.0,under,14.5,6,15.76,0.26,over,15.5,2,0.0
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_rebounds,Bruce Branch III,5.0,-137,-137.0,2026-11-24T18:04:11+00:00,7.0,29.0,over,4.83,6,4.99,-0.01,under,,0,
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_points,Collin Chandler,18.5,-137,-137.0,2026-11-24T18:04:11+00:00,34.0,34.0,over,16.67,6,11.82,-6.68,under,18.0,2,0.5
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_points,Corey Stephenson,13.5,-137,-137.0,2026-11-24T18:04:11+00:00,18.0,34.0,over,11.6,5,13.67,0.17,over,13.5,2,0.0
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_rebounds,Corey Stephenson,4.5,-137,-137.0,2026-11-24T18:04:11+00:00,3.0,34.0,under,4.4,5,4.79,0.29,over,,0,
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_points,Jaxon Kohler,14.5,-137,-137.0,2026-11-24T18:04:11+00:00,8.0,26.0,under,13.33,6,11.26,-3.24,under,14.5,1,0.0
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_rebounds,Jaxon Kohler,7.0,-137,-137.0,2026-11-24T18:04:11+00:00,10.0,26.0,over,6.17,6,7.36,0.36,over,7.5,2,-0.5
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_rebounds,Roman Siulepa,4.5,-137,-137.0,2026-11-24T18:04:11+00:00,9.0,18.0,over,5.4,5,4.63,0.13,over,,0,
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_points,Tyler Betsey,11.5,-137,-137.0,2026-11-24T18:04:11+00:00,0.0,30.0,under,11.5,6,9.4,-2.1,under,,0,
+2026-11-24,401921709,BYU Cougars,Ole Miss Rebels,prizepicks,player_rebounds,Tyler Betsey,5.0,-137,-137.0,2026-11-24T18:04:11+00:00,3.0,30.0,under,4.67,6,4.01,-0.99,under,,0,
