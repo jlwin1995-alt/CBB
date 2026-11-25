@@ -1,23 +1,17 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
 401921669,2026-11-25T19:00Z,2026-11-25,9,Arizona State Sun Devils,power6,Big 12,99,LSU Tigers,power6,Southeastern,1,1,STATUS_IN_PROGRESS
-401929406,2026-11-25T19:00Z,2026-11-25,233,South Dakota Coyotes,low,Summit League,2029,Arkansas-Pine Bluff Golden Lions,low,Southwestern Athletic,0,0,STATUS_IN_PROGRESS
-401928850,2026-11-25T19:00Z,2026-11-25,2711,Western Michigan Broncos,mid,Mid-American,126822,Grace Christian Tigers,low,,0,1,STATUS_IN_PROGRESS
-401926207,2026-11-25T19:00Z,2026-11-25,2717,Western Carolina Catamounts,low,Southern,2410,Montreat Cavaliers,low,,0,0,STATUS_IN_PROGRESS
-401924705,2026-11-25T19:00Z,2026-11-25,171,Columbia Lions,low,Ivy League,2612,Saint Peter's Peacocks,low,Metro,0,0,STATUS_IN_PROGRESS
-401922223,2026-11-25T19:00Z,2026-11-25,2454,North Florida Ospreys,low,Atlantic Sun,2683,Warner Royals,low,,0,0,STATUS_IN_PROGRESS
-401920868,2026-11-25T19:00Z,2026-11-25,2885,NJIT Highlanders,low,America East,2363,Manhattan Jaspers,low,Metro,0,0,STATUS_IN_PROGRESS
 401917967,2026-11-25T19:00Z,2026-11-25,2571,South Dakota State Jackrabbits,low,Summit League,2000,Abilene Christian Wildcats,low,United Athletic,0,0,STATUS_IN_PROGRESS
 401921715,2026-11-25T19:30Z,2026-11-25,12,Arizona Wildcats,power6,Big 12,145,Ole Miss Rebels,power6,Southeastern,1,1,STATUS_IN_PROGRESS
-401920809,2026-11-25T19:30Z,2026-11-25,2752,Xavier Musketeers,power6,Big East,245,Texas A&M Aggies,power6,Southeastern,1,1,STATUS_DELAYED
 401928836,2026-11-25T20:00Z,2026-11-25,2026,App State Mountaineers,mid,Sun Belt,2006,Akron Zips,mid,Mid-American,1,1,STATUS_IN_PROGRESS
-401920548,2026-11-25T20:00Z,2026-11-25,155,North Dakota Fighting Hawks,low,Summit League,2545,SE Louisiana Lions,low,Southland,1,0,STATUS_IN_PROGRESS
+401920548,2026-11-25T20:00Z,2026-11-25,155,North Dakota Fighting Hawks,low,Summit League,2545,SE Louisiana Lions,low,Southland,1,0,STATUS_HALFTIME
 401919042,2026-11-25T20:00Z,2026-11-25,197,Oklahoma State Cowboys,power6,Big 12,2296,Jackson State Tigers,low,Southwestern Athletic,0,1,STATUS_IN_PROGRESS
 401928359,2026-11-25T20:30Z,2026-11-25,2229,Florida International Panthers,mid,Conference USA,2032,Arkansas State Red Wolves,mid,Sun Belt,0,1,STATUS_IN_PROGRESS
-401925943,2026-11-25T21:00Z,2026-11-25,3101,Utah Tech Trailblazers,low,Big Sky,3246,Bethesda Flames,low,,0,0,STATUS_SCHEDULED
+401925943,2026-11-25T21:00Z,2026-11-25,3101,Utah Tech Trailblazers,low,Big Sky,3246,Bethesda Flames,low,,0,0,STATUS_IN_PROGRESS
 401925050,2026-11-25T21:00Z,2026-11-25,2443,LSU New Orleans Privateers,low,Southland,2755,Grambling Tigers,low,Southwestern Athletic,0,0,STATUS_SCHEDULED
-401924737,2026-11-25T21:00Z,2026-11-25,2335,Liberty Flames,mid,Conference USA,163,Princeton Tigers,low,Ivy League,1,1,STATUS_SCHEDULED
-401921703,2026-11-25T21:00Z,2026-11-25,526,Florida Gulf Coast Eagles,low,Atlantic Sun,2247,Georgia State Panthers,mid,Sun Belt,1,1,STATUS_SCHEDULED
-401920858,2026-11-25T21:00Z,2026-11-25,276,Marshall Thundering Herd,mid,Sun Belt,2504,Prairie View A&M Panthers,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
+401924737,2026-11-25T21:00Z,2026-11-25,2335,Liberty Flames,mid,Conference USA,163,Princeton Tigers,low,Ivy League,1,1,STATUS_IN_PROGRESS
+401921703,2026-11-25T21:00Z,2026-11-25,526,Florida Gulf Coast Eagles,low,Atlantic Sun,2247,Georgia State Panthers,mid,Sun Belt,1,1,STATUS_IN_PROGRESS
+401920858,2026-11-25T21:00Z,2026-11-25,276,Marshall Thundering Herd,mid,Sun Belt,2504,Prairie View A&M Panthers,low,Southwestern Athletic,0,1,STATUS_IN_PROGRESS
+401920809,2026-11-25T21:13Z,2026-11-25,2752,Xavier Musketeers,power6,Big East,245,Texas A&M Aggies,power6,Southeastern,1,1,STATUS_SCHEDULED
 401921670,2026-11-25T21:30Z,2026-11-25,30,USC Trojans,power6,Big Ten,2579,South Carolina Gamecocks,power6,Southeastern,1,1,STATUS_SCHEDULED
 401926065,2026-11-25T22:00Z,2026-11-25,158,Nebraska Cornhuskers,power6,Big Ten,2582,Southern Jaguars,low,Southwestern Athletic,0,1,STATUS_SCHEDULED
 401917182,2026-11-25T22:00Z,2026-11-25,213,Penn State Nittany Lions,power6,Big Ten,235,Memphis Tigers,mid,American,1,1,STATUS_SCHEDULED
