@@ -1,0 +1,93 @@
+[
+ {
+  "ts": "2026-11-25T05:06:00+00:00",
+  "markets": [
+   "player_points_rebounds_assists",
+   "player_points_rebounds",
+   "player_points_assists",
+   "player_rebounds_assists"
+  ],
+  "credits": 4.0,
+  "summary": {
+   "player_points_rebounds_assists": {
+    "games_with_data": 1,
+    "games": 1,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 4,
+    "prizepicks_games": 1
+   },
+   "player_points_rebounds": {
+    "games_with_data": 1,
+    "games": 1,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 4,
+    "prizepicks_games": 1
+   },
+   "player_points_assists": {
+    "games_with_data": 1,
+    "games": 1,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 4,
+    "prizepicks_games": 1
+   },
+   "player_rebounds_assists": {
+    "games_with_data": 1,
+    "games": 1,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 1,
+    "prizepicks_games": 1
+   }
+  },
+  "games": [
+   {
+    "game": "Gonzaga Bulldogs @ Kansas St Wildcats",
+    "start_utc": "2026-11-25T05:30Z",
+    "tier": "power6/power6",
+    "base_lines_known": 5,
+    "credits": 4.0,
+    "markets": {
+     "player_points_rebounds_assists": {
+      "books": {
+       "prizepicks": 4
+      },
+      "players": 4,
+      "lines": 4,
+      "prizepicks": true
+     },
+     "player_points_rebounds": {
+      "books": {
+       "prizepicks": 4
+      },
+      "players": 4,
+      "lines": 4,
+      "prizepicks": true
+     },
+     "player_points_assists": {
+      "books": {
+       "prizepicks": 4
+      },
+      "players": 4,
+      "lines": 4,
+      "prizepicks": true
+     },
+     "player_rebounds_assists": {
+      "books": {
+       "prizepicks": 1
+      },
+      "players": 1,
+      "lines": 1,
+      "prizepicks": true
+     }
+    }
+   }
+  ]
+ }
+]
