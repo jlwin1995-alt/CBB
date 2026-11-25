@@ -82,3 +82,10 @@ It is graded as the sum of the three box-score columns, projected as the sum of 
 `EST_CREDITS_PER_GAME` is 5). The model's overall hit rate on the Scorecard now pools PRA lines with the other markets; the per-market row shows PRA on its own.
 `DAILY_CREDIT_CAP` is 250 through Dec 8 (Eastern date, two weeks from Nov 25, for the holiday window) and goes back to 100 by itself afterwards (`config.HOLIDAY_CAP_THROUGH`); the 5,000-credit floor for the shared key is unchanged.
 
+
+### Projected starters (Game page, Board stars)
+
+`pipeline/teams_site.py` also writes `site/data/lineups.json`: each team's five players with the most starts in its last 8 games (this and last season, ties by minutes, current roster only), from the box scores' starter flags.
+The Game page shows a "Projected starters" strip for both teams (start counts such as `7/8`) and a ★ beside projected starters in the lines table and on the Board. It is **inferred, not announced**, and
+**availability is not modelled** (there is no college injury feed), so a starter who is out tonight is not replaced; the page says to check the news before tip. Backtest on 12,696 team-games: even knowing who sat out it
+names 4.4 of the 5 starters (4 or 5 right 87% of the time, exactly right 55%); not knowing, 3.9 of 5. Display only.
