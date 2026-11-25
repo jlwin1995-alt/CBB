@@ -71,7 +71,7 @@ def main():
                           "rows": [{**{k: v for k, v in r.items() if k not in ("at", "first_tip", "last_tip")}, "at": r["at"].strftime("%Y-%m-%dT%H:%MZ"),
                                     "first_tip": r["first_tip"].strftime("%H:%MZ"), "last_tip": r["last_tip"].strftime("%H:%MZ")} for r in rows]}, indent=1)); return
     print(f"{date_et} (ET): {n} in-scope games in {sum(r['kind'] == 'pull' for r in rows)} waves; credits spent today {spent:g} of cap {C.DAILY_CREDIT_CAP:g}; "
-          f"if every game had props the plan would price {est:g} (4 per game with props, 0 for games without)")
+          f"if every game had props the plan would price {est:g} ({EST_CREDITS:g} per game with props, 0 for games without)")
     for r in rows:
         tip = f"{r['first_tip']:%H:%MZ}" + (f"-{r['last_tip']:%H:%MZ}" if r["last_tip"] != r["first_tip"] else "")
         et = r["at"].tz_convert("America/New_York")
