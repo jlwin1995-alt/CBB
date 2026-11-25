@@ -16,7 +16,9 @@ import pandas as pd, numpy as np
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW, LOG = os.path.join(ROOT, "data", "raw"), os.path.join(ROOT, "data", "log")
 ET = ZoneInfo("America/New_York")
-MARKET_STAT = {"player_points": "pts", "player_rebounds": "reb", "player_assists": "ast", "player_threes": "fg3m"}   # same as config.MARKET_STAT
+MARKET_STAT = {"player_points": "pts", "player_rebounds": "reb", "player_assists": "ast", "player_threes": "fg3m", "player_points_rebounds_assists": "pra"}   # same as config.MARKET_STAT
+COMBO = {"pra": ("pts", "reb", "ast")}
+
 KEY = ["espn_event", "book", "market", "player"]
 OUT_COLS = ["et_date", "espn_event", "home", "away", "book", "market", "player", "point", "over", "under", "pulled_at", "actual", "mins", "result", "avg_prior", "n_prior", "proj", "edge", "pick", "consensus", "n_books", "vs_cons"]
 
@@ -36,6 +38,7 @@ def load_boxes():
     p = pd.concat(frames, ignore_index=True)
     p["nn"] = p["name"].map(nz)
     p["d"] = pd.to_datetime(p["date"])
+    for k, parts in COMBO.items(): p[k] = sum(p[c] for c in parts)
     return p
 
 
@@ -48,6 +51,11 @@ def tally(df):
     out["over_rate"] = round(out["over"] / dec, 3) if dec else None
     out["mean_actual_minus_line"] = round(float((df.loc[df.result.isin(["over", "under"]), "actual"] - df.loc[df.result.isin(["over", "under"]), "point"]).mean()), 2) if dec else None
     return out
+
+
+def proj_val(pj, st):
+    """projected value of a stat for a projection-log row; a combo stat (pra) is the sum of its parts"""
+    return float(sum(getattr(pj, c + "_p") for c in COMBO[st])) if st in COMBO else float(getattr(pj, st + "_p"))
 
 
 def load_proj():
@@ -110,7 +118,7 @@ def main():
         use = cur if len(cur) >= 2 else hist
         avg = float(use[st].mean()) if len(use) >= 3 else np.nan
         pj = proj.get((r.espn_event, str(b.pid)))
-        pv = float(getattr(pj, st + "_p")) if pj is not None else np.nan
+        pv = proj_val(pj, st) if pj is not None else np.nan
         rows.append(dict(base, actual=actual, mins=b["min"], result=res, avg_prior=round(avg, 2) if avg == avg else np.nan, n_prior=len(use),
                          proj=round(pv, 2) if pv == pv else np.nan, edge=round(pv - r.point, 2) if pv == pv else np.nan, pick=("over" if pv > r.point else "under") if pv == pv else None))
     g = pd.DataFrame(rows, columns=OUT_COLS)

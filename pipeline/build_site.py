@@ -13,7 +13,7 @@ import grade_lines as GL
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW, LOG, PROJ, OUT = os.path.join(ROOT, "data", "raw"), os.path.join(ROOT, "data", "log"), os.path.join(ROOT, "data", "proj"), os.path.join(ROOT, "site", "data")
-MARKET_LABEL = {"player_points": "Points", "player_rebounds": "Rebounds", "player_assists": "Assists", "player_threes": "3-pointers"}
+MARKET_LABEL = {"player_points": "Points", "player_rebounds": "Rebounds", "player_assists": "Assists", "player_threes": "3-pointers", "player_points_rebounds_assists": "PTS+REB+AST"}
 BACKTEST = [   # research/validate_model.py, roster = who played; FP = PrizePicks fantasy score (points 1, rebounds 1.2, assists 1.5, steals/blocks 3, turnovers -1)
     {"window": "2026 Dec-Mar", "fp_model": 6.75, "fp_avg": 6.70, "min_model": 5.09, "min_avg": 5.18},
     {"window": "2025 Dec-Mar (holdout)", "fp_model": 6.56, "fp_avg": 6.53, "min_model": 5.06, "min_avg": 5.15},
@@ -83,7 +83,7 @@ def board(now):
             except Exception: g["home_id"] = g["away_id"] = None
         pr = pidx.get((r.espn_event, GL.nz(r.player)))
         st = GL.MARKET_STAT[r.market]
-        pv = float(getattr(pr, st + "_p")) if pr is not None else None
+        pv = GL.proj_val(pr, st) if pr is not None else None
         if pr is not None:
             g["spread_home"] = num(pr.spread_home); g["total"] = num(pr.total)
         team = None
