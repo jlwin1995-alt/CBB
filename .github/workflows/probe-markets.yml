@@ -1,0 +1,64 @@
+name: Probe extra player-prop markets (by hand)
+
+# One-off, budgeted check of which extra markets (default: the four combo props) The Odds API returns for college games, from which books, and whether PrizePicks has them.
+# Costs 1 credit per market per game that returns data (default 4 games x 4 markets = at most 16), counted against the daily cap in data/log/credits.csv. Results go to the run's summary and data/log/market_probe.json.
+# It shares the lines workflow's concurrency group so the two never commit at once, and it does not touch lines.csv, the site or the model.
+on:
+  workflow_dispatch:
+    inputs:
+      games:
+        description: "How many games to probe (the ones with the most base-market props already, plus one with few)"
+        required: false
+        default: "4"
+      hours:
+        description: "Only games starting within this many hours"
+        required: false
+        default: "14"
+      markets:
+        description: "Comma-separated Odds API market keys (default: the four combos)"
+        required: false
+        default: "player_points_rebounds_assists,player_points_rebounds,player_points_assists,player_rebounds_assists"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cbb-lines
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      GAMES_IN: ${{ inputs.games }}
+      HOURS_IN: ${{ inputs.hours }}
+      MARKETS_IN: ${{ inputs.markets }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Probe
+        run: |
+          GAMES="${GAMES_IN:-4}"; HOURS="${HOURS_IN:-14}"; MARKETS="${MARKETS_IN:-player_points_rebounds_assists}"
+          case "$GAMES" in ''|*[!0-9]*) GAMES=4;; esac
+          case "$HOURS" in ''|*[!0-9.]*) HOURS=14;; esac
+          case "$MARKETS" in *[!a-z_,]*) echo "::error::markets may only contain lowercase letters, underscores and commas"; exit 1;; esac
+          [ "$GAMES" -gt 8 ] && GAMES=8
+          python pipeline/probe_markets.py --games "$GAMES" --hours "$HOURS" --markets "$MARKETS"
+      - name: Commit the credit log and the probe result
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "Market probe"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "::error::could not push the probe commit after 3 attempts"; exit 1
