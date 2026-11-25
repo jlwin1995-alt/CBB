@@ -67,3 +67,11 @@ games show n/a. Spread repeats only modestly (odd vs even games r 0.42, earlier 
 
 The **Game** tab is the opening page: pick a game once and get the team matchup (a collapsible comparison, with a one-line unit-strength summary in its header), then every PrizePicks line for the game with the model's
 projection, edge, lean and each player's consistency tag, sortable. **Board** still shows every game's lines at once with filters, and **Matchups** still compares any two Division I teams. Display only.
+
+### Schedule-aware refreshes
+
+The hourly cron prices every game in an 8-hour window on every run, so on a busy day (holiday weeks start games at 10am ET) the daily credit cap is spent re-pricing the same games while the early games are priced late.
+`python pipeline/plan_refreshes.py [--date YYYY-MM-DD]` builds the day's plan from `data/raw/schedule.csv`: one pull per wave of tip-offs (games within two hours of each other), started 130 minutes before the
+wave's first tip, with the workflow's new `hours` input set just long enough to cover that wave, plus a free grading refresh (`hours` = 0) after the last tip. The plan is run each morning and dispatched by the
+scheduled tasks; the cron stays as a backstop. Credits: 4 per game with props, so a day with more than about 25 priced games hits the 100 a day cap (`config.DAILY_CREDIT_CAP`) before the last waves.
+

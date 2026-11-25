@@ -5,7 +5,12 @@ name: Lines (ESPN ingest + Odds API player props)
 # (Was: every two hours through the evening.) The ESPN ingest is free; /odds costs nothing for a game with no props, so scanning every in-scope game is free and
 # only games that have props spend credits (stopped at the daily cap and the credit floor, see pipeline/config.py). Needs the repository secret ODDS_API_KEY.
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Price games starting within this many hours (default 8; 0 = no pricing, just ingest/grade/build). pipeline/plan_refreshes.py gives the value for each wave of tip-offs."
+        required: false
+        default: "8"
   schedule:
     - cron: "17 14-23,0-5 * * *"
 
@@ -33,8 +38,12 @@ jobs:
       - name: Ingest finished games and refresh the schedule
         run: python pipeline/ingest_daily.py
       - name: Pull player props for the games about to start
+        env:
+          HOURS_IN: ${{ inputs.hours }}
         run: |
-          if [ -z "$ODDS_API_KEY" ]; then echo "::notice::ODDS_API_KEY is not set; skipping the lines pull"; else python pipeline/fetch_lines.py; fi
+          HOURS="${HOURS_IN:-8}"
+          case "$HOURS" in ''|*[!0-9.]*) echo "::warning::hours input '$HOURS' is not a number; using 8"; HOURS=8;; esac
+          if [ -z "$ODDS_API_KEY" ]; then echo "::notice::ODDS_API_KEY is not set; skipping the lines pull"; else python pipeline/fetch_lines.py --hours "$HOURS"; fi
       - name: Project the upcoming games (logged before tip) and log spread/total
         continue-on-error: true
         run: python pipeline/project.py
