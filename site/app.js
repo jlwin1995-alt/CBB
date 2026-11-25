@@ -9,7 +9,7 @@ function wilson(k, n) { if (!n) return [0, 1]; const z = 1.96, p = k / n, d = 1 
 const rate = o => !o || !o.n ? "–" : `${pct(o.hit / o.n)} <span class="mut">(${o.hit}/${o.n}, ${pct(wilson(o.hit, o.n)[0])}–${pct(wilson(o.hit, o.n)[1])})</span>`;
 const D = {};
 async function load() {
-  for (const k of ["board", "scorecard", "teams", "consistency"]) { const r = await fetch(`data/${k}.json?v=${Date.now()}`); D[k] = r.ok ? await r.json() : null; }
+  for (const k of ["board", "scorecard", "teams", "consistency", "lineups"]) { const r = await fetch(`data/${k}.json?v=${Date.now()}`); D[k] = r.ok ? await r.json() : null; }
   const a = D.scorecard && D.scorecard.asof; if (a) $("#asof").textContent = "updated " + fmtT(a);
   const m = D.scorecard && D.scorecard.tally && D.scorecard.tally.model && D.scorecard.tally.model.all;
   const b = $("#banner"); b.hidden = false;
@@ -43,6 +43,20 @@ function consCell(pid) {
   return `<span title="${consTip(c)}"><span class="pill ${CONS_CLASS[c.fp.tag]}">${c.fp.tag}${c.fp.shape ? " · " + c.fp.shape : ""}</span> ${consBars(c)}</span>`;
 }
 
+
+// ---------- projected starters, inferred from recent starts (display only) ---------------------------------------------------------
+let PSET = null;
+function isProjStarter(pid) {
+  if (!PSET) { PSET = new Set(); if (D.lineups) for (const id in D.lineups.teams) for (const c of D.lineups.teams[id].players.slice(0, 5)) PSET.add(c.pid); }
+  return PSET.has(pid);
+}
+function startersStrip(id, label) {
+  const L = D.lineups && D.lineups.teams && D.lineups.teams[id]; if (!L || !L.players.length) return "";
+  const acc = D.lineups.acc && D.lineups.acc.absences_known;
+  const chip = c => `<span class="pill" title="${esc(c.name)}: started ${c.s} of his last ${c.gp} games (${c.mpg} min a game)">★ ${esc(c.name)} <span class="mut">${esc(c.pos)} ${c.s}/${c.gp}</span></span>`;
+  return `<p class="sub" title="Inferred, not announced, and availability is not modelled (no injury feed). ${acc && acc.avg_right ? `Backtest on ${D.lineups.acc.team_games} team-games: even knowing who sat out it names ${acc.avg_right.toFixed(1)} of the 5 starters on average (${Math.round(acc.four_plus * 100)}% of the time 4 or 5 right, ${Math.round(acc.exact * 100)}% exactly right).` : ""}"><b>${esc(label)}</b> <span class="mut">(last ${L.games} games' starts)</span>: ${L.players.slice(0, 5).map(chip).join(" ")}</p>`;
+}
+
 const LINE_COLS = [["player", "Player", 1], ["team", "Team", 1], ["market", "Market", 1], ["pp", "PrizePicks"], ["cons", "Consensus"], ["gap", "PP − cons"], ["proj", "Proj"], ["edge", "Edge"], ["lean", "Lean"], ["min", "Min"], ["consist", "Consistency", 1]];
 function gameLinesHTML(g) {
   let h = "", shown = 0;
@@ -54,7 +68,7 @@ function gameLinesHTML(g) {
     h += `<div class="gh"><b>${g.away} @ ${g.home}</b><span>${fmtT(g.start_utc)}${sp}</span></div><div class="tw"><table><thead><tr>${LINE_COLS.map(([k, t, l]) => `<th class="${l ? "l " : ""}${S.sort.k === k ? "on" + (S.sort.asc ? " asc" : "") : ""}" data-k="${k}">${t}</th>`).join("")}</tr></thead><tbody>`;
     for (const l of rows) {
       const rel = l.edge == null ? null : l.edge / Math.max(l.pp, .5), lean = l.edge == null ? "–" : (l.edge > 0 ? "Over" : "Under");
-      h += `<tr><td class="l">${l.player}</td><td class="l mut">${(l.team || "").replace(/ [A-Z][\w.'’&-]*( [A-Z][\w.'’&-]*)?$/, "")}</td><td class="l">${l.market}</td><td>${n1(l.pp)}</td>
+      h += `<tr><td class="l">${isProjStarter(l.pid) ? '<span class="star" title="Projected starter">★</span> ' : ""}${l.player}</td><td class="l mut">${(l.team || "").replace(/ [A-Z][\w.'’&-]*( [A-Z][\w.'’&-]*)?$/, "")}</td><td class="l">${l.market}</td><td>${n1(l.pp)}</td>
       <td ${l.book_lines ? `title="${l.book_lines}"` : ""}>${l.cons == null ? "–" : n1(l.cons) + ` <span class="mut">×${l.n_books}</span>`}</td><td class="${l.gap == null ? "mut" : ""}">${signed(l.gap)}</td>
       <td>${n1(l.proj)}</td><td class="${rel == null ? "mut" : rel > 0 ? "good" : "bad"}">${signed(l.edge)}${rel == null ? "" : ` <span class="mut">${Math.round(rel * 100)}%</span>`}${rel != null && bigGap() && Math.abs(rel) >= bigGap().threshold ? ` <span class="flag" title="${bigTxt(bigGap()).replace(/"/g, "'")}">big gap</span>` : ""}</td><td>${lean}</td><td class="mut">${l.min == null ? "–" : Math.round(l.min)}</td><td class="l">${consCell(l.pid)}</td></tr>`;
     }
@@ -220,6 +234,8 @@ function game() {
     ${bigGap() ? `<div class="flagbox"><b>Big-gap watch.</b> ${bigTxt(bigGap())}</div>` : ""}
     <div class="bar"><label>Game <select id="gg">${B.games.map(x => `<option value="${x.event}" ${x.event === G.ev ? "selected" : ""}>${esc(x.away)} @ ${esc(x.home)} · ${fmtT(x.start_utc)}</option>`).join("")}</select></label><span class="mut">${esc(g.away)} @ ${esc(g.home)}${sp}</span></div>
     ${hasT ? sect("cmp", "Team comparison", unitBrief(g.away_id) + " &nbsp;vs&nbsp; " + unitBrief(g.home_id) + " <span class='mut'>(click to open: scored and allowed, vs position, opponent mix)</span>", matchupHTML({embed: true, away: g.away_id, home: g.home_id}), G.cmp === true) : ""}
+    <h3>Projected starters</h3><p class="note">Inferred from who has been starting, not announced; there is no injury feed on the college side, so a starter who is out tonight is not replaced here. Check the news before tip.</p>
+    <div class="two">${startersStrip(g.away_id, g.away)}${startersStrip(g.home_id, g.home)}</div>
     <h3>Lines and projections</h3>${lines.html || "<p class='mut'>No lines match.</p>"}
     <p class="note">Projection = expected minutes × shrunk per-minute rates × opponent × pace (points, threes), un-shrunk on points/assists/threes. A blank projection means the player is an unranked newcomer with under 3 games or is not on the ESPN roster. Availability is not modelled: a player with a line is assumed to play.</p>`;
   $("#gg").onchange = e => { G.ev = e.target.value; game(); };

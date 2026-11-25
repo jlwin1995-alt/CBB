@@ -183,11 +183,60 @@ def build_consistency(tt):
     return {"window": WINDOW, "min_games": MIN_G, "min_minutes": MIN_MIN, "players": P, "rel": rel}
 
 
+# ---- projected starters -------------------------------------------------------------------------------------------------------------------------
+LINEUP_GAMES, LINEUP_KEEP = 8, 9
+
+
+def build_lineups(tt):
+    """The five players with the most starts in each team's last LINEUP_GAMES games (this and last season, so early in a season it leans on last year), ties by minutes, restricted to players whose most
+    recent team is this one. There is no injury feed on the college side, so nobody is skipped for being out: availability is not modelled. `acc` backtests the rule (last 8 games' starts, skipping anyone who
+    did not play that night as a stand-in for an Out list known beforehand) on every team-game with 5+ prior games in the window."""
+    ps = []
+    for y in (2026, 2027):
+        f = os.path.join(RAW, f"players_{y}.csv.gz")
+        if os.path.exists(f): ps.append(pd.read_csv(f, dtype={"pid": str, "event": str}))
+    g = pd.concat(ps); g = g[g["min"] > 0].copy()
+    g["pos"] = g["pos"].fillna(""); g["name"] = g["name"].fillna("")
+    g = g.sort_values("date")
+    latest = g.drop_duplicates("pid", keep="last").set_index("pid")
+    d1 = set(tt.team_id); name = dict(zip(tt.team_id, tt.team)); teams = {}
+    ev = g.groupby(["team_id", "event"], as_index=False).date.first().sort_values("date")
+    for tid, e in ev.groupby("team_id"):
+        if tid not in d1: continue
+        evs = list(e.event)[-LINEUP_GAMES:]
+        x = g[(g.team_id == tid) & g.event.isin(evs)]
+        rows = []
+        for pid, y in x.groupby("pid"):
+            if int(latest.loc[pid, "team_id"]) != int(tid): continue
+            rows.append({"pid": pid, "name": y["name"].iloc[-1], "pos": POS.get(y["pos"].iloc[-1], y["pos"].iloc[-1]), "s": int(y.starter.sum()), "gp": int(len(y)), "mpg": round(float(y["min"].mean()), 1)})
+        rows.sort(key=lambda r: (-r["s"], -r["mpg"]))
+        teams[str(int(tid))] = {"team": name[tid], "games": len(evs), "players": rows[:LINEUP_KEEP]}
+    res_all, res_known = [], []
+    for tid, e in ev.groupby("team_id"):
+        evs = list(e.event); d = g[g.team_id == tid]
+        for i, evn in enumerate(evs):
+            if i < 5: continue
+            prev = d[d.event.isin(evs[max(0, i - LINEUP_GAMES):i])]; now = d[d.event == evn]
+            act = set(now[now.starter == 1].pid)
+            if len(act) != 5: continue
+            rate = prev.groupby("pid").starter.sum().sort_values(ascending=False); played = set(now.pid)
+            res_all.append(len(set(rate.head(5).index) & act)); res_known.append(len(set(rate[rate.index.isin(played)].head(5).index) & act))
+    a, k = np.array(res_all), np.array(res_known)
+    f3 = lambda r: {"avg_right": round(float(r.mean()), 2), "exact": round(float((r == 5).mean()), 3), "four_plus": round(float((r >= 4).mean()), 3)} if len(r) else {}
+    return {"asof": str(g.date.max()), "n_games": LINEUP_GAMES, "teams": teams, "acc": {"team_games": int(len(a)), "blind": f3(a), "absences_known": f3(k)}}
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     p, tt = load()
     T = build_teams(p, tt)
     json.dump(T, open(os.path.join(OUT, "teams.json"), "w"), separators=(",", ":"), allow_nan=False)
+    try:
+        L = build_lineups(tt)
+        json.dump(L, open(os.path.join(OUT, "lineups.json"), "w"), separators=(",", ":"), allow_nan=False)
+        print(f"lineups: {len(L['teams'])} teams, backtest {L['acc']}")
+    except Exception as e:
+        print(f"lineups skipped: {e}")
     C = build_consistency(tt)
     json.dump(C, open(os.path.join(OUT, "consistency.json"), "w"), separators=(",", ":"), allow_nan=False)
     tags = pd.Series([v["fp"].get("tag") for v in C["players"].values()]).value_counts().to_dict()
