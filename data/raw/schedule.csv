@@ -1,19 +1,13 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401927399,2026-11-25T15:00Z,2026-11-25,2057,Belmont Bruins,mid,Missouri Valley,179,St. Bonaventure Bonnies,mid,Atlantic 10,1,1,STATUS_IN_PROGRESS
-401928845,2026-11-25T16:00Z,2026-11-25,195,Ohio Bobcats,mid,Mid-American,242,Rice Owls,mid,American,1,1,STATUS_IN_PROGRESS
-401921702,2026-11-25T16:00Z,2026-11-25,2429,Charlotte 49ers,mid,American,2460,Northern Iowa Panthers,mid,Missouri Valley,1,1,STATUS_HALFTIME
-401911201,2026-11-25T16:00Z,2026-11-25,2230,Fordham Rams,mid,Atlantic 10,2384,Mercy Mavericks,low,,0,1,STATUS_IN_PROGRESS
-401920428,2026-11-25T17:00Z,2026-11-25,269,Marquette Golden Eagles,power6,Big East,258,Virginia Cavaliers,power6,Atlantic Coast,1,1,STATUS_SCHEDULED
-401920196,2026-11-25T17:00Z,2026-11-25,2603,Saint Joseph's Hawks,mid,Atlantic 10,3183,Penn State Abington Nittany Lions,low,,0,1,STATUS_SCHEDULED
-401919762,2026-11-25T17:00Z,2026-11-25,161,Fairleigh Dickinson Knights,low,Northeast,130189,Vermont State Randolph Knights,low,,0,0,STATUS_SCHEDULED
-401928831,2026-11-25T17:30Z,2026-11-25,2750,Wright State Raiders,low,Horizon League,43,Yale Bulldogs,low,Ivy League,1,0,STATUS_SCHEDULED
-401920547,2026-11-25T17:30Z,2026-11-25,2174,Detroit Mercy Titans,low,Horizon League,2458,Northern Colorado Bears,low,Big Sky,1,0,STATUS_SCHEDULED
-401926835,2026-11-25T18:00Z,2026-11-25,2619,Stony Brook Seawolves,mid,Coastal Athletic Association,2815,Lindenwood Lions,low,,0,1,STATUS_SCHEDULED
-401924268,2026-11-25T18:00Z,2026-11-25,299,Long Beach State Beach,mid,Big West,253,Southern Utah Thunderbirds,low,Big Sky,1,1,STATUS_SCHEDULED
-401920067,2026-11-25T18:00Z,2026-11-25,227,Rhode Island Rams,mid,Atlantic 10,2022,American International Yellow Jackets,low,,0,1,STATUS_SCHEDULED
-401911029,2026-11-25T18:00Z,2026-11-25,193,Miami (OH) RedHawks,mid,Mid-American,2198,Eastern Kentucky Colonels,low,United Athletic,0,1,STATUS_SCHEDULED
-401919007,2026-11-25T18:30Z,2026-11-25,2166,Davidson Wildcats,mid,Atlantic 10,2655,Tulane Green Wave,mid,American,1,1,STATUS_SCHEDULED
-401921669,2026-11-25T19:00Z,2026-11-25,99,LSU Tigers,power6,Southeastern,9,Arizona State Sun Devils,power6,Big 12,1,1,STATUS_SCHEDULED
+401920428,2026-11-25T17:00Z,2026-11-25,269,Marquette Golden Eagles,power6,Big East,258,Virginia Cavaliers,power6,Atlantic Coast,1,1,STATUS_DELAYED
+401920547,2026-11-25T17:30Z,2026-11-25,2174,Detroit Mercy Titans,low,Horizon League,2458,Northern Colorado Bears,low,Big Sky,1,0,STATUS_IN_PROGRESS
+401928831,2026-11-25T17:31Z,2026-11-25,2750,Wright State Raiders,low,Horizon League,43,Yale Bulldogs,low,Ivy League,1,0,STATUS_IN_PROGRESS
+401926835,2026-11-25T18:00Z,2026-11-25,2619,Stony Brook Seawolves,mid,Coastal Athletic Association,2815,Lindenwood Lions,low,,0,1,STATUS_IN_PROGRESS
+401924268,2026-11-25T18:00Z,2026-11-25,299,Long Beach State Beach,mid,Big West,253,Southern Utah Thunderbirds,low,Big Sky,1,1,STATUS_IN_PROGRESS
+401920067,2026-11-25T18:00Z,2026-11-25,227,Rhode Island Rams,mid,Atlantic 10,2022,American International Yellow Jackets,low,,0,1,STATUS_HALFTIME
+401911029,2026-11-25T18:00Z,2026-11-25,193,Miami (OH) RedHawks,mid,Mid-American,2198,Eastern Kentucky Colonels,low,United Athletic,0,1,STATUS_IN_PROGRESS
+401919007,2026-11-25T18:30Z,2026-11-25,2166,Davidson Wildcats,mid,Atlantic 10,2655,Tulane Green Wave,mid,American,1,1,STATUS_IN_PROGRESS
+401921669,2026-11-25T19:00Z,2026-11-25,9,Arizona State Sun Devils,power6,Big 12,99,LSU Tigers,power6,Southeastern,1,1,STATUS_SCHEDULED
 401929406,2026-11-25T19:00Z,2026-11-25,233,South Dakota Coyotes,low,Summit League,2029,Arkansas-Pine Bluff Golden Lions,low,Southwestern Athletic,0,0,STATUS_SCHEDULED
 401928850,2026-11-25T19:00Z,2026-11-25,2711,Western Michigan Broncos,mid,Mid-American,126822,Grace Christian Tigers,low,,0,1,STATUS_SCHEDULED
 401926207,2026-11-25T19:00Z,2026-11-25,2717,Western Carolina Catamounts,low,Southern,2410,Montreat Cavaliers,low,,0,0,STATUS_SCHEDULED
