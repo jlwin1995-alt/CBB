@@ -89,5 +89,162 @@
     }
    }
   ]
+ },
+ {
+  "ts": "2026-11-25T13:30:56+00:00",
+  "markets": [
+   "player_points_rebounds_assists",
+   "player_points_rebounds",
+   "player_points_assists",
+   "player_rebounds_assists"
+  ],
+  "credits": 4.0,
+  "summary": {
+   "player_points_rebounds_assists": {
+    "games_with_data": 1,
+    "games": 3,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 2,
+    "prizepicks_games": 1
+   },
+   "player_points_rebounds": {
+    "games_with_data": 1,
+    "games": 3,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 4,
+    "prizepicks_games": 1
+   },
+   "player_points_assists": {
+    "games_with_data": 1,
+    "games": 3,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 2,
+    "prizepicks_games": 1
+   },
+   "player_rebounds_assists": {
+    "games_with_data": 1,
+    "games": 3,
+    "books": [
+     "prizepicks"
+    ],
+    "lines": 3,
+    "prizepicks_games": 1
+   }
+  },
+  "games": [
+   {
+    "game": "St. Bonaventure Bonnies @ Belmont Bruins",
+    "start_utc": "2026-11-25T15:00Z",
+    "tier": "mid/mid",
+    "base_lines_known": 9,
+    "credits": 4.0,
+    "markets": {
+     "player_points_rebounds_assists": {
+      "books": {
+       "prizepicks": 2
+      },
+      "players": 2,
+      "lines": 2,
+      "prizepicks": true
+     },
+     "player_points_rebounds": {
+      "books": {
+       "prizepicks": 4
+      },
+      "players": 4,
+      "lines": 4,
+      "prizepicks": true
+     },
+     "player_points_assists": {
+      "books": {
+       "prizepicks": 2
+      },
+      "players": 2,
+      "lines": 2,
+      "prizepicks": true
+     },
+     "player_rebounds_assists": {
+      "books": {
+       "prizepicks": 3
+      },
+      "players": 3,
+      "lines": 3,
+      "prizepicks": true
+     }
+    }
+   },
+   {
+    "game": "Northern Iowa Panthers @ Charlotte 49ers",
+    "start_utc": "2026-11-25T16:00Z",
+    "tier": "mid/mid",
+    "base_lines_known": 0,
+    "credits": 0.0,
+    "markets": {
+     "player_points_rebounds_assists": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     },
+     "player_points_rebounds": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     },
+     "player_points_assists": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     },
+     "player_rebounds_assists": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     }
+    }
+   },
+   {
+    "game": "Rice Owls @ Ohio Bobcats",
+    "start_utc": "2026-11-25T16:00Z",
+    "tier": "mid/mid",
+    "base_lines_known": 0,
+    "credits": 0.0,
+    "markets": {
+     "player_points_rebounds_assists": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     },
+     "player_points_rebounds": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     },
+     "player_points_assists": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     },
+     "player_rebounds_assists": {
+      "books": {},
+      "players": 0,
+      "lines": 0,
+      "prizepicks": false
+     }
+    }
+   }
+  ]
  }
 ]
