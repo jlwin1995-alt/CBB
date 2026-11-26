@@ -1,8 +1,8 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401929281,2026-11-26T16:00Z,2026-11-26,2132,Cincinnati Bearcats,power6,Big 12,61,Georgia Bulldogs,power6,Southeastern,1,1,STATUS_SCHEDULED
-401912231,2026-11-26T17:00Z,2026-11-26,2636,UTSA Roadrunners,mid,American,349,Army Black Knights,low,Patriot League,0,1,STATUS_SCHEDULED
-401906807,2026-11-26T17:00Z,2026-11-26,2509,Purdue Boilermakers,power6,Big Ten,201,Oklahoma Sooners,power6,Southeastern,1,1,STATUS_SCHEDULED
-401920528,2026-11-26T18:00Z,2026-11-26,120,Maryland Terrapins,power6,Big Ten,21,San Diego State Aztecs,power6,Pac-12,1,1,STATUS_SCHEDULED
+401929281,2026-11-26T16:00Z,2026-11-26,2132,Cincinnati Bearcats,power6,Big 12,61,Georgia Bulldogs,power6,Southeastern,1,1,STATUS_END_PERIOD
+401912231,2026-11-26T17:00Z,2026-11-26,2636,UTSA Roadrunners,mid,American,349,Army Black Knights,low,Patriot League,0,1,STATUS_IN_PROGRESS
+401906807,2026-11-26T17:00Z,2026-11-26,2509,Purdue Boilermakers,power6,Big Ten,201,Oklahoma Sooners,power6,Southeastern,1,1,STATUS_IN_PROGRESS
+401920528,2026-11-26T18:00Z,2026-11-26,21,San Diego State Aztecs,power6,Pac-12,120,Maryland Terrapins,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401929282,2026-11-26T18:30Z,2026-11-26,2116,UCF Knights,power6,Big 12,103,Boston College Eagles,power6,Atlantic Coast,1,1,STATUS_SCHEDULED
 401921674,2026-11-26T19:00Z,2026-11-26,9,Arizona State Sun Devils,power6,Big 12,2579,South Carolina Gamecocks,power6,Southeastern,1,1,STATUS_SCHEDULED
 401906869,2026-11-26T19:30Z,2026-11-26,251,Texas Longhorns,power6,Southeastern,46,Georgetown Hoyas,power6,Big East,1,1,STATUS_SCHEDULED
