@@ -62,7 +62,7 @@ event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,
 401912711,2026-11-28T00:00Z,2026-11-27,153,North Carolina Tar Heels,power6,Atlantic Coast,277,West Virginia Mountaineers,power6,Big 12,1,1,STATUS_SCHEDULED
 401911380,2026-11-28T00:00Z,2026-11-27,2193,East Tennessee State Buccaneers,low,Southern,2127,Charleston Southern Buccaneers,low,Big South,0,0,STATUS_SCHEDULED
 401925703,2026-11-28T00:30Z,2026-11-27,248,Houston Cougars,power6,Big 12,2473,Oakland Golden Grizzlies,low,Horizon League,0,1,STATUS_SCHEDULED
-401929289,2026-11-28T00:30Z,2026-11-27,213,Penn State Nittany Lions,power6,Big Ten,344,Mississippi State Bulldogs,power6,Southeastern,1,1,STATUS_SCHEDULED
+401929289,2026-11-28T00:30Z,2026-11-27,344,Mississippi State Bulldogs,power6,Southeastern,213,Penn State Nittany Lions,power6,Big Ten,1,1,STATUS_SCHEDULED
 401929381,2026-11-28T01:00Z,2026-11-27,2031,Little Rock Trojans,low,United Athletic,6371,Lane College Dragons,low,,0,0,STATUS_SCHEDULED
 401928624,2026-11-28T01:00Z,2026-11-27,198,Oral Roberts Golden Eagles,low,Summit League,2623,Missouri State Bears,mid,Conference USA,0,1,STATUS_SCHEDULED
 401925829,2026-11-28T01:00Z,2026-11-27,249,North Texas Mean Green,mid,American,2449,North Dakota State Bison,low,Summit League,1,1,STATUS_SCHEDULED
