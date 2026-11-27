@@ -44,6 +44,14 @@ jobs:
           HOURS="${HOURS_IN:-8}"
           case "$HOURS" in ''|*[!0-9.]*) echo "::warning::hours input '$HOURS' is not a number; using 8"; HOURS=8;; esac
           if [ -z "$ODDS_API_KEY" ]; then echo "::notice::ODDS_API_KEY is not set; skipping the lines pull"; else python pipeline/fetch_lines.py --hours "$HOURS"; fi
+      - name: Fill PrizePicks gaps (games The Odds API has no PrizePicks lines for)
+        continue-on-error: true
+        env:
+          HOURS_IN: ${{ inputs.hours }}
+        run: |
+          HOURS="${HOURS_IN:-8}"
+          case "$HOURS" in ''|*[!0-9.]*) HOURS=8;; esac
+          if [ "$HOURS" != "0" ]; then python pipeline/fill_pp_gaps.py --hours "$HOURS"; fi
       - name: Project the upcoming games (logged before tip) and log spread/total
         continue-on-error: true
         run: python pipeline/project.py
