@@ -1,8 +1,7 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401917547,2026-11-26T22:00Z,2026-11-26,2608,Saint Mary's Gaels,mid,West Coast,26,UCLA Bruins,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401920538,2026-11-26T23:00Z,2026-11-26,156,Creighton Bluejays,power6,Big East,2628,TCU Horned Frogs,power6,Big 12,1,1,STATUS_IN_PROGRESS
-401918972,2026-11-27T00:00Z,2026-11-26,99,LSU Tigers,power6,Southeastern,2567,SMU Mustangs,power6,Atlantic Coast,1,1,STATUS_SCHEDULED
-401909506,2026-11-27T00:00Z,2026-11-26,221,Pittsburgh Panthers,power6,Atlantic Coast,305,DePaul Blue Demons,power6,Big East,1,1,STATUS_SCHEDULED
+401909506,2026-11-27T00:00Z,2026-11-26,221,Pittsburgh Panthers,power6,Atlantic Coast,305,DePaul Blue Demons,power6,Big East,1,1,STATUS_IN_PROGRESS
+401918972,2026-11-27T00:00Z,2026-11-26,2567,SMU Mustangs,power6,Atlantic Coast,99,LSU Tigers,power6,Southeastern,1,1,STATUS_SCHEDULED
 401911523,2026-11-27T01:00Z,2026-11-26,302,UC Davis Aggies,mid,Mountain West,55,Jacksonville State Gamecocks,mid,Conference USA,1,1,STATUS_SCHEDULED
 401920530,2026-11-27T02:00Z,2026-11-26,2599,St. John's Red Storm,power6,Big East,97,Louisville Cardinals,power6,Atlantic Coast,1,1,STATUS_SCHEDULED
 401920539,2026-11-27T02:00Z,2026-11-26,2306,Kansas State Wildcats,power6,Big 12,333,Alabama Crimson Tide,power6,Southeastern,1,1,STATUS_SCHEDULED
