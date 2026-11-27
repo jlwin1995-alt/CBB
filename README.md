@@ -89,3 +89,8 @@ It is graded as the sum of the three box-score columns, projected as the sum of 
 The Game page shows a "Projected starters" strip for both teams (start counts such as `7/8`) and a ★ beside projected starters in the lines table and on the Board. It is **inferred, not announced**, and
 **availability is not modelled** (there is no college injury feed), so a starter who is out tonight is not replaced; the page says to check the news before tip. Backtest on 12,696 team-games: even knowing who sat out it
 names 4.4 of the 5 starters (4 or 5 right 87% of the time, exactly right 55%); not knowing, 3.9 of 5. Display only.
+
+`pipeline/fill_pp_gaps.py` (run by `lines.yml` after the Odds API pull, skipped when `hours` is 0) fills **PrizePicks gaps**: in-scope games with no PrizePicks line from The Odds API (no event at all, or sportsbook lines only)
+get the STANDARD lines (goblin/demon alternates skipped) for our five markets from PrizePicks' own board at `partner-api.prizepicks.com/projections` (no key; undocumented, may change or block), matched to the ESPN game
+by exact team name and start time. Rows go into `lines.csv` as book `prizepicks` with `odds_event` `pp:<game id>` and the same placeholder prices (-137) as the Odds API rows; a game later covered by the Odds API loses its `pp:` rows.
+No Odds API credits. Any failure (blocked, changed, timeout) prints one line and the run carries on as before.
