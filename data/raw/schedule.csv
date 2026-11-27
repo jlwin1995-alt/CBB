@@ -1,5 +1,5 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401920429,2026-11-27T16:00Z,2026-11-27,2752,Xavier Musketeers,power6,Big East,258,Virginia Cavaliers,power6,Atlantic Coast,1,1,STATUS_HALFTIME
+401920429,2026-11-27T16:00Z,2026-11-27,2752,Xavier Musketeers,power6,Big East,258,Virginia Cavaliers,power6,Atlantic Coast,1,1,STATUS_IN_PROGRESS
 401920848,2026-11-27T17:00Z,2026-11-27,2335,Liberty Flames,mid,Conference USA,2900,St. Thomas Tommies,low,Summit League,1,1,STATUS_IN_PROGRESS
 401920533,2026-11-27T18:00Z,2026-11-27,2599,St. John's Red Storm,power6,Big East,66,Iowa State Cyclones,power6,Big 12,1,1,STATUS_SCHEDULED
 401924810,2026-11-27T18:00Z,2026-11-27,2771,Merrimack Warriors,low,Metro,261,Vermont Catamounts,low,America East,1,0,STATUS_SCHEDULED
