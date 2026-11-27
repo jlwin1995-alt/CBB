@@ -1,22 +1,16 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401928468,2026-11-27T20:00Z,2026-11-27,2348,Louisiana Tech Bulldogs,mid,Sun Belt,326,Texas State Bobcats,power6,Pac-12,0,1,STATUS_IN_PROGRESS
-401924738,2026-11-27T20:00Z,2026-11-27,350,UNC Wilmington Seahawks,mid,Coastal Athletic Association,163,Princeton Tigers,low,Ivy League,0,1,STATUS_END_PERIOD
-401920542,2026-11-27T20:00Z,2026-11-27,239,Baylor Bears,power6,Big 12,2628,TCU Horned Frogs,power6,Big 12,1,1,STATUS_IN_PROGRESS
-401919021,2026-11-27T20:00Z,2026-11-27,5,UAB Blazers,mid,American,2040,Auburn Montgomery Senators,low,,0,1,STATUS_IN_PROGRESS
 401921417,2026-11-27T20:30Z,2026-11-27,2083,Bucknell Bison,low,Patriot League,2325,La Salle Explorers,mid,Atlantic 10,1,1,STATUS_IN_PROGRESS
-401920774,2026-11-27T20:30Z,2026-11-27,2275,Hofstra Pride,mid,Coastal Athletic Association,2142,Colgate Raiders,low,Patriot League,0,1,STATUS_IN_PROGRESS
-401920532,2026-11-27T20:30Z,2026-11-27,2483,Oregon Ducks,power6,Big Ten,120,Maryland Terrapins,power6,Big Ten,1,1,STATUS_HALFTIME
-401921818,2026-11-27T21:00Z,2026-11-27,142,Missouri Tigers,power6,Southeastern,2029,Arkansas-Pine Bluff Golden Lions,low,Southwestern Athletic,0,1,STATUS_HALFTIME
+401920532,2026-11-27T20:30Z,2026-11-27,2483,Oregon Ducks,power6,Big Ten,120,Maryland Terrapins,power6,Big Ten,1,1,STATUS_IN_PROGRESS
+401921818,2026-11-27T21:00Z,2026-11-27,142,Missouri Tigers,power6,Southeastern,2029,Arkansas-Pine Bluff Golden Lions,low,Southwestern Athletic,0,1,STATUS_IN_PROGRESS
 401912213,2026-11-27T21:00Z,2026-11-27,44,American University Eagles,low,Patriot League,2515,Radford Highlanders,low,Big South,0,0,STATUS_IN_PROGRESS
-401911212,2026-11-27T21:00Z,2026-11-27,45,George Washington Revolutionaries,mid,Atlantic 10,2378,UMBC Retrievers,low,America East,0,1,STATUS_IN_PROGRESS
 401929283,2026-11-27T21:30Z,2026-11-27,103,Boston College Eagles,power6,Atlantic Coast,2132,Cincinnati Bearcats,power6,Big 12,1,1,STATUS_IN_PROGRESS
-401924845,2026-11-27T21:30Z,2026-11-27,322,Lafayette Leopards,low,Patriot League,315,Niagara Purple Eagles,low,Metro,0,0,STATUS_SCHEDULED
-401921718,2026-11-27T22:00Z,2026-11-27,2608,Saint Mary's Gaels,mid,West Coast,251,Texas Longhorns,power6,Southeastern,1,1,STATUS_SCHEDULED
-401909789,2026-11-27T22:00Z,2026-11-27,2305,Kansas Jayhawks,power6,Big 12,222,Villanova Wildcats,power6,Big East,0,1,STATUS_SCHEDULED
-401920810,2026-11-27T22:00Z,2026-11-27,245,Texas A&M Aggies,power6,Southeastern,269,Marquette Golden Eagles,power6,Big East,1,1,STATUS_SCHEDULED
+401924845,2026-11-27T21:30Z,2026-11-27,322,Lafayette Leopards,low,Patriot League,315,Niagara Purple Eagles,low,Metro,0,0,STATUS_IN_PROGRESS
+401921718,2026-11-27T22:00Z,2026-11-27,2608,Saint Mary's Gaels,mid,West Coast,251,Texas Longhorns,power6,Southeastern,1,1,STATUS_IN_PROGRESS
+401909789,2026-11-27T22:00Z,2026-11-27,2305,Kansas Jayhawks,power6,Big 12,222,Villanova Wildcats,power6,Big East,0,1,STATUS_IN_PROGRESS
+401920810,2026-11-27T22:00Z,2026-11-27,245,Texas A&M Aggies,power6,Southeastern,269,Marquette Golden Eagles,power6,Big East,1,1,STATUS_IN_PROGRESS
 401920382,2026-11-27T22:00Z,2026-11-27,259,Virginia Tech Hokies,power6,Atlantic Coast,295,Old Dominion Monarchs,mid,Sun Belt,0,1,STATUS_IN_PROGRESS
-401927366,2026-11-27T22:30Z,2026-11-27,68,Boise State Broncos,power6,Pac-12,2181,Drake Bulldogs,mid,Missouri Valley,1,1,STATUS_SCHEDULED
-401920541,2026-11-27T22:30Z,2026-11-27,2306,Kansas State Wildcats,power6,Big 12,130,Michigan Wolverines,power6,Big Ten,1,1,STATUS_SCHEDULED
+401927366,2026-11-27T22:30Z,2026-11-27,68,Boise State Broncos,power6,Pac-12,2181,Drake Bulldogs,mid,Missouri Valley,1,1,STATUS_IN_PROGRESS
+401920541,2026-11-27T22:41Z,2026-11-27,2306,Kansas State Wildcats,power6,Big 12,130,Michigan Wolverines,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401913531,2026-11-27T23:00Z,2026-11-27,356,Illinois Fighting Illini,power6,Big Ten,98,Western Kentucky Hilltoppers,mid,Conference USA,0,1,STATUS_SCHEDULED
 401911030,2026-11-27T23:00Z,2026-11-27,84,Indiana Hoosiers,power6,Big Ten,189,Bowling Green Falcons,mid,Mid-American,0,1,STATUS_SCHEDULED
 401933055,2026-11-27T23:00Z,2026-11-27,2908,South Carolina Upstate Spartans,low,Big South,2576,Southern Wesleyan Warriors,low,,0,0,STATUS_SCHEDULED
