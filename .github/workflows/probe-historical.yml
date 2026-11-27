@@ -43,7 +43,7 @@ jobs:
         run: |
           case "$DATE_IN" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]Z) ;; *) echo "::error::date must look like 2026-11-27T01:30:00Z"; exit 1;; esac
           case "$MARKET_IN" in *[!a-z_]*) echo "::error::market may only contain lowercase letters and underscores"; exit 1;; esac
-          python pipeline/probe_historical.py --date "$DATE_IN" --teams "${TEAMS_IN:-St. John's,Kansas State,Omaha}" --market "${MARKET_IN:-player_points}"
+          python pipeline/probe_historical.py --date "$DATE_IN" --teams "$TEAMS_IN" --market "${MARKET_IN:-player_points}"
       - name: Commit the credit log
         run: |
           git config user.name "github-actions"
