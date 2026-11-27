@@ -76,6 +76,9 @@ def model_tally(g):
     out = {"all": rate(m), "by_market": {k: rate(d) for k, d in m.groupby("market")},
            "by_edge": {"under 10%": rate(m[rel < 0.10]), "10-20%": rate(m[(rel >= 0.10) & (rel < 0.20)]), "20%+": rate(m[rel >= 0.20])},
            "overs_picked": rate(m[m.pick == "over"]), "unders_picked": rate(m[m.pick == "under"])}
+    side = lambda d: {"all": rate(d), "over": rate(d[d.pick == "over"]), "under": rate(d[d.pick == "under"])}          # the running tally by side: how the model's Over picks and Under picks each did
+    out["by_market_side"] = {k: side(d) for k, d in m.groupby("market")}
+    out["by_edge_side"] = {"under 10%": side(m[rel < 0.10]), "10-20%": side(m[(rel >= 0.10) & (rel < 0.20)]), "20%+": side(m[rel >= 0.20])}
     return out
 
 
