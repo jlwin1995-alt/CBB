@@ -98,6 +98,7 @@ function board() {
   bindSort();
 }
 function bindSort() { document.querySelectorAll("th[data-k]").forEach(th => th.onclick = () => { const k = th.dataset.k; S.sort = {k, asc: S.sort.k === k ? !S.sort.asc : false}; CUR(); }); }
+const MARKET_NAMES = {player_points: "Points", player_rebounds: "Rebounds", player_assists: "Assists", player_threes: "Threes", player_points_rebounds_assists: "PTS+REB+AST"};
 function tallyRow(label, t) {
   if (!t || !t.decided) return `<tr><td class="l">${label}</td><td colspan="5" class="mut">no decided lines</td></tr>`;
   const w = wilson(t.over, t.decided);
@@ -122,6 +123,13 @@ function scorecard() {
     <tr><td class="l">All</td><td class="l">${rate(m.all)}</td></tr>${Object.entries(m.by_market || {}).map(([k, v]) => `<tr><td class="l">${k.replace("player_", "")}</td><td class="l">${rate(v)}</td></tr>`).join("")}
     ${Object.entries(m.by_edge || {}).map(([k, v]) => `<tr><td class="l">edge ${k}${k === "20%+" && S_.flags && S_.flags.big_gap && S_.flags.big_gap.active ? ' <span class="flag">watch</span>' : ""}</td><td class="l">${rate(v)}</td></tr>`).join("")}
     <tr><td class="l">picked Over</td><td class="l">${rate(m.overs_picked)}</td></tr><tr><td class="l">picked Under</td><td class="l">${rate(m.unders_picked)}</td></tr></tbody></table></div>`;
+    if (m.by_market_side) {
+      const sideRows = (o, lab) => Object.entries(o).map(([k, v]) => `<tr><td class="l">${lab(k)}</td><td class="l">${rate(v.all)}</td><td class="l">${rate(v.over)}</td><td class="l">${rate(v.under)}</td></tr>`).join("");
+      h += `<h3>Model by category and side (running tally)</h3><div class="tw"><table><thead><tr><th class="l"></th><th class="l">All picks</th><th class="l">Picked Over</th><th class="l">Picked Under</th></tr></thead><tbody>
+      <tr><td class="l"><b>All</b></td><td class="l">${rate(m.all)}</td><td class="l">${rate(m.overs_picked)}</td><td class="l">${rate(m.unders_picked)}</td></tr>
+      ${sideRows(m.by_market_side, k => (MARKET_NAMES[k] || k.replace("player_", "")))}${sideRows(m.by_edge_side || {}, k => "edge " + k)}</tbody></table></div>
+      <p class="note">Won / lines for each side the model picked, with a 95% range; ${pct(S_.breakeven)} is break-even. Several slices have under 100 lines, so read them as indications. Updated with every graded run.</p>`;
+    }
   } else h += `<h3>Model</h3><p class="note">The model's projections are logged before tip and graded against the closing line once the game is final; none are graded yet. Retro-projecting the first 100 lines gave 42 wins (history before each game, actual rosters), so treat it as unproven.</p>`;
   h += `<h3>By day</h3><div class="tw"><table>${tHead}<tbody>${Object.entries(t.by_date || {}).sort((a, b) => b[0].localeCompare(a[0])).map(([k, v]) => tallyRow(k, v)).join("")}</tbody></table></div>
   <h3>Backtest: model vs a player's season-to-date average</h3><div class="tw"><table><thead><tr><th class="l">Window</th><th>Fantasy-pt error: model</th><th>average</th><th>Minutes error: model</th><th>average</th></tr></thead><tbody>
