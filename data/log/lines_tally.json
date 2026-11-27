@@ -397,6 +397,146 @@
    "n": 1019,
    "hit": 556,
    "hit_rate": 0.546
+  },
+  "by_market_side": {
+   "player_assists": {
+    "all": {
+     "n": 198,
+     "hit": 109,
+     "hit_rate": 0.551
+    },
+    "over": {
+     "n": 90,
+     "hit": 50,
+     "hit_rate": 0.556
+    },
+    "under": {
+     "n": 108,
+     "hit": 59,
+     "hit_rate": 0.546
+    }
+   },
+   "player_points": {
+    "all": {
+     "n": 731,
+     "hit": 368,
+     "hit_rate": 0.503
+    },
+    "over": {
+     "n": 259,
+     "hit": 121,
+     "hit_rate": 0.467
+    },
+    "under": {
+     "n": 472,
+     "hit": 247,
+     "hit_rate": 0.523
+    }
+   },
+   "player_points_rebounds_assists": {
+    "all": {
+     "n": 165,
+     "hit": 91,
+     "hit_rate": 0.552
+    },
+    "over": {
+     "n": 62,
+     "hit": 28,
+     "hit_rate": 0.452
+    },
+    "under": {
+     "n": 103,
+     "hit": 63,
+     "hit_rate": 0.612
+    }
+   },
+   "player_rebounds": {
+    "all": {
+     "n": 402,
+     "hit": 214,
+     "hit_rate": 0.532
+    },
+    "over": {
+     "n": 129,
+     "hit": 62,
+     "hit_rate": 0.481
+    },
+    "under": {
+     "n": 273,
+     "hit": 152,
+     "hit_rate": 0.557
+    }
+   },
+   "player_threes": {
+    "all": {
+     "n": 131,
+     "hit": 64,
+     "hit_rate": 0.489
+    },
+    "over": {
+     "n": 68,
+     "hit": 29,
+     "hit_rate": 0.426
+    },
+    "under": {
+     "n": 63,
+     "hit": 35,
+     "hit_rate": 0.556
+    }
+   }
+  },
+  "by_edge_side": {
+   "under 10%": {
+    "all": {
+     "n": 647,
+     "hit": 322,
+     "hit_rate": 0.498
+    },
+    "over": {
+     "n": 273,
+     "hit": 135,
+     "hit_rate": 0.495
+    },
+    "under": {
+     "n": 374,
+     "hit": 187,
+     "hit_rate": 0.5
+    }
+   },
+   "10-20%": {
+    "all": {
+     "n": 510,
+     "hit": 266,
+     "hit_rate": 0.522
+    },
+    "over": {
+     "n": 149,
+     "hit": 67,
+     "hit_rate": 0.45
+    },
+    "under": {
+     "n": 361,
+     "hit": 199,
+     "hit_rate": 0.551
+    }
+   },
+   "20%+": {
+    "all": {
+     "n": 470,
+     "hit": 258,
+     "hit_rate": 0.549
+    },
+    "over": {
+     "n": 186,
+     "hit": 88,
+     "hit_rate": 0.473
+    },
+    "under": {
+     "n": 284,
+     "hit": 170,
+     "hit_rate": 0.599
+    }
+   }
   }
  }
 }

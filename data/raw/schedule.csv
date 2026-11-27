@@ -1,5 +1,5 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401920533,2026-11-27T18:00Z,2026-11-27,2599,St. John's Red Storm,power6,Big East,66,Iowa State Cyclones,power6,Big 12,1,1,STATUS_IN_PROGRESS
+401920533,2026-11-27T18:00Z,2026-11-27,2599,St. John's Red Storm,power6,Big East,66,Iowa State Cyclones,power6,Big 12,1,1,STATUS_HALFTIME
 401924810,2026-11-27T18:00Z,2026-11-27,261,Vermont Catamounts,low,America East,2771,Merrimack Warriors,low,Metro,1,0,STATUS_HALFTIME
 401921416,2026-11-27T18:00Z,2026-11-27,2261,Hampton Pirates,mid,Coastal Athletic Association,2349,UMass Lowell River Hawks,low,America East,1,1,STATUS_HALFTIME
 401920753,2026-11-27T18:00Z,2026-11-27,2754,Youngstown State Penguins,low,Horizon League,131761,Bryant & Stratton (OH) Bobcats,low,,0,0,STATUS_HALFTIME
