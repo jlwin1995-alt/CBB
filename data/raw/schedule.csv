@@ -1,5 +1,4 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401921673,2026-11-26T21:30Z,2026-11-26,328,Utah State Aggies,power6,Pac-12,30,USC Trojans,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401917547,2026-11-26T22:00Z,2026-11-26,2608,Saint Mary's Gaels,mid,West Coast,26,UCLA Bruins,power6,Big Ten,1,1,STATUS_IN_PROGRESS
 401920538,2026-11-26T23:00Z,2026-11-26,156,Creighton Bluejays,power6,Big East,2628,TCU Horned Frogs,power6,Big 12,1,1,STATUS_IN_PROGRESS
 401918972,2026-11-27T00:00Z,2026-11-26,99,LSU Tigers,power6,Southeastern,2567,SMU Mustangs,power6,Atlantic Coast,1,1,STATUS_SCHEDULED

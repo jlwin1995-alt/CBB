@@ -1,66 +1,66 @@
 {
  "through": "2026-11-26",
- "graded_rows": 1634,
- "pending_rows": 121,
+ "graded_rows": 1657,
+ "pending_rows": 98,
  "total": {
-  "over": 752,
-  "under": 834,
+  "over": 761,
+  "under": 848,
   "push": 31,
   "void": 0,
   "nomatch": 17,
-  "decided": 1586,
-  "over_rate": 0.474,
-  "mean_actual_minus_line": 0.11
+  "decided": 1609,
+  "over_rate": 0.473,
+  "mean_actual_minus_line": 0.08
  },
  "by_market": {
   "player_assists": {
-   "over": 97,
-   "under": 101,
+   "over": 99,
+   "under": 102,
    "push": 6,
    "void": 0,
    "nomatch": 0,
-   "decided": 198,
-   "over_rate": 0.49,
+   "decided": 201,
+   "over_rate": 0.493,
    "mean_actual_minus_line": 0.06
   },
   "player_points": {
-   "over": 361,
-   "under": 380,
+   "over": 364,
+   "under": 384,
    "push": 6,
    "void": 0,
    "nomatch": 8,
-   "decided": 741,
+   "decided": 748,
    "over_rate": 0.487,
-   "mean_actual_minus_line": 0.26
+   "mean_actual_minus_line": 0.24
   },
   "player_points_rebounds_assists": {
-   "over": 51,
-   "under": 67,
+   "over": 53,
+   "under": 72,
    "push": 0,
    "void": 0,
    "nomatch": 2,
-   "decided": 118,
-   "over_rate": 0.432,
-   "mean_actual_minus_line": -0.32
+   "decided": 125,
+   "over_rate": 0.424,
+   "mean_actual_minus_line": -0.54
   },
   "player_rebounds": {
-   "over": 188,
-   "under": 218,
+   "over": 189,
+   "under": 222,
    "push": 19,
    "void": 0,
    "nomatch": 5,
-   "decided": 406,
-   "over_rate": 0.463,
-   "mean_actual_minus_line": -0.02
+   "decided": 411,
+   "over_rate": 0.46,
+   "mean_actual_minus_line": -0.04
   },
   "player_threes": {
-   "over": 55,
+   "over": 56,
    "under": 68,
    "push": 0,
    "void": 0,
    "nomatch": 2,
-   "decided": 123,
-   "over_rate": 0.447,
+   "decided": 124,
+   "over_rate": 0.452,
    "mean_actual_minus_line": 0.13
   }
  },
@@ -276,14 +276,14 @@
    "mean_actual_minus_line": 0.11
   },
   "2026-11-26": {
-   "over": 63,
-   "under": 86,
+   "over": 72,
+   "under": 100,
    "push": 1,
    "void": 0,
    "nomatch": 8,
-   "decided": 149,
-   "over_rate": 0.423,
-   "mean_actual_minus_line": -0.5
+   "decided": 172,
+   "over_rate": 0.419,
+   "mean_actual_minus_line": -0.73
   }
  },
  "by_consensus_gap": {
@@ -318,59 +318,59 @@
    "mean_actual_minus_line": 0.73
   },
   "no sportsbook line": {
-   "over": 604,
-   "under": 662,
+   "over": 613,
+   "under": 676,
    "push": 24,
    "void": 0,
    "nomatch": 17,
-   "decided": 1266,
-   "over_rate": 0.477,
-   "mean_actual_minus_line": 0.18
+   "decided": 1289,
+   "over_rate": 0.476,
+   "mean_actual_minus_line": 0.14
   }
  },
  "model": {
   "all": {
-   "n": 1469,
-   "hit": 754,
+   "n": 1492,
+   "hit": 765,
    "hit_rate": 0.513
   },
   "by_market": {
    "player_assists": {
-    "n": 184,
-    "hit": 100,
-    "hit_rate": 0.543
+    "n": 187,
+    "hit": 102,
+    "hit_rate": 0.545
    },
    "player_points": {
-    "n": 677,
-    "hit": 336,
+    "n": 684,
+    "hit": 339,
     "hit_rate": 0.496
    },
    "player_points_rebounds_assists": {
-    "n": 118,
-    "hit": 57,
-    "hit_rate": 0.483
+    "n": 125,
+    "hit": 61,
+    "hit_rate": 0.488
    },
    "player_rebounds": {
-    "n": 374,
-    "hit": 202,
-    "hit_rate": 0.54
+    "n": 379,
+    "hit": 204,
+    "hit_rate": 0.538
    },
    "player_threes": {
-    "n": 116,
+    "n": 117,
     "hit": 59,
-    "hit_rate": 0.509
+    "hit_rate": 0.504
    }
   },
   "by_edge": {
    "under 10%": {
-    "n": 566,
-    "hit": 275,
-    "hit_rate": 0.486
+    "n": 575,
+    "hit": 280,
+    "hit_rate": 0.487
    },
    "10-20%": {
-    "n": 461,
-    "hit": 239,
-    "hit_rate": 0.518
+    "n": 475,
+    "hit": 245,
+    "hit_rate": 0.516
    },
    "20%+": {
     "n": 442,
@@ -379,13 +379,13 @@
    }
   },
   "overs_picked": {
-   "n": 549,
-   "hit": 263,
-   "hit_rate": 0.479
+   "n": 554,
+   "hit": 264,
+   "hit_rate": 0.477
   },
   "unders_picked": {
-   "n": 920,
-   "hit": 491,
+   "n": 938,
+   "hit": 501,
    "hit_rate": 0.534
   }
  }
