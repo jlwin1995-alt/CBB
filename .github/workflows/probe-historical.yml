@@ -1,0 +1,59 @@
+name: Probe historical odds (by hand)
+
+# One-off, budgeted check of what The Odds API listed (and priced) for games the live pulls missed, using a past snapshot time. About 1 credit for the event list plus about 10 per game checked (at most 3 games, 40 credits in all).
+# Counted in data/log/credits.csv. Does not touch lines.csv, the site or the model.
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Snapshot time (UTC ISO), e.g. 2026-11-27T01:30:00Z"
+        required: true
+      teams:
+        description: "Comma-separated team-name fragments to look for"
+        required: false
+        default: "St. John's,Kansas State,Omaha"
+      market:
+        description: "One player-prop market key"
+        required: false
+        default: "player_points"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cbb-lines
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      DATE_IN: ${{ inputs.date }}
+      TEAMS_IN: ${{ inputs.teams }}
+      MARKET_IN: ${{ inputs.market }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Probe
+        run: |
+          case "$DATE_IN" in [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]T[0-9][0-9]:[0-9][0-9]:[0-9][0-9]Z) ;; *) echo "::error::date must look like 2026-11-27T01:30:00Z"; exit 1;; esac
+          case "$MARKET_IN" in *[!a-z_]*) echo "::error::market may only contain lowercase letters and underscores"; exit 1;; esac
+          python pipeline/probe_historical.py --date "$DATE_IN" --teams "${TEAMS_IN:-St. John's,Kansas State,Omaha}" --market "${MARKET_IN:-player_points}"
+      - name: Commit the credit log
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && exit 0
+          git commit -m "Historical probe"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "::error::could not push the probe commit after 3 attempts"; exit 1
