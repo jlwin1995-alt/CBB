@@ -1,29 +1,16 @@
 event,start_utc,et_date,home_id,home,home_tier,home_conf,away_id,away,away_tier,away_conf,neutral,in_scope,status
-401924845,2026-11-27T21:30Z,2026-11-27,322,Lafayette Leopards,low,Patriot League,315,Niagara Purple Eagles,low,Metro,0,0,STATUS_IN_PROGRESS
-401921718,2026-11-27T22:00Z,2026-11-27,2608,Saint Mary's Gaels,mid,West Coast,251,Texas Longhorns,power6,Southeastern,1,1,STATUS_IN_PROGRESS
-401909789,2026-11-27T22:00Z,2026-11-27,2305,Kansas Jayhawks,power6,Big 12,222,Villanova Wildcats,power6,Big East,0,1,STATUS_IN_PROGRESS
-401920810,2026-11-27T22:00Z,2026-11-27,245,Texas A&M Aggies,power6,Southeastern,269,Marquette Golden Eagles,power6,Big East,1,1,STATUS_IN_PROGRESS
-401920382,2026-11-27T22:00Z,2026-11-27,259,Virginia Tech Hokies,power6,Atlantic Coast,295,Old Dominion Monarchs,mid,Sun Belt,0,1,STATUS_IN_PROGRESS
-401927366,2026-11-27T22:30Z,2026-11-27,68,Boise State Broncos,power6,Pac-12,2181,Drake Bulldogs,mid,Missouri Valley,1,1,STATUS_IN_PROGRESS
-401920541,2026-11-27T22:41Z,2026-11-27,2306,Kansas State Wildcats,power6,Big 12,130,Michigan Wolverines,power6,Big Ten,1,1,STATUS_IN_PROGRESS
-401913531,2026-11-27T23:00Z,2026-11-27,356,Illinois Fighting Illini,power6,Big Ten,98,Western Kentucky Hilltoppers,mid,Conference USA,0,1,STATUS_IN_PROGRESS
-401911030,2026-11-27T23:00Z,2026-11-27,84,Indiana Hoosiers,power6,Big Ten,189,Bowling Green Falcons,mid,Mid-American,0,1,STATUS_HALFTIME
-401933055,2026-11-27T23:00Z,2026-11-27,2908,South Carolina Upstate Spartans,low,Big South,2576,Southern Wesleyan Warriors,low,,0,0,STATUS_IN_PROGRESS
-401921185,2026-11-27T23:40Z,2026-11-27,219,Pennsylvania Quakers,low,Ivy League,119,Towson Tigers,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
-401929284,2026-11-28T00:00Z,2026-11-27,61,Georgia Bulldogs,power6,Southeastern,2116,UCF Knights,power6,Big 12,1,1,STATUS_SCHEDULED
-401926756,2026-11-28T00:00Z,2026-11-27,2540,UC Santa Barbara Gauchos,mid,Big West,2329,Lehigh Mountain Hawks,low,Patriot League,1,1,STATUS_SCHEDULED
-401918980,2026-11-28T00:00Z,2026-11-27,151,East Carolina Pirates,mid,American,286,North Carolina Wesleyan Battling Bishops,low,,0,1,STATUS_SCHEDULED
-401912711,2026-11-28T00:00Z,2026-11-27,153,North Carolina Tar Heels,power6,Atlantic Coast,277,West Virginia Mountaineers,power6,Big 12,1,1,STATUS_SCHEDULED
-401911380,2026-11-28T00:00Z,2026-11-27,2193,East Tennessee State Buccaneers,low,Southern,2127,Charleston Southern Buccaneers,low,Big South,0,0,STATUS_SCHEDULED
-401925703,2026-11-28T00:30Z,2026-11-27,248,Houston Cougars,power6,Big 12,2473,Oakland Golden Grizzlies,low,Horizon League,0,1,STATUS_SCHEDULED
-401929289,2026-11-28T00:30Z,2026-11-27,344,Mississippi State Bulldogs,power6,Southeastern,213,Penn State Nittany Lions,power6,Big Ten,1,1,STATUS_SCHEDULED
-401929381,2026-11-28T01:00Z,2026-11-27,2031,Little Rock Trojans,low,United Athletic,6371,Lane College Dragons,low,,0,0,STATUS_SCHEDULED
-401928624,2026-11-28T01:00Z,2026-11-27,198,Oral Roberts Golden Eagles,low,Summit League,2623,Missouri State Bears,mid,Conference USA,0,1,STATUS_SCHEDULED
-401925829,2026-11-28T01:00Z,2026-11-27,249,North Texas Mean Green,mid,American,2449,North Dakota State Bison,low,Summit League,1,1,STATUS_SCHEDULED
-401922264,2026-11-28T01:00Z,2026-11-27,265,Washington State Cougars,power6,Pac-12,70,Idaho Vandals,low,Big Sky,0,1,STATUS_SCHEDULED
-401920737,2026-11-28T01:00Z,2026-11-27,77,Northwestern Wildcats,power6,Big Ten,111,Northeastern Huskies,mid,Coastal Athletic Association,0,1,STATUS_SCHEDULED
-401911524,2026-11-28T01:00Z,2026-11-27,302,UC Davis Aggies,mid,Mountain West,279,Pacific Tigers,mid,West Coast,1,1,STATUS_SCHEDULED
-401920543,2026-11-28T01:30Z,2026-11-27,333,Alabama Crimson Tide,power6,Southeastern,2390,Miami Hurricanes,power6,Atlantic Coast,1,1,STATUS_SCHEDULED
+401929284,2026-11-28T00:00Z,2026-11-27,61,Georgia Bulldogs,power6,Southeastern,2116,UCF Knights,power6,Big 12,1,1,STATUS_IN_PROGRESS
+401912711,2026-11-28T00:00Z,2026-11-27,153,North Carolina Tar Heels,power6,Atlantic Coast,277,West Virginia Mountaineers,power6,Big 12,1,1,STATUS_IN_PROGRESS
+401911380,2026-11-28T00:00Z,2026-11-27,2193,East Tennessee State Buccaneers,low,Southern,2127,Charleston Southern Buccaneers,low,Big South,0,0,STATUS_IN_PROGRESS
+401925703,2026-11-28T00:30Z,2026-11-27,248,Houston Cougars,power6,Big 12,2473,Oakland Golden Grizzlies,low,Horizon League,0,1,STATUS_IN_PROGRESS
+401929289,2026-11-28T00:30Z,2026-11-27,344,Mississippi State Bulldogs,power6,Southeastern,213,Penn State Nittany Lions,power6,Big Ten,1,1,STATUS_IN_PROGRESS
+401929381,2026-11-28T01:00Z,2026-11-27,2031,Little Rock Trojans,low,United Athletic,6371,Lane College Dragons,low,,0,0,STATUS_HALFTIME
+401928624,2026-11-28T01:00Z,2026-11-27,198,Oral Roberts Golden Eagles,low,Summit League,2623,Missouri State Bears,mid,Conference USA,0,1,STATUS_IN_PROGRESS
+401925829,2026-11-28T01:00Z,2026-11-27,249,North Texas Mean Green,mid,American,2449,North Dakota State Bison,low,Summit League,1,1,STATUS_IN_PROGRESS
+401922264,2026-11-28T01:00Z,2026-11-27,265,Washington State Cougars,power6,Pac-12,70,Idaho Vandals,low,Big Sky,0,1,STATUS_IN_PROGRESS
+401920737,2026-11-28T01:00Z,2026-11-27,77,Northwestern Wildcats,power6,Big Ten,111,Northeastern Huskies,mid,Coastal Athletic Association,0,1,STATUS_IN_PROGRESS
+401911524,2026-11-28T01:00Z,2026-11-27,302,UC Davis Aggies,mid,Mountain West,279,Pacific Tigers,mid,West Coast,1,1,STATUS_HALFTIME
+401920543,2026-11-28T01:30Z,2026-11-27,333,Alabama Crimson Tide,power6,Southeastern,2390,Miami Hurricanes,power6,Atlantic Coast,1,1,STATUS_IN_PROGRESS
 401920534,2026-11-28T02:00Z,2026-11-27,97,Louisville Cardinals,power6,Atlantic Coast,2633,Tennessee Volunteers,power6,Southeastern,1,1,STATUS_SCHEDULED
 401919033,2026-11-28T02:00Z,2026-11-27,96,Kentucky Wildcats,power6,Southeastern,2724,Wichita State Shockers,mid,American,0,1,STATUS_SCHEDULED
 401926783,2026-11-28T03:30Z,2026-11-27,2437,Omaha Mavericks,low,Summit League,55,Jacksonville State Gamecocks,mid,Conference USA,1,1,STATUS_SCHEDULED
